@@ -1,13 +1,22 @@
 import fs from "fs";
-import dotenv from "dotenv";
+import path from "path";
 import { parsePage } from "./parser/parsePage.js";
+import { ROOT_PAGES } from "./config/rootPages.js";
 
-dotenv.config();
+const BASE_DIR = path.join(process.cwd(), "backups");
 
-if (!fs.existsSync("backups/pages")) {
-  fs.mkdirSync("backups/pages", { recursive: true });
+async function runBackup() {
+  for (const page of ROOT_PAGES) {
+
+    const folder = path.join(BASE_DIR, page.name);
+    fs.mkdirSync(folder, { recursive: true });
+
+    console.log("Backing up:", page.name);
+
+    await parsePage(page.id, folder);
+  }
+
+  console.log("✅ Backup completed");
 }
 
-await parsePage(process.env.ROOT_PAGE_ID, "backups/pages");
-
-console.log("✅ NOTION BACKUP FINISHED");
+runBackup();
