@@ -1,7 +1,8 @@
 
 📎 Attachment: ../../assets/2f20eb7a-3bc3-80b2-a3cb-d8cb2818a979
 
-### 1. Introduction to Data Structures
+# 1. Introduction to Data Structures
+
 
 **Stack (LIFO Mechanism)**
 
@@ -26,23 +27,38 @@ Only `push `operation is done at the back, all other operations are done from th
 
 ---
 
-### 2. Implementation: Stack using Arrays
+# 2. Implementation: Stack using Arrays
+
+
+**MOST IMP PART **: Initialize a top variable as -1 to keep track of topmost element, we initialize as -1 to prevent the code from throwing out  of bounds errors.
 
 - **Constraint:** Arrays require a fixed size, meaning the stack capacity is not dynamic.
-- **Variables:** An array (e.g., size 10) and a variable `top` initialized to `1`.
-- **Logic:**
-- **Push:** Increment `top` (`top + 1`) and place the value at `arr[top]`.
-- **Pop:** Decrement `top` (`top - 1`). No need to physically delete the value; moving the pointer is sufficient.
-- **Top:** Return `arr[top]`. If `top` is `1`, the stack is empty.
-- **Size:** Return `top + 1`.
+- **Variables:** An array (e.g., size 10) and a variable `top` initialized to `-1`.
+- **Logic:  **
+- **Push****:**
+-  Increment `top`
+-  and place the value at `arr[top]`.
+- **Pop****:** 
+- Decrement `top`
+- No need to physically delete the value; moving the pointer is sufficient.
+- **Top****:**   
+- Return `arr[top]`. 
+- If `top` is -`1`, the stack is empty.
+- **Size****:** 
+- Return `top + 1`.
 - **Complexity:** Time complexity is **O(1)** for all operations. Space complexity involves potentially wasted space due to fixed array size.
 
 ---
 
-### 3. Implementation: Queue using Arrays
+# 3. Implementation: Queue using Arrays
+
 
 - **Constraint:** Requires fixed size.
-- **Variables:** Array, `start` (front), `end` (rear), and `currentSize`. `start` and `end` are initialized to `1`.
+- **Variables:**
+- `start` (front)
+-  `end` (rear),
+-  `currentSize`
+-  `start` and `end` are initialized to `1`.
 - **Circular Array Logic:** To efficiently utilize space (e.g., filling empty spots at the beginning after pops), modulo arithmetic is used: `index % size`.
 - **Logic:**
 - **Push:**
@@ -57,7 +73,8 @@ Only `push `operation is done at the back, all other operations are done from th
 
 ---
 
-### 4. Implementation: Stack using Linked List
+# 4. Implementation: Stack using Linked List
+
 
 - **Advantage:** Dynamic size; consumes space proportional only to elements stored.
 - **Structure:** A `Node` class containing a value and a `next` pointer. A `top` pointer tracks the head.
