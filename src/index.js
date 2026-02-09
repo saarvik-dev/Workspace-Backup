@@ -1,3 +1,4 @@
+import { sanitizeName } from "./utils/sanitizeName.js";
 import fs from "fs";
 import path from "path";
 import { parsePage } from "./parser/parsePage.js";

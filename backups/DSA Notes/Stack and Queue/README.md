@@ -1,6 +1,10 @@
 
 📎 Attachment: ../../assets/2f20eb7a-3bc3-80b2-a3cb-d8cb2818a979
 
+Stack - only one variable required `top`
+
+Queue - three variables required `start`, `end`, `curr_size`
+
 # 1. Introduction to Data Structures
 
 
@@ -53,12 +57,29 @@ Only `push `operation is done at the back, all other operations are done from th
 # 3. Implementation: Queue using Arrays
 
 
+**CONCEPT OF CYCLING**
+
+
+![](../../assets/2f80eb7a-3bc3-807d-8637-d28bc3e544e6.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80ca-be26-faad6a32fc9c.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80a6-aa63-c5096b9a5748.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80ce-994b-ea3f297a0bf6.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80f9-b406-c24ad3f8e48e.png)
+
 - **Constraint:** Requires fixed size.
 - **Variables:**
 - `start` (front)
 -  `end` (rear),
 -  `currentSize`
--  `start` and `end` are initialized to `1`.
+-  `start` and `end` are initialized to `-1 `
 - **Circular Array Logic:** To efficiently utilize space (e.g., filling empty spots at the beginning after pops), modulo arithmetic is used: `index % size`.
 - **Logic:**
 - **Push:**
@@ -76,6 +97,18 @@ Only `push `operation is done at the back, all other operations are done from th
 # 4. Implementation: Stack using Linked List
 
 
+
+![](../../assets/2f80eb7a-3bc3-80de-9339-f0e85b52969c.png)
+
+
+![](../../assets/2f80eb7a-3bc3-807b-8dc0-f5daa181578f.png)
+
+
+![](../../assets/2f80eb7a-3bc3-808a-9f30-cd1937675b6e.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80d5-b2f2-dee7b0a82608.png)
+
 - **Advantage:** Dynamic size; consumes space proportional only to elements stored.
 - **Structure:** A `Node` class containing a value and a `next` pointer. A `top` pointer tracks the head.
 - **Logic:**
@@ -86,7 +119,20 @@ Only `push `operation is done at the back, all other operations are done from th
 
 ---
 
-### 5. Implementation: Queue using Linked List
+# 5. Implementation: Queue using Linked List
+
+
+
+![](../../assets/2f80eb7a-3bc3-800f-b7d4-f40ba7e6d9a9.png)
+
+
+![](../../assets/2f80eb7a-3bc3-805a-93aa-fa1e6bfa5b60.png)
+
+
+![](../../assets/2f80eb7a-3bc3-8099-8574-ef386164b763.png)
+
+
+![](../../assets/2f80eb7a-3bc3-8066-9963-c8257adeef27.png)
 
 - **Variables:** `start` pointing to the front (for popping) and `end` pointing to the rear (for pushing).
 - **Logic:**
@@ -99,7 +145,16 @@ Only `push `operation is done at the back, all other operations are done from th
 
 ---
 
-### 6. Advanced Implementation: Stack using Queue
+# 6. Advanced Implementation: Stack using Queue
+
+
+
+![](../../assets/2f80eb7a-3bc3-807c-9977-da2d52c5ded6.png)
+
+
+![](../../assets/2f80eb7a-3bc3-8016-bc99-deeddbcbd130.png)
+
+Basically we have to rearrange the queue data structure in such a way such that it behaves like a stack data structure.
 
 **Problem:** Make a FIFO data structure (Queue) behave like a LIFO data structure (Stack).
 
@@ -118,9 +173,24 @@ Only `push `operation is done at the back, all other operations are done from th
 
 ### 7. Advanced Implementation: Queue using Stack
 
+
+![](../../assets/2f80eb7a-3bc3-8001-8810-d6988ad7d046.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80e9-b07b-d6c523002eff.png)
+
+
+![](../../assets/2f80eb7a-3bc3-806b-b64f-c5f717b917e2.png)
+
+
+![](../../assets/2f80eb7a-3bc3-802e-a37f-eb24d1c96166.png)
+
+
+![](../../assets/2f80eb7a-3bc3-8056-bc85-d91569db4dbb.png)
+
 **Problem:** Make a LIFO data structure (Stack) behave like a FIFO data structure (Queue) using two stacks (`S1` and `S2`).
 
-**Method 1: Expensive Push (O(N))**
+## **Method 1: Expensive Push (O(N))**
 
 - **Logic:**
 - **Push(x):**
@@ -129,7 +199,16 @@ Only `push `operation is done at the back, all other operations are done from th
 1. Transfer everything back from `S2` to `S1`.
 - **Pop/Top:** Simply perform the operation on `S1`.
 - **Complexity:** Push is **O(2N)**; Pop/Top is **O(1)**.
-**Method 2: Amortized (Optimized) Push (O(1))**
+## **Method 2: Amortized (Optimized) Push (O(1))**
+
+
+![](../../assets/2f80eb7a-3bc3-8096-a6b3-e1a7a4106c04.png)
+
+
+![](../../assets/2f80eb7a-3bc3-8008-a662-cddc685f34ed.png)
+
+
+![](../../assets/2f80eb7a-3bc3-80f2-92d6-ca4d2d72a611.png)
 
 - **Logic:** Use `S1` for input and `S2` for output.
 - **Push(x):** Simply push `x` onto `S1`. **O(1)**.

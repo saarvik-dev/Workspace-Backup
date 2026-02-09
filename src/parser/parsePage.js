@@ -1,3 +1,4 @@
+import { sanitizeName } from "../utils/sanitizeName.js";
 import fs from "fs";
 import path from "path";
 import { fetchAllBlocks } from "../notion/fetchAllBlocks.js";
@@ -94,12 +95,16 @@ async function parseBlock(block, folderPath, links, assetPrefix) {
       break;
 
     case "child_page": {
-      const name = block.child_page?.title || "Untitled";
-      const childFolder = path.join(folderPath, name);
-      fs.mkdirSync(childFolder, { recursive: true });
-      await parsePage(block.id, childFolder);
-      break;
-    }
+  const rawName = block.child_page?.title || "Untitled";
+  const safeName = sanitizeName(rawName);
+
+  const childFolder = path.join(folderPath, safeName);
+  fs.mkdirSync(childFolder, { recursive: true });
+
+  await parsePage(block.id, childFolder);
+  break;
+}
+
   }
 
   if (

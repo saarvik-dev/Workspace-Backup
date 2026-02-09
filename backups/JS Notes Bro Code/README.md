@@ -78,3 +78,48 @@ for(let price in prices){
 In simple words:
 
 - *array*.forEach() is not exactly clear
+# Structure for creating a simple object in js
+
+
+
+![](../assets/2f40eb7a-3bc3-8069-ac74-ed1f2f8c4a6e.png)
+
+- Rewatch getters and setters part 3:46:00 mark, they are quite important
+# GETTER SNIPPET
+
+
+
+![](../assets/2f50eb7a-3bc3-80fe-b65c-e4a016f1d0e5.png)
+
+# Traversing through an array 
+
+
+`for`( `const `car `of` cars)
+
+- **Asynchronous Function** - Doesn’t pause execution of the program
+Loading a file is an asynchronous process.
+
+
+![](../assets/2f90eb7a-3bc3-80e1-bc38-f52361876364.png)
+
+
+![](../assets/2f90eb7a-3bc3-8062-81df-fd25fb23b0fb.png)
+
+
+![](../assets/2f90eb7a-3bc3-80e4-aa92-f13227bb6d0f.png)
+
+
+![](../assets/2f90eb7a-3bc3-80b9-89d6-ce134035ff63.png)
+
+We need to use try and catch block to execute the reject function in async await.
+
+
+![](../assets/2f90eb7a-3bc3-8053-97c9-c2a745461957.png)
+
+- `document.getElementsByName()` - returns a node list
+
+---
+
+🔗 **References**
+- 3:46:00  → https://youtu.be/8dWL3wF_OMw?t=13609
+
