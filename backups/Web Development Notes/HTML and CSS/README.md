@@ -349,3 +349,40 @@ The only HTML/CSS you’ll learn later will be:
 - While reading others’ code
 That learning is *context-driven*, not tutorial-driven.
 
+# Difference between Tailwind CSS and CSS
+
+
+
+![](../../assets/3260eb7a-3bc3-80d0-9f71-d9251e917681.png)
+
+
+![](../../assets/3260eb7a-3bc3-80db-89d2-d49d74c4ebf2.png)
+
+
+| Concept | CSS | Tailwind |
+| --- | --- | --- |
+| Approach | Write styles → apply class | Apply ready-made classes directly |
+| Files | Separate .css file | Mostly inline in className |
+| Reusability | High (custom classes) | Medium (composition-based) |
+| Speed | Slower initially | Very fast |
+| Flexibility | Unlimited | Limited to config (but extendable) |
+| Mental model | “Design classes” | “Design directly in HTML” |
+
+
+
+
+![](../../assets/3260eb7a-3bc3-8086-b083-dc68cbdb1469.png)
+
+
+![](../../assets/3260eb7a-3bc3-807f-ae79-e01748050790.png)
+
+
+![](../../assets/3260eb7a-3bc3-807b-9fc1-c2dccf20390d.png)
+
+# ⚡ Better Analogy
+
+
+### CSS:
+
+### Tailwind:
+

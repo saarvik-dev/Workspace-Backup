@@ -128,7 +128,7 @@ int main() {
 
 The above implementation can be done using a class (preferred)  just by replacing the keyword `struct `by `class`
 
-- `struct`** vs. **`class`**:** Both can define the Node. `class` is generally preferred in industry as it supports Object-Oriented Programming (OOP) concepts like abstraction, encapsulation, and inheritance ((23:03), (23:45)).
+- `struct`** vs. **`class`**:** Both can define the Node. `class` is generally `preferred `in industry as it supports Object-Oriented Programming (OOP) concepts like abstraction, encapsulation, and inheritance ((23:03), (23:45)).
 - **Pointers:** In C++, `Node\*` stores the memory address of the next node (19:37).
 - `new`** keyword:** Allocates memory for a new node on the heap and returns a pointer to that memory location ((20:18), (29:55)).
 - **Accessing members:** Use `-\>` (arrow operator) for pointers (e.g., `y-\>data`) (22:04).
@@ -454,6 +454,17 @@ If you want, next we can:
 - Set `new_`node.next to temp.next (connects new node to the rest of the list) (46:59).
 - Set temp.next to `new_node` (connects previous node to new node) (47:29).
 - **Return Value:** The head of the modified list.
+# Sorting a Linked List
+
+
+
+![](../../assets/3290eb7a-3bc3-808c-9734-f938133b8a75.png)
+
+This is also done to handle two node lists
+
+
+![](../../assets/3290eb7a-3bc3-807f-83f0-c951d6e871c7.png)
+
 
 ---
 
