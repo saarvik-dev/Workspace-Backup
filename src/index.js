@@ -59,7 +59,12 @@ async function runBackup() {
           const titleProp = row.properties["Page Name"] ?? Object.values(row.properties).find(p => p.type === 'title');
           const name = titleProp?.title?.[0]?.plain_text || `Page-${pageId}`;
 
-          pagesToSync.push({ id: pageId, name: sanitizeName(name) });
+          pagesToSync.push({
+            id: pageId,
+            name: sanitizeName(name),
+            rowId: row.id,
+            row: row
+          });
         }
         cursor = res.has_more ? res.next_cursor : undefined;
       } while (cursor);
@@ -87,6 +92,27 @@ async function runBackup() {
 
     try {
       await parsePage(page.id, folder, cache);
+
+      // Try to update "Last Synced" in the registry database row if it exists
+      if (page.rowId && dbId) {
+        const row = page.row;
+        const lastSyncedPropName = "Last Synced";
+        const actualPropName = Object.keys(row.properties).find(k => k.toLowerCase() === lastSyncedPropName.toLowerCase());
+
+        if (actualPropName && row.properties[actualPropName]?.type === 'date') {
+          await notion.pages.update({
+            page_id: page.rowId,
+            properties: {
+              [actualPropName]: {
+                date: {
+                  start: new Date().toISOString()
+                }
+              }
+            }
+          });
+          console.log(`  Updated "${actualPropName}" timestamp in Notion.`);
+        }
+      }
     } catch (err) {
       console.error(`❌ Error backing up ${page.name}:`, err.message);
     }
