@@ -1,0 +1,1306 @@
+{
+  "pages": {
+    "2d60eb7a-3bc3-80c3-808b-e1b766c5c3ee": {
+      "last_edited_time": "2026-03-20T11:43:00.000Z",
+      "relativePath": "DSA-Strivers\\Linked List",
+      "children": []
+    },
+    "2d60eb7a-3bc3-80ae-95b5-cd781bece0d7": {
+      "last_edited_time": "2025-12-28T14:47:00.000Z",
+      "relativePath": "DSA-Strivers\\Doubly Linked List",
+      "children": []
+    },
+    "2d90eb7a-3bc3-802a-8d94-fccc8e88d330": {
+      "last_edited_time": "2026-01-06T17:50:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Search",
+      "children": []
+    },
+    "2e00eb7a-3bc3-804f-9089-dd7dd413d93a": {
+      "last_edited_time": "2026-01-07T14:40:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Search - Lower & Upper Bound ‼️IMP‼️‼️",
+      "children": []
+    },
+    "2e10eb7a-3bc3-80a2-8171-e73bd54aadea": {
+      "last_edited_time": "2026-01-07T16:28:00.000Z",
+      "relativePath": "DSA-Strivers\\Upper Bound, Lower Bound, Floor, Ceil",
+      "children": []
+    },
+    "2e70eb7a-3bc3-802b-8bad-e593bf067433": {
+      "last_edited_time": "2026-01-13T13:45:00.000Z",
+      "relativePath": "DSA-Strivers\\Imp for Recursion",
+      "children": []
+    },
+    "2e70eb7a-3bc3-8091-b14b-d4798e8248e2": {
+      "last_edited_time": "2026-01-14T03:47:00.000Z",
+      "relativePath": "DSA-Strivers\\Greedy Algorithms",
+      "children": []
+    },
+    "2e90eb7a-3bc3-80fc-a509-d9fb2431518c": {
+      "last_edited_time": "2026-01-16T10:12:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Search on Answers",
+      "children": []
+    },
+    "2ef0eb7a-3bc3-80f3-98f1-f6b666880725": {
+      "last_edited_time": "2026-01-21T14:36:00.000Z",
+      "relativePath": "DSA-Strivers\\Complexity Problem",
+      "children": []
+    },
+    "2f90eb7a-3bc3-80c6-ac97-fa1cecd568a0": {
+      "last_edited_time": "2026-01-31T04:44:00.000Z",
+      "relativePath": "DSA-Strivers\\Stack and Queue\\Stack Algorithms for Infix, Prefix, and Postfix Conversion",
+      "children": []
+    },
+    "2f80eb7a-3bc3-80b7-90a7-f9546310d370": {
+      "last_edited_time": "2026-01-30T14:02:00.000Z",
+      "relativePath": "DSA-Strivers\\Stack and Queue\\Stack using arrays",
+      "children": []
+    },
+    "2f20eb7a-3bc3-801a-91ea-d54adb632e91": {
+      "last_edited_time": "2026-06-11T18:53:00.000Z",
+      "relativePath": "DSA-Strivers\\Stack and Queue",
+      "children": [
+        {
+          "type": "page",
+          "id": "2f90eb7a-3bc3-80c6-ac97-fa1cecd568a0",
+          "relativePath": "DSA-Strivers\\Stack and Queue\\Stack Algorithms for Infix, Prefix, and Postfix Conversion"
+        },
+        {
+          "type": "page",
+          "id": "2f80eb7a-3bc3-80b7-90a7-f9546310d370",
+          "relativePath": "DSA-Strivers\\Stack and Queue\\Stack using arrays"
+        }
+      ]
+    },
+    "2d60eb7a-3bc3-80b1-a8f3-fb88306fdb5f": {
+      "last_edited_time": "2026-03-02T11:09:00.000Z",
+      "relativePath": "DSA-Strivers\\Leetcode Tips",
+      "children": []
+    },
+    "2f90eb7a-3bc3-80f2-a615-f6ba9a984ee7": {
+      "last_edited_time": "2026-01-31T05:00:00.000Z",
+      "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Code Templates",
+      "children": []
+    },
+    "2f90eb7a-3bc3-80da-bb66-ed557670e549": {
+      "last_edited_time": "2026-01-31T05:13:00.000Z",
+      "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Why it works",
+      "children": []
+    },
+    "2f20eb7a-3bc3-808d-86ca-dad71c62925c": {
+      "last_edited_time": "2026-03-02T11:09:00.000Z",
+      "relativePath": "DSA-Strivers\\Monotonic Stack Queues",
+      "children": [
+        {
+          "type": "page",
+          "id": "2f90eb7a-3bc3-80f2-a615-f6ba9a984ee7",
+          "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Code Templates"
+        },
+        {
+          "type": "page",
+          "id": "2f90eb7a-3bc3-80da-bb66-ed557670e549",
+          "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Why it works"
+        }
+      ]
+    },
+    "3850eb7a-3bc3-8096-a6da-e6a647d096e1": {
+      "last_edited_time": "2026-06-20T18:01:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Trees\\Tree DP",
+      "children": []
+    },
+    "3030eb7a-3bc3-8050-aaed-f40374d3069b": {
+      "last_edited_time": "2026-06-20T18:00:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Trees",
+      "children": [
+        {
+          "type": "page",
+          "id": "3850eb7a-3bc3-8096-a6da-e6a647d096e1",
+          "relativePath": "DSA-Strivers\\Binary Trees\\Tree DP"
+        }
+      ]
+    },
+    "31a0eb7a-3bc3-80e2-adae-fc6d28286c63": {
+      "last_edited_time": "2026-03-05T13:42:00.000Z",
+      "relativePath": "DSA-Strivers\\Multiset",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8076-b0eb-e1f96fbf8ad9": {
+      "last_edited_time": "2026-03-10T17:21:00.000Z",
+      "relativePath": "DSA-Strivers\\Binary Search Tree",
+      "children": []
+    },
+    "3920eb7a-3bc3-8007-b2cc-cd84fa49c3f7": {
+      "last_edited_time": "2026-07-03T05:30:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\When to use which Graph Traversal Algo",
+      "children": []
+    },
+    "3690eb7a-3bc3-803e-86f2-ed299ca3f98c": {
+      "last_edited_time": "2026-06-02T14:34:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Striver Sheet Questions",
+      "children": []
+    },
+    "3690eb7a-3bc3-80fa-a3a0-c6751b35f9f7": {
+      "last_edited_time": "2026-06-02T14:34:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Shortest Path Algorithms",
+      "children": []
+    },
+    "3730eb7a-3bc3-80a4-a2f6-cab197281fc2": {
+      "last_edited_time": "2026-06-26T05:08:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Minimum Spanning Tree MST",
+      "children": []
+    },
+    "3730eb7a-3bc3-8031-98be-d18af4031d1d": {
+      "last_edited_time": "2026-06-26T05:22:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Disjoint Set (V. Imp. for OA’s and Interviews)",
+      "children": []
+    },
+    "3730eb7a-3bc3-8058-929b-c732d4f49066": {
+      "last_edited_time": "2026-07-09T05:52:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Dijkstra (Continued)",
+      "children": []
+    },
+    "3990eb7a-3bc3-8001-9e99-c5ca7979fb73": {
+      "last_edited_time": "2026-07-15T07:55:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\0-1 BFS",
+      "children": []
+    },
+    "39e0eb7a-3bc3-8065-8100-ef771ce307f1": {
+      "last_edited_time": "2026-07-15T07:55:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs\\Cached BFS",
+      "children": []
+    },
+    "31c0eb7a-3bc3-80a2-a43c-ce032acfcd04": {
+      "last_edited_time": "2026-07-15T07:55:00.000Z",
+      "relativePath": "DSA-Strivers\\Graphs",
+      "children": [
+        {
+          "type": "page",
+          "id": "3920eb7a-3bc3-8007-b2cc-cd84fa49c3f7",
+          "relativePath": "DSA-Strivers\\Graphs\\When to use which Graph Traversal Algo"
+        },
+        {
+          "type": "page",
+          "id": "3690eb7a-3bc3-803e-86f2-ed299ca3f98c",
+          "relativePath": "DSA-Strivers\\Graphs\\Striver Sheet Questions"
+        },
+        {
+          "type": "page",
+          "id": "3690eb7a-3bc3-80fa-a3a0-c6751b35f9f7",
+          "relativePath": "DSA-Strivers\\Graphs\\Shortest Path Algorithms"
+        },
+        {
+          "type": "page",
+          "id": "3730eb7a-3bc3-80a4-a2f6-cab197281fc2",
+          "relativePath": "DSA-Strivers\\Graphs\\Minimum Spanning Tree MST"
+        },
+        {
+          "type": "page",
+          "id": "3730eb7a-3bc3-8031-98be-d18af4031d1d",
+          "relativePath": "DSA-Strivers\\Graphs\\Disjoint Set (V. Imp. for OA’s and Interviews)"
+        },
+        {
+          "type": "page",
+          "id": "3730eb7a-3bc3-8058-929b-c732d4f49066",
+          "relativePath": "DSA-Strivers\\Graphs\\Dijkstra (Continued)"
+        },
+        {
+          "type": "page",
+          "id": "3990eb7a-3bc3-8001-9e99-c5ca7979fb73",
+          "relativePath": "DSA-Strivers\\Graphs\\0-1 BFS"
+        },
+        {
+          "type": "page",
+          "id": "39e0eb7a-3bc3-8065-8100-ef771ce307f1",
+          "relativePath": "DSA-Strivers\\Graphs\\Cached BFS"
+        }
+      ]
+    },
+    "3320eb7a-3bc3-8081-9f85-c494a103147f": {
+      "last_edited_time": "2026-06-08T17:51:00.000Z",
+      "relativePath": "DSA-Strivers\\Bit Manipulation",
+      "children": []
+    },
+    "3700eb7a-3bc3-80bc-baac-d4885feddc8b": {
+      "last_edited_time": "2026-06-04T08:37:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\Strivers Sheet Questions",
+      "children": []
+    },
+    "3990eb7a-3bc3-803d-aa21-c449afd783d2": {
+      "last_edited_time": "2026-07-10T06:05:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\Knapsack DP",
+      "children": []
+    },
+    "3990eb7a-3bc3-8050-8755-ea4508d64117": {
+      "last_edited_time": "2026-07-10T06:15:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\Digit DP",
+      "children": []
+    },
+    "3760eb7a-3bc3-8046-a705-ec9e64c68937": {
+      "last_edited_time": "2026-06-06T07:54:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on Stocks",
+      "children": []
+    },
+    "37a0eb7a-3bc3-8068-a89b-d9d8c65e3d59": {
+      "last_edited_time": "2026-06-10T07:51:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on LIS (Strictly Increasing)",
+      "children": []
+    },
+    "37b0eb7a-3bc3-8008-9059-c7837ddae947": {
+      "last_edited_time": "2026-06-11T11:31:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming\\Partition DP Hard DP",
+      "children": []
+    },
+    "3700eb7a-3bc3-805a-8c89-c42bb88fe43a": {
+      "last_edited_time": "2026-08-01T11:33:00.000Z",
+      "relativePath": "DSA-Strivers\\Dynamic Programming",
+      "children": [
+        {
+          "type": "page",
+          "id": "3700eb7a-3bc3-80bc-baac-d4885feddc8b",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\Strivers Sheet Questions"
+        },
+        {
+          "type": "page",
+          "id": "3990eb7a-3bc3-803d-aa21-c449afd783d2",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\Knapsack DP"
+        },
+        {
+          "type": "page",
+          "id": "3990eb7a-3bc3-8050-8755-ea4508d64117",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\Digit DP"
+        },
+        {
+          "type": "page",
+          "id": "3760eb7a-3bc3-8046-a705-ec9e64c68937",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on Stocks"
+        },
+        {
+          "type": "page",
+          "id": "37a0eb7a-3bc3-8068-a89b-d9d8c65e3d59",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on LIS (Strictly Increasing)"
+        },
+        {
+          "type": "page",
+          "id": "37b0eb7a-3bc3-8008-9059-c7837ddae947",
+          "relativePath": "DSA-Strivers\\Dynamic Programming\\Partition DP Hard DP"
+        }
+      ]
+    },
+    "3780eb7a-3bc3-8061-8b0d-ed2b7305eb3c": {
+      "last_edited_time": "2026-06-07T05:05:00.000Z",
+      "relativePath": "DSA-Strivers\\Recursion",
+      "children": []
+    },
+    "3840eb7a-3bc3-80bb-8cd1-ddf26d81badf": {
+      "last_edited_time": "2026-06-19T16:45:00.000Z",
+      "relativePath": "DSA-Strivers\\Tries\\Strivers Sheets Questions",
+      "children": []
+    },
+    "3840eb7a-3bc3-80ce-aaf9-c79c0ceeb51c": {
+      "last_edited_time": "2026-06-19T16:44:00.000Z",
+      "relativePath": "DSA-Strivers\\Tries",
+      "children": [
+        {
+          "type": "page",
+          "id": "3840eb7a-3bc3-80bb-8cd1-ddf26d81badf",
+          "relativePath": "DSA-Strivers\\Tries\\Strivers Sheets Questions"
+        }
+      ]
+    },
+    "3850eb7a-3bc3-8067-a802-c878b18cb05d": {
+      "last_edited_time": "2026-06-20T11:46:00.000Z",
+      "relativePath": "DSA-Strivers\\Strings Hard\\Hashing",
+      "children": []
+    },
+    "3840eb7a-3bc3-8065-9a17-cb00178860e0": {
+      "last_edited_time": "2026-06-20T06:02:00.000Z",
+      "relativePath": "DSA-Strivers\\Strings Hard",
+      "children": [
+        {
+          "type": "page",
+          "id": "3850eb7a-3bc3-8067-a802-c878b18cb05d",
+          "relativePath": "DSA-Strivers\\Strings Hard\\Hashing"
+        }
+      ]
+    },
+    "39c0eb7a-3bc3-80a3-b26c-ce1f27618a07": {
+      "last_edited_time": "2026-07-13T07:44:00.000Z",
+      "relativePath": "DSA-Strivers\\Sliding Window\\Different Patterns in Sliding Window",
+      "children": []
+    },
+    "39c0eb7a-3bc3-80b0-a791-c3860f3039f1": {
+      "last_edited_time": "2026-07-13T09:51:00.000Z",
+      "relativePath": "DSA-Strivers\\Sliding Window",
+      "children": [
+        {
+          "type": "page",
+          "id": "39c0eb7a-3bc3-80a3-b26c-ce1f27618a07",
+          "relativePath": "DSA-Strivers\\Sliding Window\\Different Patterns in Sliding Window"
+        }
+      ]
+    },
+    "2a20eb7a3bc380b4afc7ece03efd0bbe": {
+      "last_edited_time": "2026-07-13T07:41:00.000Z",
+      "relativePath": "DSA-Strivers",
+      "children": [
+        {
+          "type": "page",
+          "id": "2d60eb7a-3bc3-80c3-808b-e1b766c5c3ee",
+          "relativePath": "DSA-Strivers\\Linked List"
+        },
+        {
+          "type": "page",
+          "id": "2d60eb7a-3bc3-80ae-95b5-cd781bece0d7",
+          "relativePath": "DSA-Strivers\\Doubly Linked List"
+        },
+        {
+          "type": "page",
+          "id": "2d90eb7a-3bc3-802a-8d94-fccc8e88d330",
+          "relativePath": "DSA-Strivers\\Binary Search"
+        },
+        {
+          "type": "page",
+          "id": "2e00eb7a-3bc3-804f-9089-dd7dd413d93a",
+          "relativePath": "DSA-Strivers\\Binary Search - Lower & Upper Bound ‼️IMP‼️‼️"
+        },
+        {
+          "type": "page",
+          "id": "2e10eb7a-3bc3-80a2-8171-e73bd54aadea",
+          "relativePath": "DSA-Strivers\\Upper Bound, Lower Bound, Floor, Ceil"
+        },
+        {
+          "type": "page",
+          "id": "2e70eb7a-3bc3-802b-8bad-e593bf067433",
+          "relativePath": "DSA-Strivers\\Imp for Recursion"
+        },
+        {
+          "type": "page",
+          "id": "2e70eb7a-3bc3-8091-b14b-d4798e8248e2",
+          "relativePath": "DSA-Strivers\\Greedy Algorithms"
+        },
+        {
+          "type": "page",
+          "id": "2e90eb7a-3bc3-80fc-a509-d9fb2431518c",
+          "relativePath": "DSA-Strivers\\Binary Search on Answers"
+        },
+        {
+          "type": "page",
+          "id": "2ef0eb7a-3bc3-80f3-98f1-f6b666880725",
+          "relativePath": "DSA-Strivers\\Complexity Problem"
+        },
+        {
+          "type": "page",
+          "id": "2f20eb7a-3bc3-801a-91ea-d54adb632e91",
+          "relativePath": "DSA-Strivers\\Stack and Queue"
+        },
+        {
+          "type": "page",
+          "id": "2d60eb7a-3bc3-80b1-a8f3-fb88306fdb5f",
+          "relativePath": "DSA-Strivers\\Leetcode Tips"
+        },
+        {
+          "type": "page",
+          "id": "2f20eb7a-3bc3-808d-86ca-dad71c62925c",
+          "relativePath": "DSA-Strivers\\Monotonic Stack Queues"
+        },
+        {
+          "type": "page",
+          "id": "3030eb7a-3bc3-8050-aaed-f40374d3069b",
+          "relativePath": "DSA-Strivers\\Binary Trees"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-80e2-adae-fc6d28286c63",
+          "relativePath": "DSA-Strivers\\Multiset"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8076-b0eb-e1f96fbf8ad9",
+          "relativePath": "DSA-Strivers\\Binary Search Tree"
+        },
+        {
+          "type": "page",
+          "id": "31c0eb7a-3bc3-80a2-a43c-ce032acfcd04",
+          "relativePath": "DSA-Strivers\\Graphs"
+        },
+        {
+          "type": "page",
+          "id": "3320eb7a-3bc3-8081-9f85-c494a103147f",
+          "relativePath": "DSA-Strivers\\Bit Manipulation"
+        },
+        {
+          "type": "page",
+          "id": "3700eb7a-3bc3-805a-8c89-c42bb88fe43a",
+          "relativePath": "DSA-Strivers\\Dynamic Programming"
+        },
+        {
+          "type": "page",
+          "id": "3780eb7a-3bc3-8061-8b0d-ed2b7305eb3c",
+          "relativePath": "DSA-Strivers\\Recursion"
+        },
+        {
+          "type": "page",
+          "id": "3840eb7a-3bc3-80ce-aaf9-c79c0ceeb51c",
+          "relativePath": "DSA-Strivers\\Tries"
+        },
+        {
+          "type": "page",
+          "id": "3840eb7a-3bc3-8065-9a17-cb00178860e0",
+          "relativePath": "DSA-Strivers\\Strings Hard"
+        },
+        {
+          "type": "page",
+          "id": "39c0eb7a-3bc3-80b0-a791-c3860f3039f1",
+          "relativePath": "DSA-Strivers\\Sliding Window"
+        }
+      ]
+    },
+    "2ec0eb7a-3bc3-8010-91fe-dab40f9f9447": {
+      "last_edited_time": "2026-01-18T14:20:00.000Z",
+      "relativePath": "Web Development Notes\\HTML and CSS\\Importance of SEO",
+      "children": []
+    },
+    "2ed0eb7a-3bc3-8058-a9fc-c9a3fff055d5": {
+      "last_edited_time": "2026-01-19T17:45:00.000Z",
+      "relativePath": "Web Development Notes\\HTML and CSS\\Importance of rel = “noopener noreferrer”",
+      "children": []
+    },
+    "2ec0eb7a3bc3809c833efda3285e685d": {
+      "last_edited_time": "2026-03-17T12:05:00.000Z",
+      "relativePath": "HTML-CSS",
+      "children": [
+        {
+          "type": "page",
+          "id": "2ec0eb7a-3bc3-8010-91fe-dab40f9f9447",
+          "relativePath": "HTML-CSS\\Importance of SEO"
+        },
+        {
+          "type": "page",
+          "id": "2ed0eb7a-3bc3-8058-a9fc-c9a3fff055d5",
+          "relativePath": "HTML-CSS\\Importance of rel = “noopener noreferrer”"
+        }
+      ]
+    },
+    "2ee0eb7a-3bc3-805b-b868-e821020f6302": {
+      "last_edited_time": "2026-01-20T15:21:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference between js and react.js",
+      "children": []
+    },
+    "2f30eb7a-3bc3-8066-94f8-ec7e45cc5889": {
+      "last_edited_time": "2026-01-25T13:52:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Callbacks in JS",
+      "children": []
+    },
+    "2f30eb7a-3bc3-80e2-a174-e6c8f219e18f": {
+      "last_edited_time": "2026-01-25T15:40:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Working of arr.reduce() method",
+      "children": []
+    },
+    "2f30eb7a-3bc3-8027-bb74-c72fadb54d3d": {
+      "last_edited_time": "2026-01-25T15:51:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Sorting a number array",
+      "children": []
+    },
+    "2f30eb7a-3bc3-803d-96c5-f2f55a8dfacb": {
+      "last_edited_time": "2026-02-05T19:32:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference in nested functions and callbacks",
+      "children": []
+    },
+    "2f40eb7a-3bc3-80f7-8b99-efa08fb802c4": {
+      "last_edited_time": "2026-01-26T15:09:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Significance of Super",
+      "children": []
+    },
+    "2f60eb7a-3bc3-8056-b936-c7b3a017a561": {
+      "last_edited_time": "2026-01-28T18:53:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\setTimeout vs setInterval",
+      "children": []
+    },
+    "2f90eb7a-3bc3-8064-861d-c64ae101736b": {
+      "last_edited_time": "2026-01-31T10:48:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Promises",
+      "children": []
+    },
+    "2fa0eb7a-3bc3-80da-bb5d-de290a4eb7a1": {
+      "last_edited_time": "2026-02-01T08:59:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\XSS Cross Site Scripting Attacks",
+      "children": []
+    },
+    "2fe0eb7a-3bc3-80b6-900d-ff0b3b4de942": {
+      "last_edited_time": "2026-02-05T10:59:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference between var and let",
+      "children": []
+    },
+    "2fe0eb7a-3bc3-8043-978d-fd8ca579bbf6": {
+      "last_edited_time": "2026-02-05T19:32:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Array Manipulation",
+      "children": []
+    },
+    "2ff0eb7a-3bc3-806e-a329-f31c19744b77": {
+      "last_edited_time": "2026-02-06T18:44:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Vanilla JS",
+      "children": []
+    },
+    "2ee0eb7a3bc380d98fd2f6dd303be24d": {
+      "last_edited_time": "2026-02-09T04:00:00.000Z",
+      "relativePath": "JS Notes Bro Code",
+      "children": [
+        {
+          "type": "page",
+          "id": "2ee0eb7a-3bc3-805b-b868-e821020f6302",
+          "relativePath": "JS Notes Bro Code\\Difference between js and react.js"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-8066-94f8-ec7e45cc5889",
+          "relativePath": "JS Notes Bro Code\\Callbacks in JS"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-80e2-a174-e6c8f219e18f",
+          "relativePath": "JS Notes Bro Code\\Working of arr.reduce() method"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-8027-bb74-c72fadb54d3d",
+          "relativePath": "JS Notes Bro Code\\Sorting a number array"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-803d-96c5-f2f55a8dfacb",
+          "relativePath": "JS Notes Bro Code\\Difference in nested functions and callbacks"
+        },
+        {
+          "type": "page",
+          "id": "2f40eb7a-3bc3-80f7-8b99-efa08fb802c4",
+          "relativePath": "JS Notes Bro Code\\Significance of Super"
+        },
+        {
+          "type": "page",
+          "id": "2f60eb7a-3bc3-8056-b936-c7b3a017a561",
+          "relativePath": "JS Notes Bro Code\\setTimeout vs setInterval"
+        },
+        {
+          "type": "page",
+          "id": "2f90eb7a-3bc3-8064-861d-c64ae101736b",
+          "relativePath": "JS Notes Bro Code\\Promises"
+        },
+        {
+          "type": "page",
+          "id": "2fa0eb7a-3bc3-80da-bb5d-de290a4eb7a1",
+          "relativePath": "JS Notes Bro Code\\XSS Cross Site Scripting Attacks"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-80b6-900d-ff0b3b4de942",
+          "relativePath": "JS Notes Bro Code\\Difference between var and let"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-8043-978d-fd8ca579bbf6",
+          "relativePath": "JS Notes Bro Code\\Array Manipulation"
+        },
+        {
+          "type": "page",
+          "id": "2ff0eb7a-3bc3-806e-a329-f31c19744b77",
+          "relativePath": "JS Notes Bro Code\\Vanilla JS"
+        }
+      ]
+    },
+    "2ee0eb7a-3bc3-80d9-8fd2-f6dd303be24d": {
+      "last_edited_time": "2026-02-09T04:00:00.000Z",
+      "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async",
+      "children": [
+        {
+          "type": "page",
+          "id": "2ee0eb7a-3bc3-805b-b868-e821020f6302",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference between js and react.js"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-8066-94f8-ec7e45cc5889",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Callbacks in JS"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-80e2-a174-e6c8f219e18f",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Working of arr.reduce() method"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-8027-bb74-c72fadb54d3d",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Sorting a number array"
+        },
+        {
+          "type": "page",
+          "id": "2f30eb7a-3bc3-803d-96c5-f2f55a8dfacb",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference in nested functions and callbacks"
+        },
+        {
+          "type": "page",
+          "id": "2f40eb7a-3bc3-80f7-8b99-efa08fb802c4",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Significance of Super"
+        },
+        {
+          "type": "page",
+          "id": "2f60eb7a-3bc3-8056-b936-c7b3a017a561",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\setTimeout vs setInterval"
+        },
+        {
+          "type": "page",
+          "id": "2f90eb7a-3bc3-8064-861d-c64ae101736b",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Promises"
+        },
+        {
+          "type": "page",
+          "id": "2fa0eb7a-3bc3-80da-bb5d-de290a4eb7a1",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\XSS Cross Site Scripting Attacks"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-80b6-900d-ff0b3b4de942",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Difference between var and let"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-8043-978d-fd8ca579bbf6",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Array Manipulation"
+        },
+        {
+          "type": "page",
+          "id": "2ff0eb7a-3bc3-806e-a329-f31c19744b77",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async\\Vanilla JS"
+        }
+      ]
+    },
+    "2ec0eb7a-3bc3-809c-833e-fda3285e685d": {
+      "last_edited_time": "2026-03-17T12:05:00.000Z",
+      "relativePath": "Web Development Notes\\HTML and CSS",
+      "children": [
+        {
+          "type": "page",
+          "id": "2ec0eb7a-3bc3-8010-91fe-dab40f9f9447",
+          "relativePath": "Web Development Notes\\HTML and CSS\\Importance of SEO"
+        },
+        {
+          "type": "page",
+          "id": "2ed0eb7a-3bc3-8058-a9fc-c9a3fff055d5",
+          "relativePath": "Web Development Notes\\HTML and CSS\\Importance of rel = “noopener noreferrer”"
+        }
+      ]
+    },
+    "3020eb7a-3bc3-80ef-91ed-f70e7628689b": {
+      "last_edited_time": "2026-02-09T08:38:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\index.js",
+      "children": []
+    },
+    "3020eb7a-3bc3-808c-86e3-dd0d33109959": {
+      "last_edited_time": "2026-02-09T08:38:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\index.html",
+      "children": []
+    },
+    "3020eb7a-3bc3-8009-9124-faf3162bc7e3": {
+      "last_edited_time": "2026-02-09T12:12:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Get ppt here or below",
+      "children": []
+    },
+    "3020eb7a-3bc3-808c-80d5-c947c25032d9": {
+      "last_edited_time": "2026-03-12T14:08:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Explanation of video",
+      "children": []
+    },
+    "3210eb7a-3bc3-803e-9f5e-c757685180a5": {
+      "last_edited_time": "2026-03-12T16:49:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Hooks",
+      "children": []
+    },
+    "3210eb7a-3bc3-80a3-9e6e-dee9bd7e706f": {
+      "last_edited_time": "2026-03-12T18:16:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Bable",
+      "children": []
+    },
+    "3000eb7a-3bc3-80e2-9150-c153bf1273ea": {
+      "last_edited_time": "2026-03-31T12:26:00.000Z",
+      "relativePath": "Web Development Notes\\REACT CHAI AUR REACT",
+      "children": [
+        {
+          "type": "page",
+          "id": "3020eb7a-3bc3-80ef-91ed-f70e7628689b",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\index.js"
+        },
+        {
+          "type": "page",
+          "id": "3020eb7a-3bc3-808c-86e3-dd0d33109959",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\index.html"
+        },
+        {
+          "type": "page",
+          "id": "3020eb7a-3bc3-8009-9124-faf3162bc7e3",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Get ppt here or below"
+        },
+        {
+          "type": "page",
+          "id": "3020eb7a-3bc3-808c-80d5-c947c25032d9",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Explanation of video"
+        },
+        {
+          "type": "page",
+          "id": "3210eb7a-3bc3-803e-9f5e-c757685180a5",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Hooks"
+        },
+        {
+          "type": "page",
+          "id": "3210eb7a-3bc3-80a3-9e6e-dee9bd7e706f",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT\\Bable"
+        }
+      ]
+    },
+    "2fe0eb7a-3bc3-8099-9d73-c86b535b3aef": {
+      "last_edited_time": "2026-02-05T18:26:00.000Z",
+      "relativePath": "Web Development Notes\\Fetch API\\response.json",
+      "children": []
+    },
+    "2ff0eb7a-3bc3-8073-b53b-caa3c72b1b37": {
+      "last_edited_time": "2026-02-06T19:00:00.000Z",
+      "relativePath": "Web Development Notes\\Fetch API\\Difference between old school xml and modern fetch method",
+      "children": []
+    },
+    "2ff0eb7a-3bc3-806d-9ced-d9f3d8682a73": {
+      "last_edited_time": "2026-02-06T19:17:00.000Z",
+      "relativePath": "Web Development Notes\\Fetch API\\Usage of async and await in fetch",
+      "children": []
+    },
+    "2fe0eb7a-3bc3-80bf-92ed-edbf53308297": {
+      "last_edited_time": "2026-02-09T04:01:00.000Z",
+      "relativePath": "Web Development Notes\\Fetch API",
+      "children": [
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-8099-9d73-c86b535b3aef",
+          "relativePath": "Web Development Notes\\Fetch API\\response.json"
+        },
+        {
+          "type": "page",
+          "id": "2ff0eb7a-3bc3-8073-b53b-caa3c72b1b37",
+          "relativePath": "Web Development Notes\\Fetch API\\Difference between old school xml and modern fetch method"
+        },
+        {
+          "type": "page",
+          "id": "2ff0eb7a-3bc3-806d-9ced-d9f3d8682a73",
+          "relativePath": "Web Development Notes\\Fetch API\\Usage of async and await in fetch"
+        }
+      ]
+    },
+    "2fe0eb7a-3bc3-807c-b0f1-e85b2fe7d129": {
+      "last_edited_time": "2026-02-06T18:52:00.000Z",
+      "relativePath": "Web Development Notes\\JSON (JavaScript Object Notation)\\AJAX",
+      "children": []
+    },
+    "2fe0eb7a-3bc3-80e6-9d7b-ce14f4b9157d": {
+      "last_edited_time": "2026-02-09T04:01:00.000Z",
+      "relativePath": "Web Development Notes\\JSON (JavaScript Object Notation)",
+      "children": [
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-807c-b0f1-e85b2fe7d129",
+          "relativePath": "Web Development Notes\\JSON (JavaScript Object Notation)\\AJAX"
+        }
+      ]
+    },
+    "3340eb7a-3bc3-8098-83ca-e8778d7a8115": {
+      "last_edited_time": "2026-07-18T14:27:00.000Z",
+      "relativePath": "Web Development Notes\\NodeJS, Express, MongoDB",
+      "children": []
+    },
+    "3020eb7a3bc38034a29cf3374a89d2d0": {
+      "last_edited_time": "2026-03-31T13:15:00.000Z",
+      "relativePath": "Web Development Notes",
+      "children": [
+        {
+          "type": "page",
+          "id": "2ee0eb7a-3bc3-80d9-8fd2-f6dd303be24d",
+          "relativePath": "Web Development Notes\\JS Fundamentals → DOM → Async"
+        },
+        {
+          "type": "page",
+          "id": "2ec0eb7a-3bc3-809c-833e-fda3285e685d",
+          "relativePath": "Web Development Notes\\HTML and CSS"
+        },
+        {
+          "type": "page",
+          "id": "3000eb7a-3bc3-80e2-9150-c153bf1273ea",
+          "relativePath": "Web Development Notes\\REACT CHAI AUR REACT"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-80bf-92ed-edbf53308297",
+          "relativePath": "Web Development Notes\\Fetch API"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-80e6-9d7b-ce14f4b9157d",
+          "relativePath": "Web Development Notes\\JSON (JavaScript Object Notation)"
+        },
+        {
+          "type": "page",
+          "id": "3340eb7a-3bc3-8098-83ca-e8778d7a8115",
+          "relativePath": "Web Development Notes\\NodeJS, Express, MongoDB"
+        }
+      ]
+    },
+    "2d90eb7a-3bc3-80a8-a637-e6a39692a4f3": {
+      "last_edited_time": "2025-12-30T11:47:00.000Z",
+      "relativePath": "Leetcode\\Dummy Node in LL",
+      "children": []
+    },
+    "2d90eb7a-3bc3-8081-ae17-c742cc6c5e78": {
+      "last_edited_time": "2026-01-06T17:01:00.000Z",
+      "relativePath": "Leetcode\\Recursion Thinking",
+      "children": []
+    },
+    "2db0eb7a-3bc3-807e-a67c-d23d3b94c06e": {
+      "last_edited_time": "2026-01-01T11:21:00.000Z",
+      "relativePath": "Leetcode\\Misconception about time complexity",
+      "children": []
+    },
+    "2db0eb7a-3bc3-8017-ae91-dd42ff66a392": {
+      "last_edited_time": "2026-01-01T12:42:00.000Z",
+      "relativePath": "Leetcode\\Anagram Check Why array is used instead of hashap",
+      "children": []
+    },
+    "2e30eb7a-3bc3-8070-ac49-edb7c36eae79": {
+      "last_edited_time": "2026-01-10T08:07:00.000Z",
+      "relativePath": "Leetcode\\low, high condition in binary search questions",
+      "children": []
+    },
+    "3240eb7a-3bc3-80da-b6cd-c12c312d6efe": {
+      "last_edited_time": "2026-03-20T05:58:00.000Z",
+      "relativePath": "Leetcode\\Sliding Window\\Notes for Sliding Window",
+      "children": []
+    },
+    "3240eb7a-3bc3-80f5-8913-fede1af23000": {
+      "last_edited_time": "2026-03-20T04:48:00.000Z",
+      "relativePath": "Leetcode\\Sliding Window\\Questions to practice from leetcode",
+      "children": []
+    },
+    "2e40eb7a-3bc3-80e2-9859-e6f81b76d1d6": {
+      "last_edited_time": "2026-03-15T13:32:00.000Z",
+      "relativePath": "Leetcode\\Sliding Window",
+      "children": [
+        {
+          "type": "page",
+          "id": "3240eb7a-3bc3-80da-b6cd-c12c312d6efe",
+          "relativePath": "Leetcode\\Sliding Window\\Notes for Sliding Window"
+        },
+        {
+          "type": "page",
+          "id": "3240eb7a-3bc3-80f5-8913-fede1af23000",
+          "relativePath": "Leetcode\\Sliding Window\\Questions to practice from leetcode"
+        }
+      ]
+    },
+    "2e60eb7a-3bc3-80e9-8887-e5031e52237b": {
+      "last_edited_time": "2026-01-12T12:35:00.000Z",
+      "relativePath": "Leetcode\\Prefix Sum",
+      "children": []
+    },
+    "3030eb7a-3bc3-80ad-83ae-d0383d779abb": {
+      "last_edited_time": "2026-02-12T16:03:00.000Z",
+      "relativePath": "Leetcode\\Dummy Node Intuition (Q. 86 Partition in Lists)",
+      "children": []
+    },
+    "3080eb7a-3bc3-8029-bed5-dc2500026f86": {
+      "last_edited_time": "2026-02-15T12:49:00.000Z",
+      "relativePath": "Leetcode\\Erasing an element from a HashMap",
+      "children": []
+    },
+    "30c0eb7a-3bc3-800a-a9a4-db56cb898c0c": {
+      "last_edited_time": "2026-03-22T12:45:00.000Z",
+      "relativePath": "Leetcode\\Greedy Algorithm",
+      "children": []
+    },
+    "32c0eb7a-3bc3-809e-b06f-de82444bbcf2": {
+      "last_edited_time": "2026-03-23T12:06:00.000Z",
+      "relativePath": "Leetcode\\Difference between backtracking and recursion",
+      "children": []
+    },
+    "32c0eb7a-3bc3-80b8-90d2-d1654d9b9e20": {
+      "last_edited_time": "2026-03-24T14:19:00.000Z",
+      "relativePath": "Leetcode\\Pruning",
+      "children": []
+    },
+    "32c0eb7a-3bc3-802c-9659-fdfe1bb83d27": {
+      "last_edited_time": "2026-07-19T15:11:00.000Z",
+      "relativePath": "Leetcode\\Important modulo tricks",
+      "children": []
+    },
+    "3ab0eb7a-3bc3-8022-bf03-da7d713eca17": {
+      "last_edited_time": "2026-07-28T08:27:00.000Z",
+      "relativePath": "Leetcode\\General Points",
+      "children": []
+    },
+    "2d90eb7a3bc380fa9054f0fd2eb9fbff": {
+      "last_edited_time": "2026-08-05T18:13:00.000Z",
+      "relativePath": "Leetcode",
+      "children": [
+        {
+          "type": "page",
+          "id": "2d90eb7a-3bc3-80a8-a637-e6a39692a4f3",
+          "relativePath": "Leetcode\\Dummy Node in LL"
+        },
+        {
+          "type": "page",
+          "id": "2d90eb7a-3bc3-8081-ae17-c742cc6c5e78",
+          "relativePath": "Leetcode\\Recursion Thinking"
+        },
+        {
+          "type": "page",
+          "id": "2db0eb7a-3bc3-807e-a67c-d23d3b94c06e",
+          "relativePath": "Leetcode\\Misconception about time complexity"
+        },
+        {
+          "type": "page",
+          "id": "2db0eb7a-3bc3-8017-ae91-dd42ff66a392",
+          "relativePath": "Leetcode\\Anagram Check Why array is used instead of hashap"
+        },
+        {
+          "type": "page",
+          "id": "2e30eb7a-3bc3-8070-ac49-edb7c36eae79",
+          "relativePath": "Leetcode\\low, high condition in binary search questions"
+        },
+        {
+          "type": "page",
+          "id": "2e40eb7a-3bc3-80e2-9859-e6f81b76d1d6",
+          "relativePath": "Leetcode\\Sliding Window"
+        },
+        {
+          "type": "page",
+          "id": "2e60eb7a-3bc3-80e9-8887-e5031e52237b",
+          "relativePath": "Leetcode\\Prefix Sum"
+        },
+        {
+          "type": "page",
+          "id": "3030eb7a-3bc3-80ad-83ae-d0383d779abb",
+          "relativePath": "Leetcode\\Dummy Node Intuition (Q. 86 Partition in Lists)"
+        },
+        {
+          "type": "page",
+          "id": "3080eb7a-3bc3-8029-bed5-dc2500026f86",
+          "relativePath": "Leetcode\\Erasing an element from a HashMap"
+        },
+        {
+          "type": "page",
+          "id": "30c0eb7a-3bc3-800a-a9a4-db56cb898c0c",
+          "relativePath": "Leetcode\\Greedy Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "32c0eb7a-3bc3-809e-b06f-de82444bbcf2",
+          "relativePath": "Leetcode\\Difference between backtracking and recursion"
+        },
+        {
+          "type": "page",
+          "id": "32c0eb7a-3bc3-80b8-90d2-d1654d9b9e20",
+          "relativePath": "Leetcode\\Pruning"
+        },
+        {
+          "type": "page",
+          "id": "32c0eb7a-3bc3-802c-9659-fdfe1bb83d27",
+          "relativePath": "Leetcode\\Important modulo tricks"
+        },
+        {
+          "type": "page",
+          "id": "3ab0eb7a-3bc3-8022-bf03-da7d713eca17",
+          "relativePath": "Leetcode\\General Points"
+        }
+      ]
+    },
+    "2f80eb7a-3bc3-8006-87fd-c499f9d22599": {
+      "last_edited_time": "2026-07-17T15:34:00.000Z",
+      "relativePath": "Leetcode Solutions\\Stack and Queue",
+      "children": []
+    },
+    "2fe0eb7a-3bc3-806f-aa5f-c3bb56f21ea2": {
+      "last_edited_time": "2026-08-04T12:31:00.000Z",
+      "relativePath": "Leetcode Solutions\\Math on Arrays",
+      "children": []
+    },
+    "3070eb7a-3bc3-80af-b9f3-e37c58654c7b": {
+      "last_edited_time": "2026-07-31T11:20:00.000Z",
+      "relativePath": "Leetcode Solutions\\Sorting",
+      "children": []
+    },
+    "3070eb7a-3bc3-803e-b736-f0da64c69092": {
+      "last_edited_time": "2026-06-25T06:30:00.000Z",
+      "relativePath": "Leetcode Solutions\\Linked List",
+      "children": []
+    },
+    "3070eb7a-3bc3-8026-9fb7-d706c6271a23": {
+      "last_edited_time": "2026-07-31T12:19:00.000Z",
+      "relativePath": "Leetcode Solutions\\Prefix Sum",
+      "children": []
+    },
+    "3170eb7a-3bc3-801f-98cf-cdbba4f7f462": {
+      "last_edited_time": "2026-07-29T19:36:00.000Z",
+      "relativePath": "Leetcode Solutions\\Two Pointer",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8029-ba7f-ef61c26d900a": {
+      "last_edited_time": "2026-07-20T19:47:00.000Z",
+      "relativePath": "Leetcode Solutions\\Binary Trees",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8007-b28e-df66578239c4": {
+      "last_edited_time": "2026-06-20T18:05:00.000Z",
+      "relativePath": "Leetcode Solutions\\Binary Search Trees",
+      "children": []
+    },
+    "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519": {
+      "last_edited_time": "2026-05-29T13:53:00.000Z",
+      "relativePath": "Leetcode Solutions\\Graphs\\Very important visualization and explanation which clears doubts of how this logic works",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc": {
+      "last_edited_time": "2026-08-05T17:02:00.000Z",
+      "relativePath": "Leetcode Solutions\\Graphs",
+      "children": [
+        {
+          "type": "page",
+          "id": "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519",
+          "relativePath": "Leetcode Solutions\\Graphs\\Very important visualization and explanation which clears doubts of how this logic works"
+        }
+      ]
+    },
+    "3240eb7a-3bc3-80ff-b95a-cedd581738cf": {
+      "last_edited_time": "2026-07-13T18:19:00.000Z",
+      "relativePath": "Leetcode Solutions\\Sliding Window",
+      "children": []
+    },
+    "32b0eb7a-3bc3-80d8-991d-e913b06c2581": {
+      "last_edited_time": "2026-07-18T13:07:00.000Z",
+      "relativePath": "Leetcode Solutions\\Binary Search on Answers",
+      "children": []
+    },
+    "32b0eb7a-3bc3-8078-9ae8-d4d0acf640b4": {
+      "last_edited_time": "2026-06-26T18:25:00.000Z",
+      "relativePath": "Leetcode Solutions\\Recursion",
+      "children": []
+    },
+    "32b0eb7a-3bc3-8038-abf2-cd861e336df9": {
+      "last_edited_time": "2026-07-20T09:44:00.000Z",
+      "relativePath": "Leetcode Solutions\\Matrix",
+      "children": []
+    },
+    "32c0eb7a-3bc3-80de-9d08-c1e9586448f7": {
+      "last_edited_time": "2026-03-23T12:44:00.000Z",
+      "relativePath": "Leetcode Solutions\\Counting",
+      "children": []
+    },
+    "32d0eb7a-3bc3-8048-921b-c944b671fbaa": {
+      "last_edited_time": "2026-06-30T06:38:00.000Z",
+      "relativePath": "Leetcode Solutions\\Backtracking",
+      "children": []
+    },
+    "3320eb7a-3bc3-80e8-bc8c-f96ff4555c9b": {
+      "last_edited_time": "2026-07-23T10:56:00.000Z",
+      "relativePath": "Leetcode Solutions\\Bit Manipulation",
+      "children": []
+    },
+    "36d0eb7a-3bc3-8071-84bf-f57e14979b0f": {
+      "last_edited_time": "2026-08-02T06:24:00.000Z",
+      "relativePath": "Leetcode Solutions\\Arrays",
+      "children": []
+    },
+    "36f0eb7a-3bc3-80ed-b709-d4f3d05074f6": {
+      "last_edited_time": "2026-07-28T09:19:00.000Z",
+      "relativePath": "Leetcode Solutions\\Strings",
+      "children": []
+    },
+    "3700eb7a-3bc3-8027-9156-f0bacaa9d732": {
+      "last_edited_time": "2026-08-03T17:48:00.000Z",
+      "relativePath": "Leetcode Solutions\\Dynamic Programming",
+      "children": []
+    },
+    "3730eb7a-3bc3-80b1-a683-dc3c98984aff": {
+      "last_edited_time": "2026-07-19T07:06:00.000Z",
+      "relativePath": "Leetcode Solutions\\Greedy",
+      "children": []
+    },
+    "3800eb7a-3bc3-80be-b69e-d3a951f37f3c": {
+      "last_edited_time": "2026-08-02T06:44:00.000Z",
+      "relativePath": "Leetcode Solutions\\Puzzles",
+      "children": []
+    },
+    "3800eb7a-3bc3-80f8-a658-e8db0863bd96": {
+      "last_edited_time": "2026-08-02T06:26:00.000Z",
+      "relativePath": "Leetcode Solutions\\Binary Search",
+      "children": []
+    },
+    "3840eb7a-3bc3-8082-80d5-cf991890c1d3": {
+      "last_edited_time": "2026-06-19T16:37:00.000Z",
+      "relativePath": "Leetcode Solutions\\Tries",
+      "children": []
+    },
+    "3900eb7a-3bc3-80e6-951e-e7d931d031f9": {
+      "last_edited_time": "2026-07-12T14:44:00.000Z",
+      "relativePath": "Leetcode Solutions\\Priority Queue",
+      "children": []
+    },
+    "3950eb7a-3bc3-8087-a330-dfc713d3eaff": {
+      "last_edited_time": "2026-07-06T05:24:00.000Z",
+      "relativePath": "Leetcode Solutions\\Intervals",
+      "children": []
+    },
+    "3950eb7a-3bc3-8067-bcd1-c4236fb6091b": {
+      "last_edited_time": "2026-08-02T06:24:00.000Z",
+      "relativePath": "Leetcode Solutions\\Math",
+      "children": []
+    },
+    "3af0eb7a-3bc3-80f1-97ad-d6ba1abe0d5b": {
+      "last_edited_time": "2026-08-02T09:40:00.000Z",
+      "relativePath": "Leetcode Solutions\\Difference Array",
+      "children": []
+    },
+    "2f80eb7a3bc380bb8558c10eed45c2a9": {
+      "last_edited_time": "2026-08-05T18:13:00.000Z",
+      "relativePath": "Leetcode Solutions",
+      "children": [
+        {
+          "type": "page",
+          "id": "2f80eb7a-3bc3-8006-87fd-c499f9d22599",
+          "relativePath": "Leetcode Solutions\\Stack and Queue"
+        },
+        {
+          "type": "page",
+          "id": "2fe0eb7a-3bc3-806f-aa5f-c3bb56f21ea2",
+          "relativePath": "Leetcode Solutions\\Math on Arrays"
+        },
+        {
+          "type": "page",
+          "id": "3070eb7a-3bc3-80af-b9f3-e37c58654c7b",
+          "relativePath": "Leetcode Solutions\\Sorting"
+        },
+        {
+          "type": "page",
+          "id": "3070eb7a-3bc3-803e-b736-f0da64c69092",
+          "relativePath": "Leetcode Solutions\\Linked List"
+        },
+        {
+          "type": "page",
+          "id": "3070eb7a-3bc3-8026-9fb7-d706c6271a23",
+          "relativePath": "Leetcode Solutions\\Prefix Sum"
+        },
+        {
+          "type": "page",
+          "id": "3170eb7a-3bc3-801f-98cf-cdbba4f7f462",
+          "relativePath": "Leetcode Solutions\\Two Pointer"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8029-ba7f-ef61c26d900a",
+          "relativePath": "Leetcode Solutions\\Binary Trees"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8007-b28e-df66578239c4",
+          "relativePath": "Leetcode Solutions\\Binary Search Trees"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc",
+          "relativePath": "Leetcode Solutions\\Graphs"
+        },
+        {
+          "type": "page",
+          "id": "3240eb7a-3bc3-80ff-b95a-cedd581738cf",
+          "relativePath": "Leetcode Solutions\\Sliding Window"
+        },
+        {
+          "type": "page",
+          "id": "32b0eb7a-3bc3-80d8-991d-e913b06c2581",
+          "relativePath": "Leetcode Solutions\\Binary Search on Answers"
+        },
+        {
+          "type": "page",
+          "id": "32b0eb7a-3bc3-8078-9ae8-d4d0acf640b4",
+          "relativePath": "Leetcode Solutions\\Recursion"
+        },
+        {
+          "type": "page",
+          "id": "32b0eb7a-3bc3-8038-abf2-cd861e336df9",
+          "relativePath": "Leetcode Solutions\\Matrix"
+        },
+        {
+          "type": "page",
+          "id": "32c0eb7a-3bc3-80de-9d08-c1e9586448f7",
+          "relativePath": "Leetcode Solutions\\Counting"
+        },
+        {
+          "type": "page",
+          "id": "32d0eb7a-3bc3-8048-921b-c944b671fbaa",
+          "relativePath": "Leetcode Solutions\\Backtracking"
+        },
+        {
+          "type": "page",
+          "id": "3320eb7a-3bc3-80e8-bc8c-f96ff4555c9b",
+          "relativePath": "Leetcode Solutions\\Bit Manipulation"
+        },
+        {
+          "type": "page",
+          "id": "36d0eb7a-3bc3-8071-84bf-f57e14979b0f",
+          "relativePath": "Leetcode Solutions\\Arrays"
+        },
+        {
+          "type": "page",
+          "id": "36f0eb7a-3bc3-80ed-b709-d4f3d05074f6",
+          "relativePath": "Leetcode Solutions\\Strings"
+        },
+        {
+          "type": "page",
+          "id": "3700eb7a-3bc3-8027-9156-f0bacaa9d732",
+          "relativePath": "Leetcode Solutions\\Dynamic Programming"
+        },
+        {
+          "type": "page",
+          "id": "3730eb7a-3bc3-80b1-a683-dc3c98984aff",
+          "relativePath": "Leetcode Solutions\\Greedy"
+        },
+        {
+          "type": "page",
+          "id": "3800eb7a-3bc3-80be-b69e-d3a951f37f3c",
+          "relativePath": "Leetcode Solutions\\Puzzles"
+        },
+        {
+          "type": "page",
+          "id": "3800eb7a-3bc3-80f8-a658-e8db0863bd96",
+          "relativePath": "Leetcode Solutions\\Binary Search"
+        },
+        {
+          "type": "page",
+          "id": "3840eb7a-3bc3-8082-80d5-cf991890c1d3",
+          "relativePath": "Leetcode Solutions\\Tries"
+        },
+        {
+          "type": "page",
+          "id": "3900eb7a-3bc3-80e6-951e-e7d931d031f9",
+          "relativePath": "Leetcode Solutions\\Priority Queue"
+        },
+        {
+          "type": "page",
+          "id": "3950eb7a-3bc3-8087-a330-dfc713d3eaff",
+          "relativePath": "Leetcode Solutions\\Intervals"
+        },
+        {
+          "type": "page",
+          "id": "3950eb7a-3bc3-8067-bcd1-c4236fb6091b",
+          "relativePath": "Leetcode Solutions\\Math"
+        },
+        {
+          "type": "page",
+          "id": "3af0eb7a-3bc3-80f1-97ad-d6ba1abe0d5b",
+          "relativePath": "Leetcode Solutions\\Difference Array"
+        }
+      ]
+    }
+  },
+  "databases": {}
+}

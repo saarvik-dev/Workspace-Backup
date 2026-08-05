@@ -7,6 +7,7 @@ import { downloadAsset } from "../exporters/assets.js";
 import { downloadFile } from "../files/fileHandler.js";
 import { parseTable } from "../tables/tableParser.js";
 import { exportDatabase } from "../database/databaseExporter.js";
+import { notion } from "../notion/client.js";
 
 /* ---------- helper: calculate ../../assets path ---------- */
 function getAssetPrefix(folderPath) {
@@ -15,7 +16,16 @@ function getAssetPrefix(folderPath) {
   return "../".repeat(depth) + "assets/";
 }
 
-async function parseBlock(block, folderPath, links, assetPrefix) {
+function getPageTitle(page) {
+  if (!page || !page.properties) return "Untitled";
+  const titleProp = Object.values(page.properties).find(p => p.type === 'title');
+  if (titleProp && titleProp.title && titleProp.title.length > 0) {
+    return titleProp.title.map(t => t.plain_text || "").join("");
+  }
+  return "Untitled";
+}
+
+async function parseBlock(block, folderPath, links, assetPrefix, cache, discoveredChildren) {
   let md = "";
 
   switch (block.type) {
@@ -90,20 +100,37 @@ async function parseBlock(block, folderPath, links, assetPrefix) {
       md += "\n" + await parseTable(block) + "\n";
       break;
 
-    case "child_database":
-      await exportDatabase(block.id, block.child_database?.title || "Database");
+    case "child_database": {
+      const dbName = block.child_database?.title || "Database";
+      const safeName = sanitizeName(dbName);
+      const dbRelative = `databases/${safeName}`;
+
+      discoveredChildren.push({
+        type: "database",
+        id: block.id,
+        relativePath: dbRelative
+      });
+
+      await exportDatabase(block.id, safeName, cache);
       break;
+    }
 
     case "child_page": {
-  const rawName = block.child_page?.title || "Untitled";
-  const safeName = sanitizeName(rawName);
+      const rawName = block.child_page?.title || "Untitled";
+      const safeName = sanitizeName(rawName);
+      const childFolder = path.join(folderPath, safeName);
+      fs.mkdirSync(childFolder, { recursive: true });
 
-  const childFolder = path.join(folderPath, safeName);
-  fs.mkdirSync(childFolder, { recursive: true });
+      const childRelative = path.relative(path.join(process.cwd(), "backups"), childFolder);
+      discoveredChildren.push({
+        type: "page",
+        id: block.id,
+        relativePath: childRelative
+      });
 
-  await parsePage(block.id, childFolder);
-  break;
-}
+      await parsePage(block.id, childFolder, cache);
+      break;
+    }
 
   }
 
@@ -114,21 +141,57 @@ async function parseBlock(block, folderPath, links, assetPrefix) {
   ) {
     const children = await fetchAllBlocks(block.id);
     for (const child of children) {
-      md += await parseBlock(child, folderPath, links, assetPrefix);
+      md += await parseBlock(child, folderPath, links, assetPrefix, cache, discoveredChildren);
     }
   }
 
   return md;
 }
 
-export async function parsePage(pageId, folderPath) {
+export async function parsePage(pageId, folderPath, cache) {
+  const BASE_DIR = path.join(process.cwd(), "backups");
+  const relativePath = path.relative(BASE_DIR, folderPath);
+
+  let page;
+  try {
+    page = await notion.pages.retrieve({ page_id: pageId });
+  } catch (err) {
+    console.error(`⚠️ Failed to retrieve page ${pageId}: ${err.message}`);
+    return;
+  }
+
+  const lastEditedTime = page.last_edited_time;
+  const title = getPageTitle(page);
+
+  const cached = cache.pages[pageId];
+  const folderMatches = cached && cached.relativePath === relativePath;
+  const readmeExists = fs.existsSync(path.join(folderPath, "README.md"));
+
+  if (cached && folderMatches && readmeExists && cached.last_edited_time === lastEditedTime) {
+    console.log(`\t⏭️ Skipping page (no changes): ${title}`);
+    if (cached.children && Array.isArray(cached.children)) {
+      for (const child of cached.children) {
+        const childAbsPath = path.join(BASE_DIR, child.relativePath);
+        if (child.type === 'page') {
+          await parsePage(child.id, childAbsPath, cache);
+        } else if (child.type === 'database') {
+          const dbName = path.basename(child.relativePath);
+          await exportDatabase(child.id, dbName, cache);
+        }
+      }
+    }
+    return;
+  }
+
+  console.log(`⏳ Backing up page: ${title}`);
   const blocks = await fetchAllBlocks(pageId);
   const links = [];
   const assetPrefix = getAssetPrefix(folderPath);
   let md = "";
+  const discoveredChildren = [];
 
   for (const block of blocks) {
-    md += await parseBlock(block, folderPath, links, assetPrefix);
+    md += await parseBlock(block, folderPath, links, assetPrefix, cache, discoveredChildren);
   }
 
   if (links.length) {
@@ -139,5 +202,14 @@ export async function parsePage(pageId, folderPath) {
     md += "\n";
   }
 
+  // Ensure output folder exists and write file
+  fs.mkdirSync(folderPath, { recursive: true });
   fs.writeFileSync(path.join(folderPath, "README.md"), md);
+
+  // Update cache
+  cache.pages[pageId] = {
+    last_edited_time: lastEditedTime,
+    relativePath: relativePath,
+    children: discoveredChildren
+  };
 }

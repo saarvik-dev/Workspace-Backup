@@ -209,6 +209,8 @@ These are some standards/good practices which we need to follow to do efficient 
 # EXPRESS Middleware
 
 
+Middleware in Express.js is a function that executes during the request-response cycle. It has access to the request (`req`) and response (`res`) objects, and can either end the request-response process or pass control to the next middleware using `next()`.
+
 `app.use()`
 
 - Basically a function which can be used to do some processing on the incoming request from the client and then after processing, it can transfer it to the server if the request was valid, or it may return the request back to the client if the request was found invalid according to set rules 
@@ -221,6 +223,20 @@ These are some standards/good practices which we need to follow to do efficient 
 ![](../../assets/3370eb7a-3bc3-8057-9086-ddd9e59b6cb5.png)
 
 - Has access to request object, response object and next middleware function.
+**Middleware is used for**
+
+- Logging requests
+- Authentication and authorization
+- Parsing request bodies
+- Handling errors
+**Built-in Middleware**
+
+Express includes several useful middleware functions:
+
+- express.json() - Parse JSON request bodies
+- express.urlencoded() - Parse URL-encoded request bodies
+- express.static() - Serve static files
+- express.Router() - Create modular route handlers
 
 ---
 
