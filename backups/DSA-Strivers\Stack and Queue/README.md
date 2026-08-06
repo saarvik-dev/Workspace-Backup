@@ -1,0 +1,221 @@
+
+📎 Attachment: ../assets/2f20eb7a-3bc3-80b2-a3cb-d8cb2818a979
+
+Stack - only one variable required `top`
+
+Queue - three variables required `start`, `end`, `curr_size`
+
+# 1. Introduction to Data Structures
+
+
+**Stack (LIFO Mechanism)**
+
+- **Definition:** A data structure following the **Last In First Out (LIFO)** principle.
+- **Core Operations:**
+- **Push**
+- **Pop**
+- **Top**
+- **Size**
+- **Example:** If you push `2, 3, 4, 1`, the last element is `1`. A `pop` operation removes `1`. A subsequent `top` call would reveal `4`.
+**Queue (FIFO Mechanism)**
+
+- **Definition:** A data structure similar to a stack but follows the **First In First Out (FIFO)** principle.
+- **Core Operations:**
+Only `push `operation is done at the back, all other operations are done from the front be it `pop `or  `top`.
+
+- **Push:** Add an element to the rear.
+- **Pop:** Remove the element from the front (the one entered first).
+- **Top:** View the element at the front.
+- **Size:** Return the number of elements.
+- **Example:** If you push `2, 1, 3, 4`, the first element in was `2`. A `pop` operation removes `2` (unlike the stack which would remove `4`). The new `top` becomes `1`.
+
+---
+
+# 2. Implementation: Stack using Arrays
+
+
+**MOST IMP PART **: Initialize a top variable as -1 to keep track of topmost element, we initialize as -1 to prevent the code from throwing out  of bounds errors.
+
+- **Constraint:** Arrays require a fixed size, meaning the stack capacity is not dynamic.
+- **Variables:** An array (e.g., size 10) and a variable `top` initialized to `-1`.
+- **Logic:  **
+- **Push****:**
+-  Increment `top`
+-  and place the value at `arr[top]`.
+- **Pop****:** 
+- Decrement `top`
+- No need to physically delete the value; moving the pointer is sufficient.
+- **Top****:**   
+- Return `arr[top]`. 
+- If `top` is -`1`, the stack is empty.
+- **Size****:** 
+- Return `top + 1`.
+- **Complexity:** Time complexity is **O(1)** for all operations. Space complexity involves potentially wasted space due to fixed array size.
+
+---
+
+# 3. Implementation: Queue using Arrays
+
+
+**CONCEPT OF CYCLING**
+
+
+![](../assets/2f80eb7a-3bc3-807d-8637-d28bc3e544e6.png)
+
+
+![](../assets/2f80eb7a-3bc3-80ca-be26-faad6a32fc9c.png)
+
+
+![](../assets/2f80eb7a-3bc3-80a6-aa63-c5096b9a5748.png)
+
+
+![](../assets/2f80eb7a-3bc3-80ce-994b-ea3f297a0bf6.png)
+
+
+![](../assets/2f80eb7a-3bc3-80f9-b406-c24ad3f8e48e.png)
+
+- **Constraint:** Requires fixed size.
+- **Variables:**
+- `start` (front)
+-  `end` (rear),
+-  `currentSize`
+-  `start` and `end` are initialized to `-1 `
+- **Circular Array Logic:** To efficiently utilize space (e.g., filling empty spots at the beginning after pops), modulo arithmetic is used: `index % size`.
+- **Logic:**
+- **Push:**
+- If `currentSize == capacity`, do nothing.
+- If empty (`start == -1`), set both `start` and `end` to `0`.
+- Otherwise, move `end` cyclically: `end = (end + 1) % size`. Insert value and increment `currentSize`.
+- **Pop:**
+- If `currentSize == 1`, reset `start` and `end` to `1` (queue becomes empty).
+- Otherwise, move `start` forward cyclically: `start = (start + 1) % size`. Decrement `currentSize`.
+- **Top:** Return `arr[start]`.
+- **Complexity:** Time complexity is **O(1)**.
+
+---
+
+# 4. Implementation: Stack using Linked List
+
+
+
+![](../assets/2f80eb7a-3bc3-80de-9339-f0e85b52969c.png)
+
+
+![](../assets/2f80eb7a-3bc3-807b-8dc0-f5daa181578f.png)
+
+
+![](../assets/2f80eb7a-3bc3-808a-9f30-cd1937675b6e.png)
+
+
+![](../assets/2f80eb7a-3bc3-80d5-b2f2-dee7b0a82608.png)
+
+- **Advantage:** Dynamic size; consumes space proportional only to elements stored.
+- **Structure:** A `Node` class containing a value and a `next` pointer. A `top` pointer tracks the head.
+- **Logic:**
+- **Push:** Create a new node. Point the new node's `next` to the current `top`. Update `top` to be the new node.
+- **Pop:** Store `top` in a temporary variable. Move `top` to `top.next`. Delete the temporary node (memory cleanup).
+- **Top:** Return `top.data`.
+- **Complexity:** Time complexity is **O(1)**.
+
+---
+
+# 5. Implementation: Queue using Linked List
+
+
+
+![](../assets/2f80eb7a-3bc3-800f-b7d4-f40ba7e6d9a9.png)
+
+
+![](../assets/2f80eb7a-3bc3-805a-93aa-fa1e6bfa5b60.png)
+
+
+![](../assets/2f80eb7a-3bc3-8099-8574-ef386164b763.png)
+
+
+![](../assets/2f80eb7a-3bc3-8066-9963-c8257adeef27.png)
+
+- **Variables:** `start` pointing to the front (for popping) and `end` pointing to the rear (for pushing).
+- **Logic:**
+- **Push:** Create a new node.
+- If empty (`start == null`), both `start` and `end` point to the new node.
+- Otherwise, point `end.next` to the new node, then move `end` to the new node.
+- **Pop:** Store `start` in a temp variable. Move `start` to `start.next`. Delete temp.
+- *Edge Case:* If `start` becomes `null` (queue empty), set `end` to `null` as well.
+- **Complexity:** Time complexity is **O(1)**.
+
+---
+
+# 6. Advanced Implementation: Stack using Queue
+
+
+
+![](../assets/2f80eb7a-3bc3-807c-9977-da2d52c5ded6.png)
+
+
+![](../assets/2f80eb7a-3bc3-8016-bc99-deeddbcbd130.png)
+
+Basically we have to rearrange the queue data structure in such a way such that it behaves like a stack data structure.
+
+**Problem:** Make a FIFO data structure (Queue) behave like a LIFO data structure (Stack).
+
+- **Approach (Single Queue):**
+- Use a single queue `q`.
+- **Push(x):**
+1. Push `x` into `q`.
+1. Iterate `size - 1` times: **Pop** the front element and immediately **Push** it back into the queue.
+1. This rotation places the newly added element `x` at the front of the queue, mimicking a stack's top.
+- **Pop/Top:** Simply call `q.pop()` or `q.top()` as the "last in" element is now at the front.
+- **Complexity:**
+- Push: **O(N)** (expensive due to rotation).
+- Pop/Top: **O(1)**.
+
+---
+
+### 7. Advanced Implementation: Queue using Stack
+
+
+![](../assets/2f80eb7a-3bc3-8001-8810-d6988ad7d046.png)
+
+
+![](../assets/2f80eb7a-3bc3-80e9-b07b-d6c523002eff.png)
+
+
+![](../assets/2f80eb7a-3bc3-806b-b64f-c5f717b917e2.png)
+
+
+![](../assets/2f80eb7a-3bc3-802e-a37f-eb24d1c96166.png)
+
+
+![](../assets/2f80eb7a-3bc3-8056-bc85-d91569db4dbb.png)
+
+**Problem:** Make a LIFO data structure (Stack) behave like a FIFO data structure (Queue) using two stacks (`S1` and `S2`).
+
+## **Method 1: Expensive Push (O(N))**
+
+- **Logic:**
+- **Push(x):**
+1. Transfer all elements from `S1` to `S2`.
+1. Push `x` onto `S1` (this places `x` at the bottom, which corresponds to the "rear" of a queue).
+1. Transfer everything back from `S2` to `S1`.
+- **Pop/Top:** Simply perform the operation on `S1`.
+- **Complexity:** Push is **O(2N)**; Pop/Top is **O(1)**.
+## **Method 2: Amortized (Optimized) Push (O(1))**
+
+
+![](../assets/2f80eb7a-3bc3-8096-a6b3-e1a7a4106c04.png)
+
+
+![](../assets/2f80eb7a-3bc3-8008-a662-cddc685f34ed.png)
+
+
+![](../assets/2f80eb7a-3bc3-80f2-92d6-ca4d2d72a611.png)
+
+- **Logic:** Use `S1` for input and `S2` for output.
+- **Push(x):** Simply push `x` onto `S1`. **O(1)**.
+- **Pop/Top:**
+1. Check if `S2` is not empty. If it has elements, perform pop/top on `S2`.
+1. If `S2` is empty, transfer **all** elements from `S1` to `S2` one by one. This reverses their order (LIFO + LIFO = FIFO). Then perform the operation on `S2`.
+1. Subsequent operations use `S2` until it is empty again.
+- **Complexity:**
+- Push: **O(1)**.
+- Pop/Top: **Amortized O(1)** (Occasionally O(N) during transfer, but generally O(1)).

@@ -47,12 +47,12 @@
     },
     "2f90eb7a-3bc3-80c6-ac97-fa1cecd568a0": {
       "last_edited_time": "2026-01-31T04:44:00.000Z",
-      "relativePath": "DSA-Strivers\\Stack and Queue\\Stack Algorithms for Infix, Prefix, and Postfix Conversion",
+      "relativePath": "DSA-Strivers\\Stack and Queue/Stack Algorithms for Infix, Prefix, and Postfix Conversion",
       "children": []
     },
     "2f80eb7a-3bc3-80b7-90a7-f9546310d370": {
       "last_edited_time": "2026-01-30T14:02:00.000Z",
-      "relativePath": "DSA-Strivers\\Stack and Queue\\Stack using arrays",
+      "relativePath": "DSA-Strivers\\Stack and Queue/Stack using arrays",
       "children": []
     },
     "2f20eb7a-3bc3-801a-91ea-d54adb632e91": {
@@ -62,12 +62,12 @@
         {
           "type": "page",
           "id": "2f90eb7a-3bc3-80c6-ac97-fa1cecd568a0",
-          "relativePath": "DSA-Strivers\\Stack and Queue\\Stack Algorithms for Infix, Prefix, and Postfix Conversion"
+          "relativePath": "DSA-Strivers\\Stack and Queue/Stack Algorithms for Infix, Prefix, and Postfix Conversion"
         },
         {
           "type": "page",
           "id": "2f80eb7a-3bc3-80b7-90a7-f9546310d370",
-          "relativePath": "DSA-Strivers\\Stack and Queue\\Stack using arrays"
+          "relativePath": "DSA-Strivers\\Stack and Queue/Stack using arrays"
         }
       ]
     },
@@ -78,12 +78,12 @@
     },
     "2f90eb7a-3bc3-80f2-a615-f6ba9a984ee7": {
       "last_edited_time": "2026-01-31T05:00:00.000Z",
-      "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Code Templates",
+      "relativePath": "DSA-Strivers\\Monotonic Stack Queues/Code Templates",
       "children": []
     },
     "2f90eb7a-3bc3-80da-bb66-ed557670e549": {
       "last_edited_time": "2026-01-31T05:13:00.000Z",
-      "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Why it works",
+      "relativePath": "DSA-Strivers\\Monotonic Stack Queues/Why it works",
       "children": []
     },
     "2f20eb7a-3bc3-808d-86ca-dad71c62925c": {
@@ -93,18 +93,18 @@
         {
           "type": "page",
           "id": "2f90eb7a-3bc3-80f2-a615-f6ba9a984ee7",
-          "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Code Templates"
+          "relativePath": "DSA-Strivers\\Monotonic Stack Queues/Code Templates"
         },
         {
           "type": "page",
           "id": "2f90eb7a-3bc3-80da-bb66-ed557670e549",
-          "relativePath": "DSA-Strivers\\Monotonic Stack Queues\\Why it works"
+          "relativePath": "DSA-Strivers\\Monotonic Stack Queues/Why it works"
         }
       ]
     },
     "3850eb7a-3bc3-8096-a6da-e6a647d096e1": {
       "last_edited_time": "2026-06-20T18:01:00.000Z",
-      "relativePath": "DSA-Strivers\\Binary Trees\\Tree DP",
+      "relativePath": "DSA-Strivers\\Binary Trees/Tree DP",
       "children": []
     },
     "3030eb7a-3bc3-8050-aaed-f40374d3069b": {
@@ -114,7 +114,7 @@
         {
           "type": "page",
           "id": "3850eb7a-3bc3-8096-a6da-e6a647d096e1",
-          "relativePath": "DSA-Strivers\\Binary Trees\\Tree DP"
+          "relativePath": "DSA-Strivers\\Binary Trees/Tree DP"
         }
       ]
     },
@@ -130,42 +130,42 @@
     },
     "3920eb7a-3bc3-8007-b2cc-cd84fa49c3f7": {
       "last_edited_time": "2026-07-03T05:30:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\When to use which Graph Traversal Algo",
+      "relativePath": "DSA-Strivers\\Graphs/When to use which Graph Traversal Algo",
       "children": []
     },
     "3690eb7a-3bc3-803e-86f2-ed299ca3f98c": {
       "last_edited_time": "2026-06-02T14:34:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Striver Sheet Questions",
+      "relativePath": "DSA-Strivers\\Graphs/Striver Sheet Questions",
       "children": []
     },
     "3690eb7a-3bc3-80fa-a3a0-c6751b35f9f7": {
       "last_edited_time": "2026-06-02T14:34:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Shortest Path Algorithms",
+      "relativePath": "DSA-Strivers\\Graphs/Shortest Path Algorithms",
       "children": []
     },
     "3730eb7a-3bc3-80a4-a2f6-cab197281fc2": {
       "last_edited_time": "2026-06-26T05:08:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Minimum Spanning Tree MST",
+      "relativePath": "DSA-Strivers\\Graphs/Minimum Spanning Tree MST",
       "children": []
     },
     "3730eb7a-3bc3-8031-98be-d18af4031d1d": {
       "last_edited_time": "2026-06-26T05:22:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Disjoint Set (V. Imp. for OA’s and Interviews)",
+      "relativePath": "DSA-Strivers\\Graphs/Disjoint Set (V. Imp. for OA’s and Interviews)",
       "children": []
     },
     "3730eb7a-3bc3-8058-929b-c732d4f49066": {
       "last_edited_time": "2026-07-09T05:52:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Dijkstra (Continued)",
+      "relativePath": "DSA-Strivers\\Graphs/Dijkstra (Continued)",
       "children": []
     },
     "3990eb7a-3bc3-8001-9e99-c5ca7979fb73": {
       "last_edited_time": "2026-07-15T07:55:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\0-1 BFS",
+      "relativePath": "DSA-Strivers\\Graphs/0-1 BFS",
       "children": []
     },
     "39e0eb7a-3bc3-8065-8100-ef771ce307f1": {
       "last_edited_time": "2026-07-15T07:55:00.000Z",
-      "relativePath": "DSA-Strivers\\Graphs\\Cached BFS",
+      "relativePath": "DSA-Strivers\\Graphs/Cached BFS",
       "children": []
     },
     "31c0eb7a-3bc3-80a2-a43c-ce032acfcd04": {
@@ -175,42 +175,42 @@
         {
           "type": "page",
           "id": "3920eb7a-3bc3-8007-b2cc-cd84fa49c3f7",
-          "relativePath": "DSA-Strivers\\Graphs\\When to use which Graph Traversal Algo"
+          "relativePath": "DSA-Strivers\\Graphs/When to use which Graph Traversal Algo"
         },
         {
           "type": "page",
           "id": "3690eb7a-3bc3-803e-86f2-ed299ca3f98c",
-          "relativePath": "DSA-Strivers\\Graphs\\Striver Sheet Questions"
+          "relativePath": "DSA-Strivers\\Graphs/Striver Sheet Questions"
         },
         {
           "type": "page",
           "id": "3690eb7a-3bc3-80fa-a3a0-c6751b35f9f7",
-          "relativePath": "DSA-Strivers\\Graphs\\Shortest Path Algorithms"
+          "relativePath": "DSA-Strivers\\Graphs/Shortest Path Algorithms"
         },
         {
           "type": "page",
           "id": "3730eb7a-3bc3-80a4-a2f6-cab197281fc2",
-          "relativePath": "DSA-Strivers\\Graphs\\Minimum Spanning Tree MST"
+          "relativePath": "DSA-Strivers\\Graphs/Minimum Spanning Tree MST"
         },
         {
           "type": "page",
           "id": "3730eb7a-3bc3-8031-98be-d18af4031d1d",
-          "relativePath": "DSA-Strivers\\Graphs\\Disjoint Set (V. Imp. for OA’s and Interviews)"
+          "relativePath": "DSA-Strivers\\Graphs/Disjoint Set (V. Imp. for OA’s and Interviews)"
         },
         {
           "type": "page",
           "id": "3730eb7a-3bc3-8058-929b-c732d4f49066",
-          "relativePath": "DSA-Strivers\\Graphs\\Dijkstra (Continued)"
+          "relativePath": "DSA-Strivers\\Graphs/Dijkstra (Continued)"
         },
         {
           "type": "page",
           "id": "3990eb7a-3bc3-8001-9e99-c5ca7979fb73",
-          "relativePath": "DSA-Strivers\\Graphs\\0-1 BFS"
+          "relativePath": "DSA-Strivers\\Graphs/0-1 BFS"
         },
         {
           "type": "page",
           "id": "39e0eb7a-3bc3-8065-8100-ef771ce307f1",
-          "relativePath": "DSA-Strivers\\Graphs\\Cached BFS"
+          "relativePath": "DSA-Strivers\\Graphs/Cached BFS"
         }
       ]
     },
@@ -221,32 +221,32 @@
     },
     "3700eb7a-3bc3-80bc-baac-d4885feddc8b": {
       "last_edited_time": "2026-06-04T08:37:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\Strivers Sheet Questions",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/Strivers Sheet Questions",
       "children": []
     },
     "3990eb7a-3bc3-803d-aa21-c449afd783d2": {
       "last_edited_time": "2026-07-10T06:05:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\Knapsack DP",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/Knapsack DP",
       "children": []
     },
     "3990eb7a-3bc3-8050-8755-ea4508d64117": {
       "last_edited_time": "2026-07-10T06:15:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\Digit DP",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/Digit DP",
       "children": []
     },
     "3760eb7a-3bc3-8046-a705-ec9e64c68937": {
       "last_edited_time": "2026-06-06T07:54:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on Stocks",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/DP on Stocks",
       "children": []
     },
     "37a0eb7a-3bc3-8068-a89b-d9d8c65e3d59": {
       "last_edited_time": "2026-06-10T07:51:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on LIS (Strictly Increasing)",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/DP on LIS (Strictly Increasing)",
       "children": []
     },
     "37b0eb7a-3bc3-8008-9059-c7837ddae947": {
       "last_edited_time": "2026-06-11T11:31:00.000Z",
-      "relativePath": "DSA-Strivers\\Dynamic Programming\\Partition DP Hard DP",
+      "relativePath": "DSA-Strivers\\Dynamic Programming/Partition DP Hard DP",
       "children": []
     },
     "3700eb7a-3bc3-805a-8c89-c42bb88fe43a": {
@@ -256,32 +256,32 @@
         {
           "type": "page",
           "id": "3700eb7a-3bc3-80bc-baac-d4885feddc8b",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\Strivers Sheet Questions"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/Strivers Sheet Questions"
         },
         {
           "type": "page",
           "id": "3990eb7a-3bc3-803d-aa21-c449afd783d2",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\Knapsack DP"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/Knapsack DP"
         },
         {
           "type": "page",
           "id": "3990eb7a-3bc3-8050-8755-ea4508d64117",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\Digit DP"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/Digit DP"
         },
         {
           "type": "page",
           "id": "3760eb7a-3bc3-8046-a705-ec9e64c68937",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on Stocks"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/DP on Stocks"
         },
         {
           "type": "page",
           "id": "37a0eb7a-3bc3-8068-a89b-d9d8c65e3d59",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\DP on LIS (Strictly Increasing)"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/DP on LIS (Strictly Increasing)"
         },
         {
           "type": "page",
           "id": "37b0eb7a-3bc3-8008-9059-c7837ddae947",
-          "relativePath": "DSA-Strivers\\Dynamic Programming\\Partition DP Hard DP"
+          "relativePath": "DSA-Strivers\\Dynamic Programming/Partition DP Hard DP"
         }
       ]
     },
@@ -292,7 +292,7 @@
     },
     "3840eb7a-3bc3-80bb-8cd1-ddf26d81badf": {
       "last_edited_time": "2026-06-19T16:45:00.000Z",
-      "relativePath": "DSA-Strivers\\Tries\\Strivers Sheets Questions",
+      "relativePath": "DSA-Strivers\\Tries/Strivers Sheets Questions",
       "children": []
     },
     "3840eb7a-3bc3-80ce-aaf9-c79c0ceeb51c": {
@@ -302,13 +302,13 @@
         {
           "type": "page",
           "id": "3840eb7a-3bc3-80bb-8cd1-ddf26d81badf",
-          "relativePath": "DSA-Strivers\\Tries\\Strivers Sheets Questions"
+          "relativePath": "DSA-Strivers\\Tries/Strivers Sheets Questions"
         }
       ]
     },
     "3850eb7a-3bc3-8067-a802-c878b18cb05d": {
       "last_edited_time": "2026-06-20T11:46:00.000Z",
-      "relativePath": "DSA-Strivers\\Strings Hard\\Hashing",
+      "relativePath": "DSA-Strivers\\Strings Hard/Hashing",
       "children": []
     },
     "3840eb7a-3bc3-8065-9a17-cb00178860e0": {
@@ -318,13 +318,13 @@
         {
           "type": "page",
           "id": "3850eb7a-3bc3-8067-a802-c878b18cb05d",
-          "relativePath": "DSA-Strivers\\Strings Hard\\Hashing"
+          "relativePath": "DSA-Strivers\\Strings Hard/Hashing"
         }
       ]
     },
     "39c0eb7a-3bc3-80a3-b26c-ce1f27618a07": {
       "last_edited_time": "2026-07-13T07:44:00.000Z",
-      "relativePath": "DSA-Strivers\\Sliding Window\\Different Patterns in Sliding Window",
+      "relativePath": "DSA-Strivers\\Sliding Window/Different Patterns in Sliding Window",
       "children": []
     },
     "39c0eb7a-3bc3-80b0-a791-c3860f3039f1": {
@@ -334,7 +334,7 @@
         {
           "type": "page",
           "id": "39c0eb7a-3bc3-80a3-b26c-ce1f27618a07",
-          "relativePath": "DSA-Strivers\\Sliding Window\\Different Patterns in Sliding Window"
+          "relativePath": "DSA-Strivers\\Sliding Window/Different Patterns in Sliding Window"
         }
       ]
     },
@@ -874,12 +874,12 @@
     },
     "3240eb7a-3bc3-80da-b6cd-c12c312d6efe": {
       "last_edited_time": "2026-03-20T05:58:00.000Z",
-      "relativePath": "Leetcode\\Sliding Window\\Notes for Sliding Window",
+      "relativePath": "Leetcode\\Sliding Window/Notes for Sliding Window",
       "children": []
     },
     "3240eb7a-3bc3-80f5-8913-fede1af23000": {
       "last_edited_time": "2026-03-20T04:48:00.000Z",
-      "relativePath": "Leetcode\\Sliding Window\\Questions to practice from leetcode",
+      "relativePath": "Leetcode\\Sliding Window/Questions to practice from leetcode",
       "children": []
     },
     "2e40eb7a-3bc3-80e2-9859-e6f81b76d1d6": {
@@ -889,12 +889,12 @@
         {
           "type": "page",
           "id": "3240eb7a-3bc3-80da-b6cd-c12c312d6efe",
-          "relativePath": "Leetcode\\Sliding Window\\Notes for Sliding Window"
+          "relativePath": "Leetcode\\Sliding Window/Notes for Sliding Window"
         },
         {
           "type": "page",
           "id": "3240eb7a-3bc3-80f5-8913-fede1af23000",
-          "relativePath": "Leetcode\\Sliding Window\\Questions to practice from leetcode"
+          "relativePath": "Leetcode\\Sliding Window/Questions to practice from leetcode"
         }
       ]
     },
@@ -1056,7 +1056,7 @@
     },
     "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519": {
       "last_edited_time": "2026-05-29T13:53:00.000Z",
-      "relativePath": "Leetcode Solutions\\Graphs\\Very important visualization and explanation which clears doubts of how this logic works",
+      "relativePath": "Leetcode Solutions\\Graphs/Very important visualization and explanation which clears doubts of how this logic works",
       "children": []
     },
     "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc": {
@@ -1066,7 +1066,7 @@
         {
           "type": "page",
           "id": "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519",
-          "relativePath": "Leetcode Solutions\\Graphs\\Very important visualization and explanation which clears doubts of how this logic works"
+          "relativePath": "Leetcode Solutions\\Graphs/Very important visualization and explanation which clears doubts of how this logic works"
         }
       ]
     },
