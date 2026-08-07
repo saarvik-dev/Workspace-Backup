@@ -1151,7 +1151,7 @@
       "children": []
     },
     "3950eb7a-3bc3-8067-bcd1-c4236fb6091b": {
-      "last_edited_time": "2026-08-02T06:24:00.000Z",
+      "last_edited_time": "2026-08-06T11:32:00.000Z",
       "relativePath": "Leetcode Solutions\\Math",
       "children": []
     },
@@ -1300,6 +1300,127 @@
           "relativePath": "Leetcode Solutions\\Difference Array"
         }
       ]
+    },
+    "2c80eb7a-3bc3-8097-86cb-c0902c1d8f21": {
+      "last_edited_time": "2026-02-25T12:45:00.000Z",
+      "relativePath": "Named Algos DSA/Boyer-Moore Voting Algorithm",
+      "children": []
+    },
+    "2c80eb7a-3bc3-8023-a12a-f02843ecc3ec": {
+      "last_edited_time": "2025-12-13T18:51:00.000Z",
+      "relativePath": "Named Algos DSA/Three Pointer Dutch National Flag Algorithm",
+      "children": []
+    },
+    "2c80eb7a-3bc3-803d-80e4-eb13aaea31a1": {
+      "last_edited_time": "2025-12-14T06:18:00.000Z",
+      "relativePath": "Named Algos DSA/Kadane’s Algorithm",
+      "children": []
+    },
+    "2d90eb7a-3bc3-8072-bdb6-d711418be6a4": {
+      "last_edited_time": "2025-12-31T16:23:00.000Z",
+      "relativePath": "Named Algos DSA/Tortoise Hare Method",
+      "children": []
+    },
+    "2db0eb7a-3bc3-802f-998b-ffdfafa102c9": {
+      "last_edited_time": "2026-01-01T10:10:00.000Z",
+      "relativePath": "Named Algos DSA/Floyd’s Cycle Detection",
+      "children": []
+    },
+    "3160eb7a-3bc3-80c3-877a-e078e40514fe": {
+      "last_edited_time": "2026-03-02T04:12:00.000Z",
+      "relativePath": "Named Algos DSA/KMP Algorithm (Knuth-Morris-Pratt)",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8096-a314-fbd6c9c156bc": {
+      "last_edited_time": "2026-04-01T17:23:00.000Z",
+      "relativePath": "Named Algos DSA/Brian Kernighan’s Algorithm",
+      "children": []
+    },
+    "31a0eb7a-3bc3-8041-b9d9-e00d21307f75": {
+      "last_edited_time": "2026-06-20T15:39:00.000Z",
+      "relativePath": "Named Algos DSA/Morris Traversal",
+      "children": []
+    },
+    "36d0eb7a-3bc3-80b4-b2b1-ec5bbd83ce57": {
+      "last_edited_time": "2026-05-27T13:51:00.000Z",
+      "relativePath": "Named Algos DSA/Kahn’s Algorithm",
+      "children": []
+    },
+    "3840eb7a-3bc3-8001-8d57-dbca53a66621": {
+      "last_edited_time": "2026-06-19T19:11:00.000Z",
+      "relativePath": "Named Algos DSA/Rabin Karp Algorithm",
+      "children": []
+    },
+    "3910eb7a-3bc3-8094-a766-c54731b5d023": {
+      "last_edited_time": "2026-07-02T11:26:00.000Z",
+      "relativePath": "Named Algos DSA/Bézout's Identity",
+      "children": []
+    },
+    "2c80eb7a3bc38007881ec71e9f93e3ce": {
+      "last_edited_time": "2026-08-06T11:21:00.000Z",
+      "relativePath": "Named Algos DSA",
+      "children": [
+        {
+          "type": "page",
+          "id": "2c80eb7a-3bc3-8097-86cb-c0902c1d8f21",
+          "relativePath": "Named Algos DSA/Boyer-Moore Voting Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "2c80eb7a-3bc3-8023-a12a-f02843ecc3ec",
+          "relativePath": "Named Algos DSA/Three Pointer Dutch National Flag Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "2c80eb7a-3bc3-803d-80e4-eb13aaea31a1",
+          "relativePath": "Named Algos DSA/Kadane’s Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "2d90eb7a-3bc3-8072-bdb6-d711418be6a4",
+          "relativePath": "Named Algos DSA/Tortoise Hare Method"
+        },
+        {
+          "type": "page",
+          "id": "2db0eb7a-3bc3-802f-998b-ffdfafa102c9",
+          "relativePath": "Named Algos DSA/Floyd’s Cycle Detection"
+        },
+        {
+          "type": "page",
+          "id": "3160eb7a-3bc3-80c3-877a-e078e40514fe",
+          "relativePath": "Named Algos DSA/KMP Algorithm (Knuth-Morris-Pratt)"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8096-a314-fbd6c9c156bc",
+          "relativePath": "Named Algos DSA/Brian Kernighan’s Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "31a0eb7a-3bc3-8041-b9d9-e00d21307f75",
+          "relativePath": "Named Algos DSA/Morris Traversal"
+        },
+        {
+          "type": "page",
+          "id": "36d0eb7a-3bc3-80b4-b2b1-ec5bbd83ce57",
+          "relativePath": "Named Algos DSA/Kahn’s Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "3840eb7a-3bc3-8001-8d57-dbca53a66621",
+          "relativePath": "Named Algos DSA/Rabin Karp Algorithm"
+        },
+        {
+          "type": "page",
+          "id": "3910eb7a-3bc3-8094-a766-c54731b5d023",
+          "relativePath": "Named Algos DSA/Bézout's Identity"
+        }
+      ]
+    },
+    "3120eb7a3bc38016ace1fef1d0c81300": {
+      "last_edited_time": "2026-08-06T11:21:00.000Z",
+      "relativePath": "DSA-Important Questions",
+      "children": []
     }
   },
   "databases": {}
