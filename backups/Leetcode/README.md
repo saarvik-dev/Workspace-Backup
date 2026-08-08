@@ -394,3 +394,6 @@ vector<int> dp(1 << (n + 1), -1);
 //1 << (n + 1) is the key here
 ```
 
+
+![](../assets/3b50eb7a-3bc3-8015-addd-e28575299ec4.png)
+

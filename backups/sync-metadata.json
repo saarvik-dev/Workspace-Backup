@@ -849,168 +849,168 @@
     },
     "2d90eb7a-3bc3-80a8-a637-e6a39692a4f3": {
       "last_edited_time": "2025-12-30T11:47:00.000Z",
-      "relativePath": "Leetcode\\Dummy Node in LL",
+      "relativePath": "Leetcode/Dummy Node in LL",
       "children": []
     },
     "2d90eb7a-3bc3-8081-ae17-c742cc6c5e78": {
       "last_edited_time": "2026-01-06T17:01:00.000Z",
-      "relativePath": "Leetcode\\Recursion Thinking",
+      "relativePath": "Leetcode/Recursion Thinking",
       "children": []
     },
     "2db0eb7a-3bc3-807e-a67c-d23d3b94c06e": {
       "last_edited_time": "2026-01-01T11:21:00.000Z",
-      "relativePath": "Leetcode\\Misconception about time complexity",
+      "relativePath": "Leetcode/Misconception about time complexity",
       "children": []
     },
     "2db0eb7a-3bc3-8017-ae91-dd42ff66a392": {
       "last_edited_time": "2026-01-01T12:42:00.000Z",
-      "relativePath": "Leetcode\\Anagram Check Why array is used instead of hashap",
+      "relativePath": "Leetcode/Anagram Check Why array is used instead of hashap",
       "children": []
     },
     "2e30eb7a-3bc3-8070-ac49-edb7c36eae79": {
       "last_edited_time": "2026-01-10T08:07:00.000Z",
-      "relativePath": "Leetcode\\low, high condition in binary search questions",
+      "relativePath": "Leetcode/low, high condition in binary search questions",
       "children": []
     },
     "3240eb7a-3bc3-80da-b6cd-c12c312d6efe": {
       "last_edited_time": "2026-03-20T05:58:00.000Z",
-      "relativePath": "Leetcode\\Sliding Window/Notes for Sliding Window",
+      "relativePath": "Leetcode/Sliding Window/Notes for Sliding Window",
       "children": []
     },
     "3240eb7a-3bc3-80f5-8913-fede1af23000": {
       "last_edited_time": "2026-03-20T04:48:00.000Z",
-      "relativePath": "Leetcode\\Sliding Window/Questions to practice from leetcode",
+      "relativePath": "Leetcode/Sliding Window/Questions to practice from leetcode",
       "children": []
     },
     "2e40eb7a-3bc3-80e2-9859-e6f81b76d1d6": {
       "last_edited_time": "2026-03-15T13:32:00.000Z",
-      "relativePath": "Leetcode\\Sliding Window",
+      "relativePath": "Leetcode/Sliding Window",
       "children": [
         {
           "type": "page",
           "id": "3240eb7a-3bc3-80da-b6cd-c12c312d6efe",
-          "relativePath": "Leetcode\\Sliding Window/Notes for Sliding Window"
+          "relativePath": "Leetcode/Sliding Window/Notes for Sliding Window"
         },
         {
           "type": "page",
           "id": "3240eb7a-3bc3-80f5-8913-fede1af23000",
-          "relativePath": "Leetcode\\Sliding Window/Questions to practice from leetcode"
+          "relativePath": "Leetcode/Sliding Window/Questions to practice from leetcode"
         }
       ]
     },
     "2e60eb7a-3bc3-80e9-8887-e5031e52237b": {
       "last_edited_time": "2026-01-12T12:35:00.000Z",
-      "relativePath": "Leetcode\\Prefix Sum",
+      "relativePath": "Leetcode/Prefix Sum",
       "children": []
     },
     "3030eb7a-3bc3-80ad-83ae-d0383d779abb": {
       "last_edited_time": "2026-02-12T16:03:00.000Z",
-      "relativePath": "Leetcode\\Dummy Node Intuition (Q. 86 Partition in Lists)",
+      "relativePath": "Leetcode/Dummy Node Intuition (Q. 86 Partition in Lists)",
       "children": []
     },
     "3080eb7a-3bc3-8029-bed5-dc2500026f86": {
       "last_edited_time": "2026-02-15T12:49:00.000Z",
-      "relativePath": "Leetcode\\Erasing an element from a HashMap",
+      "relativePath": "Leetcode/Erasing an element from a HashMap",
       "children": []
     },
     "30c0eb7a-3bc3-800a-a9a4-db56cb898c0c": {
       "last_edited_time": "2026-03-22T12:45:00.000Z",
-      "relativePath": "Leetcode\\Greedy Algorithm",
+      "relativePath": "Leetcode/Greedy Algorithm",
       "children": []
     },
     "32c0eb7a-3bc3-809e-b06f-de82444bbcf2": {
       "last_edited_time": "2026-03-23T12:06:00.000Z",
-      "relativePath": "Leetcode\\Difference between backtracking and recursion",
+      "relativePath": "Leetcode/Difference between backtracking and recursion",
       "children": []
     },
     "32c0eb7a-3bc3-80b8-90d2-d1654d9b9e20": {
       "last_edited_time": "2026-03-24T14:19:00.000Z",
-      "relativePath": "Leetcode\\Pruning",
+      "relativePath": "Leetcode/Pruning",
       "children": []
     },
     "32c0eb7a-3bc3-802c-9659-fdfe1bb83d27": {
       "last_edited_time": "2026-07-19T15:11:00.000Z",
-      "relativePath": "Leetcode\\Important modulo tricks",
+      "relativePath": "Leetcode/Important modulo tricks",
       "children": []
     },
     "3ab0eb7a-3bc3-8022-bf03-da7d713eca17": {
       "last_edited_time": "2026-07-28T08:27:00.000Z",
-      "relativePath": "Leetcode\\General Points",
+      "relativePath": "Leetcode/General Points",
       "children": []
     },
     "2d90eb7a3bc380fa9054f0fd2eb9fbff": {
-      "last_edited_time": "2026-08-05T18:13:00.000Z",
+      "last_edited_time": "2026-08-07T10:12:00.000Z",
       "relativePath": "Leetcode",
       "children": [
         {
           "type": "page",
           "id": "2d90eb7a-3bc3-80a8-a637-e6a39692a4f3",
-          "relativePath": "Leetcode\\Dummy Node in LL"
+          "relativePath": "Leetcode/Dummy Node in LL"
         },
         {
           "type": "page",
           "id": "2d90eb7a-3bc3-8081-ae17-c742cc6c5e78",
-          "relativePath": "Leetcode\\Recursion Thinking"
+          "relativePath": "Leetcode/Recursion Thinking"
         },
         {
           "type": "page",
           "id": "2db0eb7a-3bc3-807e-a67c-d23d3b94c06e",
-          "relativePath": "Leetcode\\Misconception about time complexity"
+          "relativePath": "Leetcode/Misconception about time complexity"
         },
         {
           "type": "page",
           "id": "2db0eb7a-3bc3-8017-ae91-dd42ff66a392",
-          "relativePath": "Leetcode\\Anagram Check Why array is used instead of hashap"
+          "relativePath": "Leetcode/Anagram Check Why array is used instead of hashap"
         },
         {
           "type": "page",
           "id": "2e30eb7a-3bc3-8070-ac49-edb7c36eae79",
-          "relativePath": "Leetcode\\low, high condition in binary search questions"
+          "relativePath": "Leetcode/low, high condition in binary search questions"
         },
         {
           "type": "page",
           "id": "2e40eb7a-3bc3-80e2-9859-e6f81b76d1d6",
-          "relativePath": "Leetcode\\Sliding Window"
+          "relativePath": "Leetcode/Sliding Window"
         },
         {
           "type": "page",
           "id": "2e60eb7a-3bc3-80e9-8887-e5031e52237b",
-          "relativePath": "Leetcode\\Prefix Sum"
+          "relativePath": "Leetcode/Prefix Sum"
         },
         {
           "type": "page",
           "id": "3030eb7a-3bc3-80ad-83ae-d0383d779abb",
-          "relativePath": "Leetcode\\Dummy Node Intuition (Q. 86 Partition in Lists)"
+          "relativePath": "Leetcode/Dummy Node Intuition (Q. 86 Partition in Lists)"
         },
         {
           "type": "page",
           "id": "3080eb7a-3bc3-8029-bed5-dc2500026f86",
-          "relativePath": "Leetcode\\Erasing an element from a HashMap"
+          "relativePath": "Leetcode/Erasing an element from a HashMap"
         },
         {
           "type": "page",
           "id": "30c0eb7a-3bc3-800a-a9a4-db56cb898c0c",
-          "relativePath": "Leetcode\\Greedy Algorithm"
+          "relativePath": "Leetcode/Greedy Algorithm"
         },
         {
           "type": "page",
           "id": "32c0eb7a-3bc3-809e-b06f-de82444bbcf2",
-          "relativePath": "Leetcode\\Difference between backtracking and recursion"
+          "relativePath": "Leetcode/Difference between backtracking and recursion"
         },
         {
           "type": "page",
           "id": "32c0eb7a-3bc3-80b8-90d2-d1654d9b9e20",
-          "relativePath": "Leetcode\\Pruning"
+          "relativePath": "Leetcode/Pruning"
         },
         {
           "type": "page",
           "id": "32c0eb7a-3bc3-802c-9659-fdfe1bb83d27",
-          "relativePath": "Leetcode\\Important modulo tricks"
+          "relativePath": "Leetcode/Important modulo tricks"
         },
         {
           "type": "page",
           "id": "3ab0eb7a-3bc3-8022-bf03-da7d713eca17",
-          "relativePath": "Leetcode\\General Points"
+          "relativePath": "Leetcode/General Points"
         }
       ]
     },
@@ -1030,7 +1030,7 @@
       "children": []
     },
     "3070eb7a-3bc3-803e-b736-f0da64c69092": {
-      "last_edited_time": "2026-06-25T06:30:00.000Z",
+      "last_edited_time": "2026-08-07T10:04:00.000Z",
       "relativePath": "Leetcode Solutions\\Linked List",
       "children": []
     },
@@ -1045,7 +1045,7 @@
       "children": []
     },
     "31a0eb7a-3bc3-8029-ba7f-ef61c26d900a": {
-      "last_edited_time": "2026-07-20T19:47:00.000Z",
+      "last_edited_time": "2026-08-07T15:21:00.000Z",
       "relativePath": "Leetcode Solutions\\Binary Trees",
       "children": []
     },
@@ -1060,7 +1060,7 @@
       "children": []
     },
     "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc": {
-      "last_edited_time": "2026-08-05T17:02:00.000Z",
+      "last_edited_time": "2026-08-07T13:41:00.000Z",
       "relativePath": "Leetcode Solutions\\Graphs",
       "children": [
         {
@@ -1106,7 +1106,7 @@
       "children": []
     },
     "36d0eb7a-3bc3-8071-84bf-f57e14979b0f": {
-      "last_edited_time": "2026-08-02T06:24:00.000Z",
+      "last_edited_time": "2026-08-07T09:15:00.000Z",
       "relativePath": "Leetcode Solutions\\Arrays",
       "children": []
     },
@@ -1418,7 +1418,7 @@
       ]
     },
     "3120eb7a3bc38016ace1fef1d0c81300": {
-      "last_edited_time": "2026-08-06T11:21:00.000Z",
+      "last_edited_time": "2026-08-07T10:47:00.000Z",
       "relativePath": "DSA-Important Questions",
       "children": []
     }

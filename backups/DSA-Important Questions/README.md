@@ -128,6 +128,8 @@ number of wonderful substrings → very bizarre question, quite forgetful and co
 
 Redundant Connection
 
+https://leetcode.com/problems/number-of-operations-to-make-network-connected/?envType=problem-list-v2&envId=graph
+
 https://leetcode.com/problems/stone-game-ii/ - Tabulation Code
 
 ## https://leetcode.com/problems/stone-game-iv/
@@ -181,6 +183,7 @@ Easy question but is a very important pattern for game questions
 - https://leetcode.com/problems/2-keys-keyboard/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/2-keys-keyboard/?envType=problem-list-v2&envId=dynamic-programming
 - https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/ → https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/
 - https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/description/?envType=daily-question&envId=2026-07-19 → https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/description/?envType=daily-question&envId=2026-07-19
+- https://leetcode.com/problems/number-of-operations-to-make-network-connected/?envType=problem-list-v2&envId=graph → https://leetcode.com/problems/number-of-operations-to-make-network-connected/?envType=problem-list-v2&envId=graph
 - https://leetcode.com/problems/stone-game-ii/ → https://leetcode.com/problems/stone-game-ii/
 - https://leetcode.com/problems/stone-game-iv/ → https://leetcode.com/problems/stone-game-iv/
 
