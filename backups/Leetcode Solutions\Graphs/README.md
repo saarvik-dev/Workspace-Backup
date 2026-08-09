@@ -3929,3 +3929,70 @@ public:
 
 ---
 
+## **1765. Map of Highest Peak**
+
+**Map of Highest Peak — Key Observation**
+
+Although the problem asks to maximize heights, the maximum valid height of a cell is its **distance from the nearest water cell**. Since adjacent cells can differ by at most 1, a cell cannot have height greater than its shortest distance to water. Therefore, we run a **multi-source BFS from all water cells**, and the first time a cell is reached gives its optimal height. The BFS distance itself becomes the answer.
+
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {
+
+    // We have to maximize the height following the given rules
+    //Intuition : Do a multi source bfs from each water cell with height zero, and assign 1 to its neighboring land cells, and keep on increasing, it seems like this greedy approach should work here   
+
+    //Seems a simple multi source bfs while tracking maximum height using a separate matrix
+
+    int m = isWater.size();
+    int n = isWater[0].size();
+
+    queue <pair<int, int>> q;
+    vector <vector<int>> dis(m, vector <int> (n, -1));
+
+    for(int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if(isWater[i][j] == 1)
+            {
+                q.push({i, j});
+                dis[i][j] = 0;
+            }
+        }
+    }
+
+    int drow[] = {-1, 1, 0, 0};
+    int dcol[] = {0, 0, -1, 1};
+
+    while(!q.empty())
+    {
+        auto [row, col] = q.front();
+        q.pop();
+
+        for(int i = 0; i < 4; i++)
+        {
+            int r = row + drow[i];
+            int c = col + dcol[i];
+
+            if(r >= 0 && r < m && c >= 0 && c < n)
+            {
+                if(dis[r][c] == -1)
+                {
+                    dis[r][c] = dis[row][col] + 1;
+                    q.push({r, c});
+                }
+            }
+        }
+    }
+
+    return dis;
+    }
+};
+```
+
+
+---
+

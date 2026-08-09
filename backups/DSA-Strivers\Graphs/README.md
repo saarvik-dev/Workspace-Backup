@@ -184,6 +184,19 @@ Now, instead of just the neighbors, we still store the weight also, by using `pa
 # TRAVERSAL TECHNIQUES
 
 
+BFS proceeds level by level.
+
+### Key Property
+
+In an unweighted graph, BFS always reaches a node for the **first time using the shortest possible distance**.
+
+This property still holds when there are multiple sources.
+
+The crucial fact is:
+
+
+![](../assets/3b60eb7a-3bc3-8062-8929-fd8fd718cf92.png)
+
 ## *BFS(Breadth First Search) / Level Wise Traversal*
 
 - Traversal level by level

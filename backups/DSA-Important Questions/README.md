@@ -136,6 +136,10 @@ https://leetcode.com/problems/stone-game-ii/ - Tabulation Code
 
 Easy question but is a very important pattern for game questions
 
+Good non Inutuitive question
+
+https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming
+
 
 ---
 
@@ -186,4 +190,5 @@ Easy question but is a very important pattern for game questions
 - https://leetcode.com/problems/number-of-operations-to-make-network-connected/?envType=problem-list-v2&envId=graph → https://leetcode.com/problems/number-of-operations-to-make-network-connected/?envType=problem-list-v2&envId=graph
 - https://leetcode.com/problems/stone-game-ii/ → https://leetcode.com/problems/stone-game-ii/
 - https://leetcode.com/problems/stone-game-iv/ → https://leetcode.com/problems/stone-game-iv/
+- https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming
 

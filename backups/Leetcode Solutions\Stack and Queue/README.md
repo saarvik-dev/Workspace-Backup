@@ -1024,6 +1024,74 @@ public:
 
 ---
 
+## **71. Simplify Path**
+
+### Double Stack Approach
+
+
+```c++
+class Solution {
+public:
+    string simplifyPath(string path) {
+
+    //We can simply use a stack to simulate this process    
+    stack <string> st1;
+    stack <string> st2;
+
+    string res = "";
+    int l = 1;
+    int n = path.length();
+
+    while(l < n)
+    {
+        string curr = "";
+
+        while(l < n && path[l] != '/')
+        {
+            curr += path[l];
+            l++;
+        }
+
+        if(curr == ".")
+        {
+            //dont push
+        }
+        else if(curr == "..")
+        {
+            if(st1.size() >= 1)
+                st1.pop();
+        }
+        else
+        {       
+            if(curr != "")
+                st1.push(curr);
+        }
+        
+        l++;
+    }
+
+    while(!st1.empty())
+    {
+        string curr = st1.top();
+        st2.push(curr);
+        st1.pop();
+    }
+
+    while(!st2.empty())
+    {   
+        string curr = st2.top();
+        res = res + "/" + curr;
+        st2.pop();
+    }
+
+    return (res == "") ? "/" : res;
+    }
+};
+```
+
+
+---
+
 🔗 **References**
 - 907. Sum of Subarray Minimums → https://leetcode.com/problems/sum-of-subarray-minimums/
 - 735. Asteroid Collision → https://leetcode.com/problems/asteroid-collision/description/
