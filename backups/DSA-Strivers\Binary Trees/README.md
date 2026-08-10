@@ -1,3 +1,8 @@
+- Every node has at most one parent
+- There is exactly one root
+- No cycles
+- All nodes must be connected (reachable from the root)
+
 ## Definition
 
 A **Binary Tree** is a **hierarchical data structure** in which each node can have **at most two children**.
