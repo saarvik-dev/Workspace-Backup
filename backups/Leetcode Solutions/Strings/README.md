@@ -345,7 +345,7 @@ public:
 
 ***Explanation Here*** ⬇️⬇️⬇️
 
-Untitled 
+Rabin Karp Algorithm 
 
 
 ![](../../assets/3850eb7a-3bc3-80ab-ad5a-de6afa80934c.png)
@@ -992,5 +992,5 @@ public:
 ---
 
 🔗 **References**
-- Untitled → https://app.notion.com/p/3840eb7a3bc380018d57dbca53a66621
+- Rabin Karp Algorithm → https://app.notion.com/p/3840eb7a3bc380018d57dbca53a66621
 

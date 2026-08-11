@@ -542,3 +542,34 @@ public:
 
 ---
 
+## **3345. Smallest Divisible Digit Product I**
+
+
+```c++
+	class Solution {
+public:
+    int smallestNumber(int n, int t) {
+    
+    int ans = -1;
+    while (true)
+    {
+        int prod = 1;
+        int num = n;
+        while(num)
+        {
+            prod *= num % 10;
+            num = num / 10;
+        }
+        if(prod % t == 0)
+        {
+            ans = n;
+            break;
+        }
+        n++;
+    }
+
+    return ans;
+    }
+};
+```
+

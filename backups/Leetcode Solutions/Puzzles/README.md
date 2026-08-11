@@ -104,7 +104,7 @@ The problem now becomes:
 
 This is **exactly** what Bézout's Identity answers.
 
-Untitled 
+Bézout's Identity 
 
 - The problem reduces to asking whether `target` can be expressed as an integer linear combination of the jug capacities: `ax + by = target`.
 - By Bézout's Identity, such an equation has an integer solution iff `target` is divisible by `gcd(x, y)`.
@@ -217,5 +217,5 @@ public:
 ---
 
 🔗 **References**
-- Untitled → https://app.notion.com/p/3910eb7a3bc38094a766c54731b5d023
+- Bézout's Identity → https://app.notion.com/p/3910eb7a3bc38094a766c54731b5d023
 

@@ -3798,3 +3798,201 @@ public:
 };
 ```
 
+
+---
+
+## **1319. Number of Operations to Make Network Connected**
+
+Algorithm:
+
+- Count the number of components (cnt)
+- If there are n - 1 connections initially, then it is always possible to connect all computers, else return -1
+- Return cnt  - 1
+
+```c++
+class Solution {
+private:
+    void dfs(vector <vector<int>> &adj, vector <int> &vis, int node)
+    {
+        vis[node] = 1;
+
+        for(auto neighbor : adj[node])
+        {
+            if(!vis[neighbor])
+                dfs(adj, vis, neighbor);
+        }
+    }
+public:
+    int makeConnected(int n, vector<vector<int>>& connections) {
+
+    //    intuition :
+    //As long as there are at least (n - 1) connections, there is definitely a way to connect all computers.
+    //Use DFS to determine the number of isolated computer clusters.
+
+    //We need to count the number of components, and then we just need to coneect these components with each other, which is 1 less than the number of components
+    //We can use the dfs to find the number of connected components
+    
+    //If number of connections is less than n - 1, then it is not possible to connect all computers
+    // The language of the question is ambigous, we have to consider this as an undirected graph, not directed
+    if(connections.size() < n - 1)
+        return -1;
+
+    int cnt = 0;
+    vector <vector<int>> adj(n);
+    vector <int> vis(n, 0);
+
+    for(const auto &p : connections)
+    {
+        adj[p[0]].push_back(p[1]);
+        adj[p[1]].push_back(p[0]);
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        if(!vis[i])
+        {
+            cnt++;
+            dfs(adj, vis, i);
+        }
+    }
+
+    return cnt - 1;
+    }
+};
+```
+
+
+---
+
+## **1557. Minimum Number of Vertices to Reach All Nodes**
+
+And once you choose all zero-indegree nodes, every other node has indegree ≥ 1, meaning there is some path of predecessors leading back through the DAG until you eventually hit a zero-indegree node (DAGs cannot keep going backwards forever because there are no cycles).
+
+So disconnected components are not a problem at all—they are exactly the reason multiple zero-indegree nodes may exist. Each disconnected/source component contributes at least one zero-indegree node that must be included.
+
+
+```c++
+class Solution {
+public:
+    vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
+
+    //Given DAG
+    //Hence, topological sort
+
+    //Obviously we have to include all those nodes which cannot be reached by any other node otherwise we can never reach all the nodes
+    vector <vector<int>> adj(n);
+    vector <int> indegree(n, 0);
+
+    for(const auto &p : edges)
+    {
+        indegree[p[1]]++;
+        adj[p[0]].push_back(p[1]);   
+    }
+
+    //From constraints we can see that nested dfs is not possible, so there must be some observation which might be mising
+
+    //So now we realize that after adding the non reachable nodes, we are left withn nodes which can be reached by atleast one other node which is also obviously reachable by any other node (since we already included the non reachable nodes)
+    vector <int> res;
+    for(int i = 0; i < n; i++)
+    {
+        if(indegree[i] == 0)
+            res.push_back(i);
+    }
+
+    return res;
+    }
+};
+```
+
+We dont even need to build the adjacency list
+
+
+```c++
+class Solution {
+public:
+    vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
+        vector<int> inDegree(n,0);
+        for(int i=0;i<edges.size();i++){
+            inDegree[edges[i][1]]++;
+        }
+        vector<int> ans;
+        for(int i=0;i<n;i++){
+            if(inDegree[i]==0){
+                ans.push_back(i);
+            }
+        }
+        return ans;
+    }
+};
+```
+
+
+---
+
+## **1765. Map of Highest Peak**
+
+**Map of Highest Peak — Key Observation**
+
+Although the problem asks to maximize heights, the maximum valid height of a cell is its **distance from the nearest water cell**. Since adjacent cells can differ by at most 1, a cell cannot have height greater than its shortest distance to water. Therefore, we run a **multi-source BFS from all water cells**, and the first time a cell is reached gives its optimal height. The BFS distance itself becomes the answer.
+
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {
+
+    // We have to maximize the height following the given rules
+    //Intuition : Do a multi source bfs from each water cell with height zero, and assign 1 to its neighboring land cells, and keep on increasing, it seems like this greedy approach should work here   
+
+    //Seems a simple multi source bfs while tracking maximum height using a separate matrix
+
+    int m = isWater.size();
+    int n = isWater[0].size();
+
+    queue <pair<int, int>> q;
+    vector <vector<int>> dis(m, vector <int> (n, -1));
+
+    for(int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if(isWater[i][j] == 1)
+            {
+                q.push({i, j});
+                dis[i][j] = 0;
+            }
+        }
+    }
+
+    int drow[] = {-1, 1, 0, 0};
+    int dcol[] = {0, 0, -1, 1};
+
+    while(!q.empty())
+    {
+        auto [row, col] = q.front();
+        q.pop();
+
+        for(int i = 0; i < 4; i++)
+        {
+            int r = row + drow[i];
+            int c = col + dcol[i];
+
+            if(r >= 0 && r < m && c >= 0 && c < n)
+            {
+                if(dis[r][c] == -1)
+                {
+                    dis[r][c] = dis[row][col] + 1;
+                    q.push({r, c});
+                }
+            }
+        }
+    }
+
+    return dis;
+    }
+};
+```
+
+
+---
+

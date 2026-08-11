@@ -1016,288 +1016,293 @@
     },
     "2f80eb7a-3bc3-8006-87fd-c499f9d22599": {
       "last_edited_time": "2026-08-08T08:38:00.000Z",
-      "relativePath": "Leetcode Solutions\\Stack and Queue",
+      "relativePath": "Leetcode Solutions/Stack and Queue",
       "children": []
     },
     "2fe0eb7a-3bc3-806f-aa5f-c3bb56f21ea2": {
       "last_edited_time": "2026-08-04T12:31:00.000Z",
-      "relativePath": "Leetcode Solutions\\Math on Arrays",
+      "relativePath": "Leetcode Solutions/Math on Arrays",
       "children": []
     },
     "3070eb7a-3bc3-80af-b9f3-e37c58654c7b": {
       "last_edited_time": "2026-07-31T11:20:00.000Z",
-      "relativePath": "Leetcode Solutions\\Sorting",
+      "relativePath": "Leetcode Solutions/Sorting",
       "children": []
     },
     "3070eb7a-3bc3-803e-b736-f0da64c69092": {
       "last_edited_time": "2026-08-07T10:04:00.000Z",
-      "relativePath": "Leetcode Solutions\\Linked List",
+      "relativePath": "Leetcode Solutions/Linked List",
       "children": []
     },
     "3070eb7a-3bc3-8026-9fb7-d706c6271a23": {
       "last_edited_time": "2026-07-31T12:19:00.000Z",
-      "relativePath": "Leetcode Solutions\\Prefix Sum",
+      "relativePath": "Leetcode Solutions/Prefix Sum",
       "children": []
     },
     "3170eb7a-3bc3-801f-98cf-cdbba4f7f462": {
       "last_edited_time": "2026-07-29T19:36:00.000Z",
-      "relativePath": "Leetcode Solutions\\Two Pointer",
+      "relativePath": "Leetcode Solutions/Two Pointer",
       "children": []
     },
     "31a0eb7a-3bc3-8029-ba7f-ef61c26d900a": {
       "last_edited_time": "2026-08-07T15:21:00.000Z",
-      "relativePath": "Leetcode Solutions\\Binary Trees",
+      "relativePath": "Leetcode Solutions/Binary Trees",
       "children": []
     },
     "31a0eb7a-3bc3-8007-b28e-df66578239c4": {
       "last_edited_time": "2026-08-08T05:37:00.000Z",
-      "relativePath": "Leetcode Solutions\\Binary Search Trees",
+      "relativePath": "Leetcode Solutions/Binary Search Trees",
       "children": []
     },
     "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519": {
       "last_edited_time": "2026-05-29T13:53:00.000Z",
-      "relativePath": "Leetcode Solutions\\Graphs/Very important visualization and explanation which clears doubts of how this logic works",
+      "relativePath": "Leetcode Solutions/Graphs/Very important visualization and explanation which clears doubts of how this logic works",
       "children": []
     },
     "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc": {
       "last_edited_time": "2026-08-08T10:00:00.000Z",
-      "relativePath": "Leetcode Solutions\\Graphs",
+      "relativePath": "Leetcode Solutions/Graphs",
       "children": [
         {
           "type": "page",
           "id": "36f0eb7a-3bc3-80da-b89e-d6ee0c0c8519",
-          "relativePath": "Leetcode Solutions\\Graphs/Very important visualization and explanation which clears doubts of how this logic works"
+          "relativePath": "Leetcode Solutions/Graphs/Very important visualization and explanation which clears doubts of how this logic works"
         }
       ]
     },
     "3240eb7a-3bc3-80ff-b95a-cedd581738cf": {
       "last_edited_time": "2026-07-13T18:19:00.000Z",
-      "relativePath": "Leetcode Solutions\\Sliding Window",
+      "relativePath": "Leetcode Solutions/Sliding Window",
       "children": []
     },
     "32b0eb7a-3bc3-80d8-991d-e913b06c2581": {
       "last_edited_time": "2026-07-18T13:07:00.000Z",
-      "relativePath": "Leetcode Solutions\\Binary Search on Answers",
+      "relativePath": "Leetcode Solutions/Binary Search on Answers",
       "children": []
     },
     "32b0eb7a-3bc3-8078-9ae8-d4d0acf640b4": {
       "last_edited_time": "2026-06-26T18:25:00.000Z",
-      "relativePath": "Leetcode Solutions\\Recursion",
+      "relativePath": "Leetcode Solutions/Recursion",
       "children": []
     },
     "32b0eb7a-3bc3-8038-abf2-cd861e336df9": {
       "last_edited_time": "2026-07-20T09:44:00.000Z",
-      "relativePath": "Leetcode Solutions\\Matrix",
+      "relativePath": "Leetcode Solutions/Matrix",
       "children": []
     },
     "32c0eb7a-3bc3-80de-9d08-c1e9586448f7": {
       "last_edited_time": "2026-03-23T12:44:00.000Z",
-      "relativePath": "Leetcode Solutions\\Counting",
+      "relativePath": "Leetcode Solutions/Counting",
       "children": []
     },
     "32d0eb7a-3bc3-8048-921b-c944b671fbaa": {
       "last_edited_time": "2026-06-30T06:38:00.000Z",
-      "relativePath": "Leetcode Solutions\\Backtracking",
+      "relativePath": "Leetcode Solutions/Backtracking",
       "children": []
     },
     "3320eb7a-3bc3-80e8-bc8c-f96ff4555c9b": {
       "last_edited_time": "2026-07-23T10:56:00.000Z",
-      "relativePath": "Leetcode Solutions\\Bit Manipulation",
+      "relativePath": "Leetcode Solutions/Bit Manipulation",
       "children": []
     },
     "36d0eb7a-3bc3-8071-84bf-f57e14979b0f": {
       "last_edited_time": "2026-08-07T09:15:00.000Z",
-      "relativePath": "Leetcode Solutions\\Arrays",
+      "relativePath": "Leetcode Solutions/Arrays",
       "children": []
     },
     "36f0eb7a-3bc3-80ed-b709-d4f3d05074f6": {
       "last_edited_time": "2026-07-28T09:19:00.000Z",
-      "relativePath": "Leetcode Solutions\\Strings",
+      "relativePath": "Leetcode Solutions/Strings",
       "children": []
     },
     "3700eb7a-3bc3-8027-9156-f0bacaa9d732": {
       "last_edited_time": "2026-08-03T17:48:00.000Z",
-      "relativePath": "Leetcode Solutions\\Dynamic Programming",
+      "relativePath": "Leetcode Solutions/Dynamic Programming",
       "children": []
     },
     "3730eb7a-3bc3-80b1-a683-dc3c98984aff": {
       "last_edited_time": "2026-07-19T07:06:00.000Z",
-      "relativePath": "Leetcode Solutions\\Greedy",
+      "relativePath": "Leetcode Solutions/Greedy",
       "children": []
     },
     "3800eb7a-3bc3-80be-b69e-d3a951f37f3c": {
       "last_edited_time": "2026-08-02T06:44:00.000Z",
-      "relativePath": "Leetcode Solutions\\Puzzles",
+      "relativePath": "Leetcode Solutions/Puzzles",
       "children": []
     },
     "3800eb7a-3bc3-80f8-a658-e8db0863bd96": {
       "last_edited_time": "2026-08-08T06:30:00.000Z",
-      "relativePath": "Leetcode Solutions\\Binary Search",
+      "relativePath": "Leetcode Solutions/Binary Search",
       "children": []
     },
     "3840eb7a-3bc3-8082-80d5-cf991890c1d3": {
       "last_edited_time": "2026-06-19T16:37:00.000Z",
-      "relativePath": "Leetcode Solutions\\Tries",
+      "relativePath": "Leetcode Solutions/Tries",
       "children": []
     },
     "3900eb7a-3bc3-80e6-951e-e7d931d031f9": {
       "last_edited_time": "2026-07-12T14:44:00.000Z",
-      "relativePath": "Leetcode Solutions\\Priority Queue",
+      "relativePath": "Leetcode Solutions/Priority Queue",
       "children": []
     },
     "3950eb7a-3bc3-8087-a330-dfc713d3eaff": {
       "last_edited_time": "2026-07-06T05:24:00.000Z",
-      "relativePath": "Leetcode Solutions\\Intervals",
+      "relativePath": "Leetcode Solutions/Intervals",
       "children": []
     },
     "3950eb7a-3bc3-8067-bcd1-c4236fb6091b": {
       "last_edited_time": "2026-08-06T11:32:00.000Z",
-      "relativePath": "Leetcode Solutions\\Math",
+      "relativePath": "Leetcode Solutions/Math",
       "children": []
     },
     "3af0eb7a-3bc3-80f1-97ad-d6ba1abe0d5b": {
       "last_edited_time": "2026-08-02T09:40:00.000Z",
-      "relativePath": "Leetcode Solutions\\Difference Array",
+      "relativePath": "Leetcode Solutions/Difference Array",
       "children": []
     },
     "2f80eb7a3bc380bb8558c10eed45c2a9": {
-      "last_edited_time": "2026-08-05T18:13:00.000Z",
+      "last_edited_time": "2026-08-10T11:22:00.000Z",
       "relativePath": "Leetcode Solutions",
       "children": [
         {
           "type": "page",
           "id": "2f80eb7a-3bc3-8006-87fd-c499f9d22599",
-          "relativePath": "Leetcode Solutions\\Stack and Queue"
+          "relativePath": "Leetcode Solutions/Stack and Queue"
         },
         {
           "type": "page",
           "id": "2fe0eb7a-3bc3-806f-aa5f-c3bb56f21ea2",
-          "relativePath": "Leetcode Solutions\\Math on Arrays"
+          "relativePath": "Leetcode Solutions/Math on Arrays"
         },
         {
           "type": "page",
           "id": "3070eb7a-3bc3-80af-b9f3-e37c58654c7b",
-          "relativePath": "Leetcode Solutions\\Sorting"
+          "relativePath": "Leetcode Solutions/Sorting"
         },
         {
           "type": "page",
           "id": "3070eb7a-3bc3-803e-b736-f0da64c69092",
-          "relativePath": "Leetcode Solutions\\Linked List"
+          "relativePath": "Leetcode Solutions/Linked List"
         },
         {
           "type": "page",
           "id": "3070eb7a-3bc3-8026-9fb7-d706c6271a23",
-          "relativePath": "Leetcode Solutions\\Prefix Sum"
+          "relativePath": "Leetcode Solutions/Prefix Sum"
         },
         {
           "type": "page",
           "id": "3170eb7a-3bc3-801f-98cf-cdbba4f7f462",
-          "relativePath": "Leetcode Solutions\\Two Pointer"
+          "relativePath": "Leetcode Solutions/Two Pointer"
         },
         {
           "type": "page",
           "id": "31a0eb7a-3bc3-8029-ba7f-ef61c26d900a",
-          "relativePath": "Leetcode Solutions\\Binary Trees"
+          "relativePath": "Leetcode Solutions/Binary Trees"
         },
         {
           "type": "page",
           "id": "31a0eb7a-3bc3-8007-b28e-df66578239c4",
-          "relativePath": "Leetcode Solutions\\Binary Search Trees"
+          "relativePath": "Leetcode Solutions/Binary Search Trees"
         },
         {
           "type": "page",
           "id": "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc",
-          "relativePath": "Leetcode Solutions\\Graphs"
+          "relativePath": "Leetcode Solutions/Graphs"
         },
         {
           "type": "page",
           "id": "3240eb7a-3bc3-80ff-b95a-cedd581738cf",
-          "relativePath": "Leetcode Solutions\\Sliding Window"
+          "relativePath": "Leetcode Solutions/Sliding Window"
         },
         {
           "type": "page",
           "id": "32b0eb7a-3bc3-80d8-991d-e913b06c2581",
-          "relativePath": "Leetcode Solutions\\Binary Search on Answers"
+          "relativePath": "Leetcode Solutions/Binary Search on Answers"
         },
         {
           "type": "page",
           "id": "32b0eb7a-3bc3-8078-9ae8-d4d0acf640b4",
-          "relativePath": "Leetcode Solutions\\Recursion"
+          "relativePath": "Leetcode Solutions/Recursion"
         },
         {
           "type": "page",
           "id": "32b0eb7a-3bc3-8038-abf2-cd861e336df9",
-          "relativePath": "Leetcode Solutions\\Matrix"
+          "relativePath": "Leetcode Solutions/Matrix"
         },
         {
           "type": "page",
           "id": "32c0eb7a-3bc3-80de-9d08-c1e9586448f7",
-          "relativePath": "Leetcode Solutions\\Counting"
+          "relativePath": "Leetcode Solutions/Counting"
         },
         {
           "type": "page",
           "id": "32d0eb7a-3bc3-8048-921b-c944b671fbaa",
-          "relativePath": "Leetcode Solutions\\Backtracking"
+          "relativePath": "Leetcode Solutions/Backtracking"
         },
         {
           "type": "page",
           "id": "3320eb7a-3bc3-80e8-bc8c-f96ff4555c9b",
-          "relativePath": "Leetcode Solutions\\Bit Manipulation"
+          "relativePath": "Leetcode Solutions/Bit Manipulation"
         },
         {
           "type": "page",
           "id": "36d0eb7a-3bc3-8071-84bf-f57e14979b0f",
-          "relativePath": "Leetcode Solutions\\Arrays"
+          "relativePath": "Leetcode Solutions/Arrays"
         },
         {
           "type": "page",
           "id": "36f0eb7a-3bc3-80ed-b709-d4f3d05074f6",
-          "relativePath": "Leetcode Solutions\\Strings"
+          "relativePath": "Leetcode Solutions/Strings"
         },
         {
           "type": "page",
           "id": "3700eb7a-3bc3-8027-9156-f0bacaa9d732",
-          "relativePath": "Leetcode Solutions\\Dynamic Programming"
+          "relativePath": "Leetcode Solutions/Dynamic Programming"
         },
         {
           "type": "page",
           "id": "3730eb7a-3bc3-80b1-a683-dc3c98984aff",
-          "relativePath": "Leetcode Solutions\\Greedy"
+          "relativePath": "Leetcode Solutions/Greedy"
         },
         {
           "type": "page",
           "id": "3800eb7a-3bc3-80be-b69e-d3a951f37f3c",
-          "relativePath": "Leetcode Solutions\\Puzzles"
+          "relativePath": "Leetcode Solutions/Puzzles"
         },
         {
           "type": "page",
           "id": "3800eb7a-3bc3-80f8-a658-e8db0863bd96",
-          "relativePath": "Leetcode Solutions\\Binary Search"
+          "relativePath": "Leetcode Solutions/Binary Search"
         },
         {
           "type": "page",
           "id": "3840eb7a-3bc3-8082-80d5-cf991890c1d3",
-          "relativePath": "Leetcode Solutions\\Tries"
+          "relativePath": "Leetcode Solutions/Tries"
         },
         {
           "type": "page",
           "id": "3900eb7a-3bc3-80e6-951e-e7d931d031f9",
-          "relativePath": "Leetcode Solutions\\Priority Queue"
+          "relativePath": "Leetcode Solutions/Priority Queue"
         },
         {
           "type": "page",
           "id": "3950eb7a-3bc3-8087-a330-dfc713d3eaff",
-          "relativePath": "Leetcode Solutions\\Intervals"
+          "relativePath": "Leetcode Solutions/Intervals"
         },
         {
           "type": "page",
           "id": "3950eb7a-3bc3-8067-bcd1-c4236fb6091b",
-          "relativePath": "Leetcode Solutions\\Math"
+          "relativePath": "Leetcode Solutions/Math"
         },
         {
           "type": "page",
           "id": "3af0eb7a-3bc3-80f1-97ad-d6ba1abe0d5b",
-          "relativePath": "Leetcode Solutions\\Difference Array"
+          "relativePath": "Leetcode Solutions/Difference Array"
+        },
+        {
+          "type": "page",
+          "id": "3b80eb7a-3bc3-80c0-baa6-c6f86f36f570",
+          "relativePath": "Leetcode Solutions/DP on Grids"
         }
       ]
     },
@@ -1418,8 +1423,13 @@
       ]
     },
     "3120eb7a3bc38016ace1fef1d0c81300": {
-      "last_edited_time": "2026-08-08T06:07:00.000Z",
+      "last_edited_time": "2026-08-10T11:18:00.000Z",
       "relativePath": "DSA-Important Questions",
+      "children": []
+    },
+    "3b80eb7a-3bc3-80c0-baa6-c6f86f36f570": {
+      "last_edited_time": "2026-08-10T17:29:00.000Z",
+      "relativePath": "Leetcode Solutions/DP on Grids",
       "children": []
     }
   },

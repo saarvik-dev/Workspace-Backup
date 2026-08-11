@@ -1998,6 +1998,48 @@ public:
 
 ---
 
+## **80. Remove Duplicates from Sorted Array II**
+
+**Algorithm:**
+
+Use two pointers: `r` scans the array while `l` marks the next position where a valid element should be written. For each group of equal elements, copy only the first two occurrences to the front of the array and skip the rest.
+
+**Key Idea:**
+
+Count the frequency of each consecutive duplicate block and allow insertion only when the count is less than 3, ensuring every element appears at most twice.
+
+
+```c++
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+    //Lets use two pointers, one for the next valid position for insertion, and one for traversing the array   
+
+    int l = 0, r = 0;
+    int n = nums.size();
+    while (r < n)
+    {
+        int cnt = 0;
+        while(cnt == 0 || (r < n && nums[r] == nums[r - 1]))
+        {
+            cnt++;
+            if(cnt < 3)
+            {
+                nums[l] = nums[r];
+                l++;
+            }
+            r++;
+        }
+    }
+
+    return l;
+    }
+};
+```
+
+
+---
+
 🔗 **References**
 - Reverse Pairs → https://leetcode.com/problems/reverse-pairs/
 

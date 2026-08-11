@@ -452,3 +452,104 @@ public:
 };
 ```
 
+
+---
+
+## **792. Number of Matching Subsequences**
+
+### Algorithm
+
+**Idea:**
+
+Store all indices of each character in `s`. For every word, try to match its characters one by one using binary search to find the next valid occurrence in `s`.
+
+1. Create an array of 26 vectors.
+- `index[0]` stores positions of `'a'`
+- `index[1]` stores positions of `'b'`
+- and so on.
+1. Traverse `s` and store the index of each character in its corresponding vector.
+1. Store the frequency of every word in a hash map so that duplicate words are processed only once.
+1. For each unique word:
+- Start with `prev = -1`.
+- For every character:
+- Use `upper_bound()` on its index vector to find the first occurrence after `prev`.
+- If no such position exists, the word is not a subsequence.
+- Otherwise, update `prev` to the found position.
+- If all characters are matched, add the frequency of that word to the answer.
+1. Return the answer.
+### Complexity
+
+Let:
+
+- `n = s.length()`
+- `L = total length of all words`
+Building index arrays:
+
+
+```plain text
+O(n)
+```
+
+Checking all words:
+
+
+```plain text
+O(L log n)
+```
+
+Overall:
+
+
+```plain text
+O(n + L log n)
+```
+
+### Key Observation
+
+For each character, instead of searching the entire string `s`, we directly jump to its next occurrence using binary search on the stored indices.
+
+
+```c++
+class Solution {
+public:
+    int numMatchingSubseq(string s, vector<string>& words) {
+
+    //Intuition : Create a set and store all the words from the words array, then perform a simple knapsack dp to check all combinations of words possible    
+
+    vector <vector<int>> index(26);
+
+    for(int i = 0; i < s.length(); i++)
+        index[s[i] - 'a'].push_back(i);
+
+    unordered_map <string, int> hash;
+    for(auto word : words)  
+        hash[word]++;
+    int res = 0;
+
+    for(const auto &[key, value] : hash)
+    {
+        int prev = -1;
+        bool ok = true;
+
+        for(char ch : key)
+        {
+            auto &v = index[ch - 'a'];
+
+            auto it = upper_bound(v.begin(), v.end(), prev);
+
+            if(it == v.end())
+            {
+                ok = false;
+                break;
+            }
+
+            prev = *it; 
+        }
+
+        if(ok) res += value;
+    }
+    return res;
+    }
+};
+```
+

@@ -558,7 +558,7 @@ public:
 
 This question uses a very important technique called the morris traversal whose theory and algo can be found in the below page ⬇️⬇️⬇️
 
-Untitled 
+Morris Traversal 
 
 
 ```c++
@@ -761,7 +761,65 @@ public:
 
 ---
 
+## **1305. All Elements in Two Binary Search Trees**
+
+Inorder Traversal + Merging the two sorted list of nodes
+
+
+```c++
+class Solution {
+private:
+    void inorder(TreeNode* root, vector <int> &nodes)
+    {
+        if(root == nullptr)
+            return;
+
+        inorder(root->left, nodes);
+        nodes.push_back(root->val);
+        inorder(root->right, nodes);
+    }
+
+    void merge(vector <int> &first, vector <int> &second, vector <int> &res)
+    {
+        int m = first.size();
+        int n = second.size();
+        int l = 0, r = 0;
+
+        while(l < m && r < n)
+        {
+            if(first[l] < second[r])
+                res.push_back(first[l++]);
+            else
+                res.push_back(second[r++]);
+        }
+
+        while(l < m)
+            res.push_back(first[l++]);
+        while(r < n)
+            res.push_back(second[r++]);
+    }
+public:
+    vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
+    //We can first do inorder traversal to get the sorted nodes for both trees separately, then we can write a merge fubnction to merge these arrays
+    
+    vector <int> first;
+    vector <int> second;    
+
+    inorder(root1, first);
+    inorder(root2, second);
+
+    vector <int> res;
+    merge(first, second, res);
+
+    return res;
+    }
+};
+```
+
+
+---
+
 🔗 **References**
-- Untitled → https://app.notion.com/p/31a0eb7a3bc38041b9d9e00d21307f75
+- Morris Traversal → https://app.notion.com/p/31a0eb7a3bc38041b9d9e00d21307f75
 - Tree DP → https://app.notion.com/p/3850eb7a3bc38096a6dae6a647d096e1
 

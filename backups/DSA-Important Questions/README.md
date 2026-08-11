@@ -140,6 +140,10 @@ Good non Inutuitive question
 
 https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming
 
+### Important Questions
+
+https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming
+
 
 ---
 
@@ -191,4 +195,5 @@ https://leetcode.com/problems/number-of-matching-subsequences/description/?envTy
 - https://leetcode.com/problems/stone-game-ii/ → https://leetcode.com/problems/stone-game-ii/
 - https://leetcode.com/problems/stone-game-iv/ → https://leetcode.com/problems/stone-game-iv/
 - https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming
+- https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming
 
