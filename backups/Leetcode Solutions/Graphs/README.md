@@ -1227,6 +1227,49 @@ public:
 };
 ```
 
+### DFS
+
+
+```c++
+class Solution {
+public:
+    bool dfs(int node, int currColor,
+             vector<int>& color,
+             vector<vector<int>>& graph) {
+
+        color[node] = currColor;
+
+        for (int nei : graph[node]) {
+
+            if (color[nei] == -1) {
+                if (!dfs(nei, 1 - currColor, color, graph))
+                    return false;
+            }
+            else if (color[nei] == currColor) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n = graph.size();
+
+        vector<int> color(n, -1);
+
+        for (int i = 0; i < n; i++) {
+            if (color[i] == -1) {
+                if (!dfs(i, 0, color, graph))
+                    return false;
+            }
+        }
+
+        return true;
+    }
+};
+```
+
 
 ---
 
@@ -3989,6 +4032,196 @@ public:
     }
 
     return dis;
+    }
+};
+```
+
+
+---
+
+## **1162. As Far from Land as Possible**
+
+### TLE - Brute Frce BFS - O(n^4)
+
+
+```c++
+class Solution {
+public:
+    int maxDistance(vector<vector<int>>& grid) {
+
+    //For each water cell, we have to find the nearest land cell, and calculate the distance between them, also we have to track this distance across all water cells , to find the maximum answer    
+
+    //We wil choose multi-source bfs, and do nested bfs, bfs ensures we always reach the nearer land cells before the farther ones, so that the nearest land condition is satisfied
+
+    int n = grid.size();
+    int res = INT_MIN;
+
+    int drow[] = {-1, 1, 0, 0};
+    int dcol[] = {0, 0, -1, 1};
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {
+            if(grid[i][j] == 0)
+            {
+                queue <pair<int, int>> q;
+                vector <vector<int>> vis(n, vector<int> (n, -1));
+
+                q.push({i, j});
+                vis[i][j] = 1;
+                bool flag = false;
+                while(!q.empty())
+                {
+                    auto [row, col] = q.front();
+                    q.pop();
+
+                    for(int k = 0; k < 4; k++)
+                    {
+                        int r = row + drow[k];
+                        int c = col + dcol[k];
+
+                        if(r >= 0 && r < n && c >= 0 && c < n)
+                        {
+                            if(grid[r][c] == 1)
+                            {
+                                res = max(res, abs(r - i) + abs(c - j));
+                                flag = true;
+                                break;
+                            }
+                            else if (vis[r][c] == -1)
+                            {
+                                q.push({r, c});
+                                vis[r][c] = 1;
+                            }
+                        }
+                    }
+                    if(flag)
+                        break;
+                }
+            }
+        }
+    }
+    return (res == INT_MIN) ? -1 : res;
+    }
+};
+```
+
+Your approach treats every water cell as a separate source. For each water cell, you run a BFS to find the nearest land cell. Since BFS explores cells level by level, the first land cell encountered is guaranteed to be the closest one. After finding this nearest land, you compute its Manhattan distance from the starting water cell and update the global maximum. While this correctly captures the idea that every water cell needs the distance to its nearest land cell, it repeatedly traverses large parts of the grid for different water cells, leading to a time complexity of (O(n^4)) in the worst case.
+
+The intended solution reverses the perspective. Instead of starting a BFS from every water cell, it starts a single multi-source BFS from all land cells simultaneously. All land cells are inserted into the queue initially with distance 0, and the BFS expands outward into water cells. Because BFS always reaches a cell through the shortest possible path, the first time a water cell is visited, its distance from the nearest land is already known. As the expansion continues layer by layer, the distance values naturally increase, and the last water cell reached represents the water cell farthest from any land. This computes the answer for all cells in one traversal of the grid, reducing the complexity to (O(n^2)).
+
+Although the problem asks for the water cell that is farthest from land, the distance for each individual water cell is still defined as its distance to the **nearest** land cell. My approach computes this directly by starting a BFS from every water cell and stopping when the first land cell is found, since BFS guarantees that the first land reached is the closest one. The answer is then the maximum among these nearest-land distances. The optimized solution computes the same nearest-land distances in reverse using a multi-source BFS. Instead of starting from every water cell, all land cells are inserted into the queue initially and expanded simultaneously. Because BFS processes cells in increasing order of distance, the first time a water cell is visited, it must have been reached from its nearest land cell. Thus, every water cell automatically receives its nearest-land distance in a single traversal, and the maximum of these distances is simply the distance of the last BFS layer, reducing the complexity from (O(n^4)) to (O(n^2)).
+
+O(n^2)
+
+
+```c++
+class Solution {
+public:
+    int maxDistance(vector<vector<int>>& grid) {
+        int n = grid.size();
+
+        queue<pair<int, int>> q;
+        vector<vector<int>> dist(n, vector<int>(n, -1));
+
+        // Push all land cells initially
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    q.push({i, j});
+                    dist[i][j] = 0;
+                }
+            }
+        }
+
+        // Edge cases: all land or all water
+        if (q.empty() || q.size() == n * n)
+            return -1;
+
+        int drow[] = {-1, 1, 0, 0};
+        int dcol[] = {0, 0, -1, 1};
+
+        int ans = 0;
+
+        while (!q.empty()) {
+            auto [row, col] = q.front();
+            q.pop();
+
+            for (int k = 0; k < 4; k++) {
+                int r = row + drow[k];
+                int c = col + dcol[k];
+
+                if (r >= 0 && r < n && c >= 0 && c < n &&
+                    dist[r][c] == -1) {
+
+                    dist[r][c] = dist[row][col] + 1;
+                    ans = max(ans, dist[r][c]);
+                    q.push({r, c});
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
+
+---
+
+## **886. Possible Bipartition**
+
+***GRAPH-COLORING \ ALGORITHM***
+
+
+```c++
+class Solution {
+public:
+    bool possibleBipartition(int n, vector<vector<int>>& dislikes) {
+    
+    //Graph Coloring Algorithm
+    //lets create an adjacency list between nodes and rivals, then we will pick each node, color the node 0 and its rivals 1, and so on color its rivals' rivals' 0, and keep checking that if someone's rival already has the same color as the node, which tells that splitting is not possible   
+    //Take care that this is a bipartite graph 
+
+    vector <vector<int>> adj(n + 1);
+
+    for(const auto &p : dislikes)
+    {
+        adj[p[0]].push_back(p[1]);
+        adj[p[1]].push_back(p[0]);
+    }
+
+    vector <int> color(n + 1, -1);
+
+    for(int i = 1; i <= n; i++)
+    {
+        if(color[i] == -1)
+        {
+            queue <int> q;
+            q.push(i);
+            color[i] = 0;
+
+            while(!q.empty())
+            {
+                int node = q.front();
+                q.pop();
+
+                for(auto neigh : adj[node])
+                {
+                    if(color[neigh] == -1)
+                    {
+                        color[neigh] = 1 - color[node];
+                        q.push(neigh);
+                    }
+
+                    else if(color[neigh] == color[node])
+                        return false;
+                }
+            }
+        }
+    }
+
+    return true;
     }
 };
 ```

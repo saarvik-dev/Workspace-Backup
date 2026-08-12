@@ -169,7 +169,7 @@
       "children": []
     },
     "31c0eb7a-3bc3-80a2-a43c-ce032acfcd04": {
-      "last_edited_time": "2026-08-08T09:09:00.000Z",
+      "last_edited_time": "2026-08-11T13:16:00.000Z",
       "relativePath": "DSA-Strivers\\Graphs",
       "children": [
         {
@@ -1060,7 +1060,7 @@
       "children": []
     },
     "31a0eb7a-3bc3-8077-8290-d7ad1d76e5bc": {
-      "last_edited_time": "2026-08-08T10:00:00.000Z",
+      "last_edited_time": "2026-08-11T13:50:00.000Z",
       "relativePath": "Leetcode Solutions/Graphs",
       "children": [
         {
@@ -1151,7 +1151,7 @@
       "children": []
     },
     "3950eb7a-3bc3-8067-bcd1-c4236fb6091b": {
-      "last_edited_time": "2026-08-06T11:32:00.000Z",
+      "last_edited_time": "2026-08-11T10:43:00.000Z",
       "relativePath": "Leetcode Solutions/Math",
       "children": []
     },
@@ -1161,7 +1161,7 @@
       "children": []
     },
     "2f80eb7a3bc380bb8558c10eed45c2a9": {
-      "last_edited_time": "2026-08-10T11:22:00.000Z",
+      "last_edited_time": "2026-08-11T15:11:00.000Z",
       "relativePath": "Leetcode Solutions",
       "children": [
         {
@@ -1303,6 +1303,11 @@
           "type": "page",
           "id": "3b80eb7a-3bc3-80c0-baa6-c6f86f36f570",
           "relativePath": "Leetcode Solutions/DP on Grids"
+        },
+        {
+          "type": "page",
+          "id": "3b90eb7a-3bc3-8080-8ed8-f88a3b74092a",
+          "relativePath": "Leetcode Solutions/DP on Trees"
         }
       ]
     },
@@ -1423,13 +1428,18 @@
       ]
     },
     "3120eb7a3bc38016ace1fef1d0c81300": {
-      "last_edited_time": "2026-08-10T11:18:00.000Z",
+      "last_edited_time": "2026-08-11T13:54:00.000Z",
       "relativePath": "DSA-Important Questions",
       "children": []
     },
     "3b80eb7a-3bc3-80c0-baa6-c6f86f36f570": {
       "last_edited_time": "2026-08-10T17:29:00.000Z",
       "relativePath": "Leetcode Solutions/DP on Grids",
+      "children": []
+    },
+    "3b90eb7a-3bc3-8080-8ed8-f88a3b74092a": {
+      "last_edited_time": "2026-08-11T16:54:00.000Z",
+      "relativePath": "Leetcode Solutions/DP on Trees",
       "children": []
     }
   },

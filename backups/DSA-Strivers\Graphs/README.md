@@ -396,9 +396,9 @@ If you want to solve this seating arrangement in real life, you would naturally 
 **When does it fail?**
 It only fails if you are looking at a student in Room 0, and you go to place their rival in Room 1, but you see that the rival is *already sitting in Room 0*. You have a conflict. The seating arrangement is impossible, meaning the graph is **not bipartite**.
 
-### The Mathematical Rule: "Odd Cycles"
+### **The Mathematical Rule: "Odd Cycles"**
 
-In graph theory, the only thing that makes a graph "Not Bipartite" is the presence of an **Odd-Length Cycle** (a loop of 3, 5, 7, etc., nodes).
+**In graph theory, the only thing that makes a graph "Not Bipartite" is the presence of an Odd-Length Cycle (a loop of 3, 5, 7, etc., nodes).**
 
 Imagine a triangle of three rivals: A hates B, B hates C, and C hates A.
 

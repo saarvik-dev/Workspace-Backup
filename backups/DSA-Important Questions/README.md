@@ -144,6 +144,20 @@ https://leetcode.com/problems/number-of-matching-subsequences/description/?envTy
 
 https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming
 
+## Graph Modelling Questions
+
+
+| LC No. | Problem |
+| --- | --- |
+| 752 | Open the Lock |
+| 127 | Word Ladder |
+| 433 | Minimum Genetic Mutation |
+| 399 | Evaluate Division |
+| 909 | Snakes and Ladders |
+| 815 | Bus Routes |
+
+
+
 
 ---
 

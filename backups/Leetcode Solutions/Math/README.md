@@ -573,3 +573,35 @@ public:
 };
 ```
 
+
+---
+
+## **2996. Smallest Missing Integer Greater Than Sequential Prefix Sum**
+
+
+```c++
+class Solution {
+public:
+    int missingInteger(vector<int>& nums) {
+        int sum = nums[0];
+        
+        for (int i = 1; i < nums.size(); ++i) {
+            if (nums[i] == nums[i - 1] + 1) {
+                sum += nums[i];
+            } else {
+                break;
+            }
+        }
+        
+        unordered_set<int> st(nums.begin(), nums.end());
+        
+        // Find the smallest missing integer >= sum
+        while (st.count(sum)) {
+            sum++;
+        }
+        
+        return sum;
+    }
+};
+```
+
