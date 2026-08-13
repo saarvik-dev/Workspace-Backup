@@ -952,3 +952,39 @@ public:
 
 ---
 
+## 2958. Length of Longest Subarray With at Most K Frequency
+
+
+```mermaid
+class Solution {
+public:
+    int maxSubarrayLength(vector<int>& nums, int k) {
+        int n = nums.size();
+        int l = 0;
+        unordered_map <int, int> freq;
+        int res = INT_MIN;
+        
+        for(int r = 0; r < n; r++)  
+        {
+            freq[nums[r]]++;
+            
+            while (l <  r && freq[nums[r]] > k)
+            {
+                freq[nums[l]]--;
+                l++;
+            }
+            
+            res = max(res, r - l + 1);
+        }
+        
+        return res;
+ }
+};
+```
+
+
+---
+
+🔗 **References**
+- 2958. Length of Longest Subarray With at Most K Frequency → https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/
+
