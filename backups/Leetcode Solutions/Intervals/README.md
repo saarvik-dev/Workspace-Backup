@@ -68,3 +68,198 @@ public:
 };
 ```
 
+
+---
+
+## **435. Non-overlapping Intervals**
+
+**Note:** This is a classic **Interval Scheduling Greedy** problem. The key observation is that minimizing removals is equivalent to maximizing the number of non-overlapping intervals kept. The optimal greedy choice is to always keep the interval that **ends earliest**, because it leaves the maximum room for future intervals. Hence, sort intervals by end time and greedily keep an interval if its start is at least the end of the last kept interval; the answer is `n - kept`. An equivalent start-time sorted solution removes one interval whenever an overlap occurs and keeps the interval with the **smaller end** (`end = min(end, currentEnd)`), since a smaller end creates fewer future conflicts. My wrong approach was sorting by start time and counting intervals with the same starting point. This is incorrect because overlap is not determined by equal starts (e.g., `[1,5]` and `[2,4]` overlap despite different starts), and the problem's core decision is not detecting equal starts but deciding **which interval to keep during an overlap**. The greedy insight I missed was: whenever two intervals overlap, keep the one with the smaller end because it preserves the most opportunities for future non-overlapping intervals. Time Complexity: `O(n log n)` due to sorting. (leetcode.doocs.org)
+
+### Pattern
+
+**Interval Scheduling / Activity Selection Greedy**
+
+### Greedy Choice
+
+Reason:
+
+- Leaves maximum room for future intervals.
+- Maximizes the number of intervals we can keep.
+- Minimum removals = Total intervals − Maximum intervals kept.
+### End-Time Solution
+
+1. Sort intervals by ending time.
+1. Keep the first interval.
+1. For every next interval:
+- If `start >= lastEnd`, keep it.
+- Else skip it.
+1. Answer = `n - kept`.
+Complexity:
+
+
+```plain text
+Time  : O(n log n)
+Space : O(1) (excluding sorting)
+```
+
+### What Was Wrong In My Attempt?
+
+My approach:
+
+
+```plain text
+sortby starttime
+countintervals havingsame start
+```
+
+Problems:
+
+1. Overlap is **not determined by equal starts**.
+
+```plain text
+[1,5]
+[2,4]
+```
+
+overlap exists even though starts differ.
+
+1. Two intervals with the same start do not necessarily determine the answer.
+
+```plain text
+[1,100]
+[1,2]
+[2,3]
+```
+
+The optimal choice is to keep `[1,2]`, not `[1,100]`.
+
+1. The solution never makes the crucial greedy decision:
+The key observation is:
+
+
+```plain text
+Keep the interval with the smaller end.
+```
+
+because it creates fewer future conflicts.
+
+### Recognition Signal
+
+Whenever you see:
+
+
+```plain text
+Intervals
+Non-overlapping
+Maximum activities
+Minimum removals
+Maximum meetings
+```
+
+Immediately think:
+
+
+```plain text
+Sort by END time
+Greedy interval scheduling
+```
+
+### Sorting by end + Greedy Approach 
+
+The greedy choice is:
+
+Why?
+
+Because an interval that ends earlier leaves the maximum space available for future intervals.
+
+Example:
+
+
+```plain text
+[1,100]
+[2,3]
+[3,4]
+```
+
+If you keep `[1,100]`, you lose both others.
+
+If you keep `[2,3]`, you can also keep `[3,4]`.
+
+So the earliest ending interval is always the safest choice.
+
+
+```c++
+class Solution {
+public:
+    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+
+        sort(intervals.begin(), intervals.end(),
+             [](const vector<int>& a, const vector<int>& b) {
+                 return a[1] < b[1];
+             });
+
+        int keep = 1;
+        int lastEnd = intervals[0][1];
+
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals[i][0] >= lastEnd) {
+                keep++;
+                lastEnd = intervals[i][1];
+            }
+        }
+
+        return intervals.size() - keep;
+    }
+};
+```
+
+### Alternative Greedy (Sort by Start Time)
+
+When overlap occurs:
+
+
+```plain text
+[1,5]
+[2,3]
+```
+
+You remove the interval with the larger end (`[1,5]`) because it blocks more future intervals.
+
+
+```c++
+class Solution {
+public:
+    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+
+        sort(intervals.begin(), intervals.end());
+
+        int removals = 0;
+        int end = intervals[0][1];
+
+        for (int i = 1; i < intervals.size(); i++) {
+
+            if (intervals[i][0] < end) {
+                removals++;
+
+                // keep interval with smaller end
+                end = min(end, intervals[i][1]);
+            }
+            else {
+                end = intervals[i][1];
+            }
+        }
+
+        return removals;
+    }
+};
+```
+
+
+---
+
+
+---
+
+🔗 **References**
+- leetcode.doocs.org → https://leetcode.doocs.org/en/lc/435/?utm_source=chatgpt.com
+

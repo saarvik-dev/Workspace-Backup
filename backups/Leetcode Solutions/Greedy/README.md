@@ -540,3 +540,82 @@ public:
 };
 ```
 
+
+---
+
+## **763. Partition Labels**
+
+
+```c++
+Good counter testcase:
+
+Input : "abcdeabcde"
+Output : [10]
+```
+
+### Greedy Approach with explanation
+
+**Intuition**
+
+We need a way to look ahead, i.e. we cannot partition if any of the letters in our current partition exists on the right side.
+
+**What I realized**
+
+I should create a `last occurrence` array which stores the last occurrence of each character in the string.
+
+Then I start traversing from the left of the string.
+
+I take two pointers:
+
+- One for traversal.
+- One for keeping track of the `rightmost occurrence` of any character in my current partition.
+As I am traversing, I update the second pointer with the `max` of the second pointer and the `last occurrence` of the current character.
+
+Whenever my first pointer and the other pointer are equal, I can partition.
+
+**WHY?**
+
+As the second pointer keeps track of the `rightmost position` of any of the characters in our current partition.
+
+When it becomes equal to the current pointer, it means there is no occurrence of any of our characters in the partition to the right; hence we can partition safely.
+
+We can keep a `length tracker` variable for the partition's length.
+
+
+```c++
+class Solution {
+public:
+    vector<int> partitionLabels(string s) {
+
+    int n = s.length();
+    vector <int> lastOccur(26);
+
+    for(int i = 0; i < s.length(); i++)
+        lastOccur[s[i] - 'a'] = i;
+
+    int len = 0;
+    vector <int> res;
+
+    int r = INT_MIN;
+
+    for(int l = 0; l < n; l++)
+    {
+        r = max(r, lastOccur[s[l] - 'a']);
+
+        len++;
+        
+        if(l == r)
+        {
+            res.push_back(len);
+            len = 0;
+        }
+    }
+    
+    return res;
+    }
+};
+```
+
+
+---
+

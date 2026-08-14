@@ -991,6 +991,127 @@ public:
 
 ---
 
+## **316. Remove Duplicate Letters**
+
+The greedy insight is:
+
+### Visited Array + Stack + Last Occurrence Approach
+
+
+```c++
+class Solution {
+public:
+    string removeDuplicateLetters(string s) {
+
+    //Approach 1
+    //Using stack
+    //Keep a visited array and a last occurence array for each character
+
+    //traverse the string
+    //Popping condition from string
+    //If the current character is smaller than the char at the top of the stack, and the top character has a later appearance, then we pop it, similarly we check for other characters, and then we add the current char in the stack
+
+    //Mtlb basically smjho ham har character ko left se right add krte jaa rhe hain, 
+    //lekin socho hame koi pehle se koi chota character mil gya, jo ham chahte hain aage
+    // ho (since lexicographically smallest), to ham dekhenge kitne aise pichle 
+    // characters hain isse bade jo iske baad bhi aa rhe hain, to unhe ham hata denge 
+    // aur isko aage le aayenge, kyunki jinko hamne nikala hai wo to baad mein bhi aa 
+    // rhe hain
+
+    
+    int n = s.length();
+    int vis[26] = {0};
+    int lastOccurence[26];
+    stack <char> st;
+
+    for(int i = 0; i < n; i++)
+        lastOccurence[s[i] - 'a'] = i;
+
+    for(int i = 0; i < n; i++)
+    {
+        char ch = s[i];
+
+        if(vis[ch - 'a'])
+            continue;
+
+        vis[ch - 'a'] = 1;
+
+        while(!st.empty() && ch < st.top() && i < lastOccurence[st.top() - 'a'])
+        {    
+            vis[st.top() - 'a'] = 0;
+            st.pop();
+        }
+
+        st.push(ch);
+    }
+
+    string res = "";
+
+    while(!st.empty())
+    {
+        res = st.top() + res;
+        st.pop();
+    }
+
+    return res;
+    }
+};
+```
+
+### Bitmask in place of visited array
+
+
+```c++
+class Solution {
+public:
+    string removeDuplicateLetters(string s) {
+
+    // in this appraoch we just use a bitmask instead of a visited array for the characters
+
+
+    int n = s.length();
+    int mask = 0;
+    int lastOccurence[26];
+    stack <char> st;
+
+    for(int i = 0; i < n; i++)
+        lastOccurence[s[i] - 'a'] = i;
+
+    for(int i = 0; i < n; i++)
+    {
+        char ch = s[i];
+
+        if((mask >> (ch - 'a')) & 1)
+            continue;
+
+        mask |= (1 << (ch - 'a'));
+
+        while(!st.empty() && ch < st.top() && i < lastOccurence[st.top() - 'a'])
+        {    
+            mask ^= (1 << (st.top() - 'a'));
+            st.pop();
+        }
+
+        st.push(ch);
+    }
+
+    string res = "";
+
+    while(!st.empty())
+    {
+        res = st.top() + res;
+        st.pop();
+    }
+
+    return res;
+    }
+};
+
+```
+
+
+---
+
 🔗 **References**
 - Rabin Karp Algorithm → https://app.notion.com/p/3840eb7a3bc380018d57dbca53a66621
 
