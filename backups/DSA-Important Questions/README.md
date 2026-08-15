@@ -158,6 +158,8 @@ https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dyna
 
 
 
+https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/
+
 
 ---
 
@@ -210,4 +212,5 @@ https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dyna
 - https://leetcode.com/problems/stone-game-iv/ → https://leetcode.com/problems/stone-game-iv/
 - https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/number-of-matching-subsequences/description/?envType=problem-list-v2&envId=dynamic-programming
 - https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/maximal-square/?envType=problem-list-v2&envId=dynamic-programming
+- https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/ → https://leetcode.com/problems/split-array-into-consecutive-subsequences/description/
 

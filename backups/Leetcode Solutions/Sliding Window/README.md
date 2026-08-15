@@ -955,7 +955,7 @@ public:
 ## 2958. Length of Longest Subarray With at Most K Frequency
 
 
-```mermaid
+```c++
 class Solution {
 public:
     int maxSubarrayLength(vector<int>& nums, int k) {
@@ -979,6 +979,42 @@ public:
         
         return res;
  }
+};
+```
+
+
+---
+
+## **3090. Maximum Length Substring With Two Occurrences**
+
+
+```c++
+class Solution {
+public:
+    int maximumLengthSubstring(string s) {
+
+    //Simple shrinking type sliding window approach using freq array
+    vector <int> freq(26, 0);
+    int n = s.length();
+
+    int len = INT_MIN;
+    int l = 0;
+    for(int r = 0; r < n; r++)
+    {
+        freq[s[r] - 'a']++;
+
+        while(freq[s[r] - 'a'] > 2)
+        {
+            freq[s[l] - 'a']--;
+            l++;
+        }    
+
+        len = max(len, r - l + 1);
+    }
+
+    return len;
+
+    }
 };
 ```
 

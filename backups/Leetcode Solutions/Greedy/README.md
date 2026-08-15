@@ -619,3 +619,128 @@ public:
 
 ---
 
+## **659. Split Array into Consecutive Subsequences**
+
+When you are at a number `x`, you have only **two meaningful choices**:
+
+1. Use `x` to **extend an already existing subsequence** ending at `x-1`.
+1. Start a **new subsequence** beginning with `x`.
+Now ask yourself:
+
+Starting a new subsequence is dangerous because a subsequence of length `1` is invalid. If you start at `x`, you are now forced to find `x+1` and `x+2` later. Extending an existing subsequence doesn't create any new requirement
+
+Maintain two hash maps:
+
+- `freq[x]` = how many copies of `x` are still unused.
+- `need[x]` = how many subsequences are currently waiting for `x` next
+**Greedy Idea:** For every number, always try to **extend an already existing subsequence first** because extending is safer. If no subsequence is waiting for the current number, try to **start a new subsequence** by reserving `num+1` and `num+2`. The `need[x]` map stores how many subsequences are currently waiting for `x` as their next element, while `freq[x]` stores how many copies of `x` are still unused. If a number can neither extend an existing subsequence nor start a new valid subsequence of length at least 3, the answer is `false`; otherwise all numbers can be successfully partitioned into consecutive subsequences.
+
+
+
+`need[x]` does **not** mean a subsequence *requires* `x`; it means a subsequence can be **extended** using `x`. After extending a subsequence with `num`, it now ends at `num`, so if a future `num+1` exists, extending this already-valid subsequence is always the safest greedy choice because it does not create any new constraints. Thus, `need[num + 1]++` simply records that there is one more subsequence that can accept `num+1` next.
+
+
+```c++
+class Solution {
+public:
+    bool isPossible(vector<int>& nums) {
+    
+//     Maintain two hash maps:
+
+    // freq[x] = how many copies of x are still unused.
+    // need[x] = how many subsequences are currently waiting for x next    
+
+    unordered_map <int, int> freq;
+    unordered_map <int, int> need;
+    int n = nums.size();
+
+    for(auto num : nums)
+        freq[num]++;
+
+    for(auto num : nums) 
+    {   
+        //If this element is already reserved and finished, continue
+        if(freq[num] == 0)
+            continue;
+
+        //Since we use this number (either to extend a subsequence or start a new, hence decrease frequency)
+        freq[num]--;
+
+        //This element is needed to extend a previous subsequence
+        if(need[num] > 0)
+        {
+            need[num]--;
+            need[num + 1]++;
+        }
+
+        //We can start a new subsequence from num
+        else if(freq[num + 1] > 0 && freq[num + 2] > 0)
+        {
+                freq[num + 1]--;
+                freq[num + 2]--;
+                need[num + 3]++;
+        }
+        else
+            return false;
+    }
+
+    return true;
+    }
+};
+```
+
+
+---
+
+## **624. Maximum Distance in Arrays**
+
+Since arrays are sorted, what if we just traverse the array once and take two variables, one maxi and one mini, we update mini with arr[0] and maxi with arr[len - 1] everytime, this way we get the overall minimum and maximum of the arrays, and hence the maximum difference should be the difference between the final maximum and minimum
+
+
+***But if we track this way, then we can accidentaly choose the mini and maxi from the same array. so we have to anyhow decide what to choose mini or maxi from the current array
+This is the main problem we have to address***
+
+
+```c++
+    int mini = INT_MAX, maxi = INT_MIN;
+
+    for(auto arr : arrays)
+    {
+        mini = min(mini, arr[0]);
+        maxi = max(maxi, arr[arr.size() - 1]);
+    }    
+
+    return maxi - mini;
+```
+
+### Correct Greedy Approach
+
+Since each array is sorted, only its first (minimum) and last (maximum) elements matter. While traversing the arrays, maintain the global minimum `mn` and global maximum `mx` seen in all previous arrays. For the current array, the best distance involving it can only be `current_max - mn` or `mx - current_min`, since the maximum distance is always formed by a minimum from one array and a maximum from another. Compute these distances before updating `mn` and `mx` so that both chosen elements always come from different arrays. This gives an `O(n)` greedy solution with `O(1)` extra space.
+
+
+```c++
+class Solution {
+public:
+    int maxDistance(vector<vector<int>>& arrays) {
+        
+        int mn = arrays[0][0];
+        int mx = arrays[0].back();
+        int ans = 0;
+
+        for (int i = 1; i < arrays.size(); i++) {
+            
+            ans = max(ans, arrays[i].back() - mn);
+            ans = max(ans, mx - arrays[i][0]);
+
+            mn = min(mn, arrays[i][0]);
+            mx = max(mx, arrays[i].back());
+        }
+
+        return ans;
+    }
+};
+```
+
+
+---
+
