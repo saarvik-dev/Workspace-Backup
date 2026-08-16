@@ -4229,3 +4229,143 @@ public:
 
 ---
 
+## **947. Most Stones Removed with Same Row or Column**
+
+Since we need to remove the maximum number of stones, intuition:
+Start by removing the stones with the least degree, because they have less stones in the same row or column, so if we remove the higher ones, it might happen we do not have any choice left for the less degree ones
+
+How the graph will be made ?
+This is the main difficult part, to figure out how the nodes can be stored
+Maybe a priority queue to store the nodes according to their degrees
+
+### Correct Approach
+
+Think of it this way:
+
+- Each stone is a node.
+- There is an edge between two stones if they share a row or a column.
+- A stone can be removed if it has at least one neighbor.
+Now consider a connected component of this graph.
+
+Suppose a component has **k stones**.
+
+Can you remove all k stones? No, because the last remaining stone would have no neighbor and therefore cannot be removed.
+
+Can you remove k−1 stones? Yes. Keep removing stones until only one remains.
+
+Therefore:
+
+**For every connected component of size k, the maximum removable stones = k − 1.**
+
+So if:
+
+- Total stones = N
+- Number of connected components = C
+then:*** answer=N−C***
+
+
+```c++
+class Solution {
+public:
+    void dfs(int node, vector<vector<int>>& adj, vector<int>& visited)
+    {
+        visited[node] = 1;
+
+        for (int neighbour : adj[node])
+        {
+            if (!visited[neighbour])
+                dfs(neighbour, adj, visited);
+        }
+    }
+
+    int removeStones(vector<vector<int>>& stones) {
+
+        int n = stones.size();
+
+        vector<vector<int>> adj(n);
+
+        // Build graph:
+        // Connect two stones if they share a row or a column.
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = i + 1; j < n; j++)
+            {
+                if (stones[i][0] == stones[j][0] ||
+                    stones[i][1] == stones[j][1])
+                {
+                    adj[i].push_back(j);
+                    adj[j].push_back(i);
+                }
+            }
+        }
+
+        vector<int> visited(n, 0);
+        int components = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (!visited[i])
+            {
+                components++;
+                dfs(i, adj, visited);
+            }
+        }
+
+        return n - components;
+    }
+};
+```
+
+
+---
+
+## **1042. Flower Planting With No Adjacent**
+
+**Note:** The key observation is that each garden can have at most 3 adjacent gardens, while we have 4 flower types available. Therefore, when assigning a flower to a garden, at most 3 flower types can be forbidden by its already-colored neighbors, guaranteeing that at least one flower type is always available. Hence, we can greedily process each garden, check the flower types used by its colored neighbors, and assign any available flower from `{1, 2, 3, 4}` without requiring DFS, backtracking, or a general graph coloring algorithm.
+
+
+```c++
+class Solution {
+public:
+    vector<int> gardenNoAdj(int n, vector<vector<int>>& paths) {
+
+        vector<vector<int>> adj(n);
+
+        for (auto &path : paths)
+        {
+            int u = path[0] - 1;
+            int v = path[1] - 1;
+
+            adj[u].push_back(v);
+            adj[v].push_back(u);
+        }
+
+        vector<int> color(n, 0);
+
+        for (int node = 0; node < n; node++)
+        {
+            bool used[5] = {false};
+
+            for (int neighbour : adj[node])
+            {
+                used[color[neighbour]] = true;
+            }
+
+            for (int flower = 1; flower <= 4; flower++)
+            {
+                if (!used[flower])
+                {
+                    color[node] = flower;
+                    break;
+                }
+            }
+        }
+
+        return color;
+    }
+};
+```
+
+
+---
+

@@ -106,6 +106,8 @@ https://leetcode.com/problems/all-possible-full-binary-trees/description/?envTyp
 
 https://leetcode.com/problems/continuous-subarray-sum/description/
 
+https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/description/
+
 ## Redo
 
 https://leetcode.com/problems/sum-of-subarray-minimums/description/
@@ -202,6 +204,7 @@ https://leetcode.com/problems/split-array-into-consecutive-subsequences/descript
 - https://leetcode.com/problems/evaluate-division/description/ → https://leetcode.com/problems/evaluate-division/description/
 - https://leetcode.com/problems/all-possible-full-binary-trees/description/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/all-possible-full-binary-trees/description/?envType=problem-list-v2&envId=dynamic-programming
 - https://leetcode.com/problems/continuous-subarray-sum/description/ → https://leetcode.com/problems/continuous-subarray-sum/description/
+- https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/description/ → https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/description/
 - https://leetcode.com/problems/sum-of-subarray-minimums/description/ → https://leetcode.com/problems/sum-of-subarray-minimums/description/
 - https://leetcode.com/problems/target-sum/description/ → https://leetcode.com/problems/target-sum/description/
 - https://leetcode.com/problems/2-keys-keyboard/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/2-keys-keyboard/?envType=problem-list-v2&envId=dynamic-programming

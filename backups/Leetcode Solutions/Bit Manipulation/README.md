@@ -230,3 +230,49 @@ public:
 };
 ```
 
+
+---
+
+## **3702. Longest Subsequence With Non-Zero Bitwise XOR**
+
+  We have got some great observation
+  Acombination of nums producing 0 is only possible if say the subsequence is --
+  [a, b, c, ......w, x] and a ^ b ^ c ^ d.......w = x, then x ^ x == 0
+  This is the only possible case
+
+  Since we want the longest subsequence, we will calculate the xor of all elements till the second last, if it does not equal the last element, then we can take the last element too, as it won't produce a zero xor, hence answer would be len, but say the xor equals to the last element, then taking the last element would result in zero, hence, we can remove any element from the former part to change the previous xor to be not equal to the last element
+
+ However, if all elements are 0, then the answer would be zero
+
+
+```c++
+class Solution {
+public:
+    int longestSubsequence(vector<int>& nums) {
+
+    //Since the constraints are high, hence O(N) solution seems most optimal    
+
+
+    int zero = 0;
+    long long xore = 0;
+    int n = nums.size();
+
+    for(int i = 0; i < n - 1; i++)
+    {
+        xore = xore ^ nums[i];
+
+        if(nums[i] == 0)
+            zero++;
+    }
+
+    if(zero == n - 1 && nums[n - 1] == 0)
+        return 0;
+
+    return (xore == nums[n - 1]) ? n - 1 : n;
+    }
+};
+```
+
+
+---
+
