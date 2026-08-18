@@ -5956,6 +5956,127 @@ public:
 
 ---
 
+## **712. Minimum ASCII Delete Sum for Two Strings**
+
+`dp[i][j]` = minimum ASCII deletion sum required to make the first `i` characters of `s1` and the first `j` characters of `s2` equal
+
+
+
+```c++
+if s1[i] == s2[j]:
+    dp[i][j] = dp[i-1][j-1]
+
+else:
+    dp[i][j] = min(
+        dp[i-1][j] + ASCII(s1[i]),
+        dp[i][j-1] + ASCII(s2[j])
+    )
+```
+
+Think of `dp[i][j]` as:
+
+### Memoization
+
+
+```c++
+class Solution {
+private:
+    int sum(int i, int j, string &s1, string &s2, vector <vector<int>> &dp)
+    {
+        if(i < 0 || j < 0)
+        {
+            int rem = 0;
+
+            while(i >= 0)
+                rem += s1[i--];
+
+            while(j >= 0)
+                rem += s2[j--];
+
+            return rem;
+        }
+
+        if(dp[i][j] != -1)
+            return dp[i][j];
+
+        if(s1[i] == s2[j])
+            return dp[i][j] = sum(i - 1, j - 1, s1, s2, dp);
+
+        return dp[i][j] = min(s1[i] + sum(i - 1, j, s1, s2, dp),
+                   s2[j] + sum(i, j - 1, s1, s2, dp));
+            
+    }
+public:
+    int minimumDeleteSum(string s1, string s2) {
+    // Cases -> When s1[i] != s2[j]
+    // Delete s1[i] (i -- ,j) or Delete s2[j] (j--, i) 
+    //Else
+    // Do not delete, move both forward
+
+    // dp[i][j] -> lowest ascii sum of deleted characters if strings till index i and j are equal, strings will be equal only if the index of the smaller string reaches 0 without the bigger string getting exhausted
+    //Then we need to delete everything remaining
+    // One string exhausted: delete everything remaining in the other.
+
+    int m = s1.length();
+    int n = s2.length();
+
+    vector <vector<int>> dp(m, vector <int> (n, -1));
+    return sum(m - 1, n - 1, s1, s2, dp);
+    }
+};
+```
+
+### Tabulation
+
+For the tabulation approach, we would have to make the dp table of size `(m + 1) * (n + 1)`, so that we can handle the base cases more efficiently.
+
+
+```c++
+class Solution {
+public:
+    int minimumDeleteSum(string s1, string s2) {
+
+    // Tabulation Approach
+
+    int m = s1.length();
+    int n = s2.length();
+
+    vector <vector<int>> dp(m + 1, vector <int> (n + 1, 0));
+
+    //Base Cases
+    for(int i = 1; i <= m; i++)
+    {
+        dp[i][0] = dp[i - 1][0] + s1[i - 1];
+    }
+
+    for(int i = 1; i <= n; i++)
+    {
+        dp[0][i] = dp[0][i - 1] + s2[i - 1];
+    }
+
+    for(int i = 1; i <= m; i++)
+    {
+        for(int j = 1; j <= n; j++)
+        {            
+        if(s1[i - 1] == s2[j - 1])
+            dp[i][j] = dp[i - 1][j - 1];
+        else
+            //We will use i - 1, j - 1, due to the 1 indexed dp table
+            dp[i][j] = min(s1[i - 1] + dp[i - 1][j], s2[j - 1] + dp[i][j - 1]);
+        }
+    }
+
+    return dp[m][n];
+    }
+};
+```
+
+
+---
+
+
+---
+
 🔗 **References**
 - https://leetcode.com/problems/largest-rectangle-in-histogram/description/ → https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 

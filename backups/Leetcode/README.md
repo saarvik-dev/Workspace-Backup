@@ -397,3 +397,21 @@ vector<int> dp(1 << (n + 1), -1);
 
 ![](../assets/3b50eb7a-3bc3-8015-addd-e28575299ec4.png)
 
+https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/?envType=problem-list-v2&envId=dynamic-programming
+
+When `s1[i] != s2[j]`, you can:
+
+- Delete `s1[i]` → `dp[i-1][j] + ASCII(s1[i])`
+- Delete `s2[j]` → `dp[i][j-1] + ASCII(s2[j])`
+You **do not need a separate **`delete both`** transition**.
+
+Why? Because deleting both is already covered by doing the two deletions sequentially:
+
+(remember this for future such type of questions), though even if you do so , it will be covered in the dp state
+
+
+---
+
+🔗 **References**
+- https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/?envType=problem-list-v2&envId=dynamic-programming → https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/?envType=problem-list-v2&envId=dynamic-programming
+

@@ -389,6 +389,73 @@ public:
 
 ---
 
+## **1128. Number of Equivalent Domino Pairs**
+
+
+```c++
+class Solution {
+public:
+    int numEquivDominoPairs(vector<vector<int>>& dominoes) {
+        unordered_map<int, int> count;
+        int pairs = 0;
+
+        for (const auto& domino : dominoes) {
+            int d1 = min(domino[0], domino[1]);
+            int d2 = max(domino[0], domino[1]);
+
+            //To avoid inserting pairs into the map, we can encode them into a single key
+            int key = d1 * 10 + d2;
+
+            // Add already seen matching dominoes, then increment frequency
+            pairs += count[key];
+            count[key]++;
+        }
+
+        return pairs;
+    }
+};
+```
+
+
+---
+
+## **553. Optimal Division**
+
+
+```c++
+class Solution {
+public:
+    string optimalDivision(vector<int>& nums) {
+        //     Just write any array down and see what is happening , continuous
+        //     division of elements , which will always reduce the value.
+        // so the idea is to just take the first element and divide it by the
+        // remaining elements , because this will deal the max value as you have
+        // minmized the denominator and numerator is at its peak which is the
+        // first element
+
+        string ans;
+        if (!nums.size())
+            return ans;
+        ans = to_string(nums[0]);
+        if (nums.size() == 1)
+            return ans;
+        if (nums.size() == 2)
+            return ans + "/" + to_string(nums[1]);
+        ans += "/(" + to_string(nums[1]);
+        for (int i = 2; i < nums.size(); ++i)
+            ans += "/" + to_string(nums[i]);
+        ans += ")";
+        return ans;
+    }
+};
+```
+
+
+---
+
+
+---
+
 🔗 **References**
 - 3379. Transformed Array → https://leetcode.com/problems/transformed-array/description/?envType=daily-question&envId=2026-02-05
 - 696. Count Binary Substrings → https://leetcode.com/problems/count-binary-substrings/?envType=daily-question&envId=2026-02-19
