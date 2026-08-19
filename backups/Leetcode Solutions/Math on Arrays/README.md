@@ -453,6 +453,91 @@ public:
 
 ---
 
+## **3471. Find the Largest Almost Missing Integer**
+
+### Brute Force
+
+
+```c++
+class Solution {
+public:
+    int largestInteger(vector<int>& nums, int k) {
+    // Since the constraints are low, we can use nested loops
+
+    vector <int> freq(51, 0);
+    int n = nums.size();
+    
+    for(int i = 0; i <= n - k; i++)
+    {
+        unordered_set <int> elements;
+        for(int j = i; j < i + k; j++)
+        {
+            if(elements.find(nums[j]) == elements.end())
+            {
+                elements.insert(nums[j]);
+                freq[nums[j]]++;
+            }
+        }
+    }
+
+    for(int i = 50; i >= 0; i--)
+    {
+        if(freq[i] == 1)
+            return i;
+    }
+
+    return -1;
+    }
+};
+```
+
+### Optimal
+
+- **Case k = 1:** Every single element forms its own subarray of size 1. An element appears in exactly one subarray only if it appears **once in the entire array**. The answer is the **maximum unique element** (frequency = 1).
+- **Case k = n:** There is only **one subarray** in total (the entire array). Every distinct element in the array is present in that single subarray. The answer is simply the **maximum element** in `nums`.
+- **Case 1 < k < n:** Every interior element (indices 1 through n - 2) is covered by at least two overlapping sliding windows. Only the two boundary elements—`nums[0]` and `nums[n - 1]`—can ever appear in exactly one window, provided their **total frequency in the array is 1**. The answer is the **larger of the two boundary values that appears uniquely**, or `1` if neither qualifies.
+
+```c++
+class Solution {
+public:
+    int largestInteger(vector<int>& nums, int k) {
+        int n = nums.size();
+
+        vector<int> freq(51, 0);
+
+        for (int x : nums) {
+            freq[x]++;
+        }
+        if (k == n) {
+            return *max_element(nums.begin(), nums.end());
+        }
+        if (k == 1) {
+            int ans = -1;
+
+            for (int x : nums) {
+                if (freq[x] == 1) {
+                    ans = max(ans, x);
+                }
+            }
+
+            return ans;
+        }
+
+        int ans = -1;
+
+        if (freq[nums[0]] == 1) {
+            ans = max(ans, nums[0]);
+        }
+
+        if (freq[nums[n - 1]] == 1) {
+            ans = max(ans, nums[n - 1]);
+        }
+
+        return ans;
+    }
+};
+```
+
 
 ---
 

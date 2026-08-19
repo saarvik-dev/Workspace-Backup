@@ -605,3 +605,61 @@ public:
 };
 ```
 
+
+---
+
+## **4022. K-th Digit in Infinite String**
+
+
+```c++
+class Solution {
+public:
+    int kthDigit(long long k) {
+
+        //k is very high -- 1e15 order
+        //so instead of simulating as it is, we need to identify the range somehow in which our kth digit will land
+
+    if(k < 10)
+        return k;
+
+    k = k - 9;
+        
+    long long p = 10;
+
+    //loop through number of digits
+    for(int d = 2;; d++) {
+
+        long long blocks = 9 * (p / 10);
+        long long take = blocks * 10LL * d;
+
+        if(k > take) {
+            k -= take;
+            p *= 10;
+            continue;
+            //shows k is not in current block
+        }
+
+        long long off = (k - 1) / (10LL * d);
+        long long rem = (k - 1) % (d * 10LL);
+        long long b = (p/10) + off;
+
+        long long index = rem/d;
+        long long posi = rem%d;
+
+        long long number;
+
+        //we use bit manipulation, since b can very beb ig
+        if(b & 1)
+            number = b * 10 + (9 - index);
+        else
+            number = b * 10 + index;
+
+        //converting given number to dtrign for easier outputds
+        string s = to_string(number);
+
+        return s[posi] - '0';
+    }
+    }
+};
+```
+

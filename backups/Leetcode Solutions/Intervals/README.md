@@ -257,6 +257,81 @@ public:
 
 ---
 
+## Merge Intervals(Standard Question)
+
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        
+        // Sort according to starting point
+        sort(intervals.begin(), intervals.end());
+
+        vector<vector<int>> ans;
+
+        for (auto interval : intervals) {
+
+            // No overlap
+            if (ans.empty() || ans.back()[1] < interval[0]) {
+                ans.push_back(interval);
+            }
+            
+            // Overlap
+            else {
+                ans.back()[1] = max(ans.back()[1], interval[1]);
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
+
+---
+
+## **3975. Filter Occupied Intervals**
+
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> filterOccupiedIntervals(vector<vector<int>>& occupiedIntervals, int freeStart, int freeEnd) {
+
+    vector <vector<int>> res;
+    //Lets use the standard merge intervals trick
+    sort(occupiedIntervals.begin(), occupiedIntervals.end());
+    
+    for(auto interval : occupiedIntervals)
+    {   
+        if(res.empty() || interval[0] > res.back()[1] + 1)
+            res.push_back(interval);
+
+        else
+            res.back()[1] = max(res.back()[1], interval[1]);
+    }   
+
+    vector <vector<int>> ans;
+    for(auto interval : res)
+    {
+        if(interval[1] < freeStart || interval[0] > freeEnd)
+            ans.push_back(interval);    
+        
+        else
+        {
+            if(freeStart > interval[0])
+                ans.push_back({interval[0], freeStart - 1});
+            
+            if(interval[1] > freeEnd)
+                ans.push_back({freeEnd + 1, interval[1]});
+         }
+    }
+    return ans;
+    }
+};
+```
+
 
 ---
 

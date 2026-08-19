@@ -2040,6 +2040,42 @@ public:
 
 ---
 
+## **53. Maximum Subarray**
+
+### Kadane’s Algorithm
+
+Kadane’s Algorithm is classified as **Dynamic Programming (DP)** because it follows the core DP idea:
+
+Kadane’s Algorithm is classified as **Dynamic Programming (DP)** because it solves the problem using a DP state and recurrence: `dp[i]` represents the **maximum sum of a subarray ending exactly at index **`i`. For every element `nums[i]`, there are two choices: either start a new subarray from `nums[i]`, or extend the best subarray ending at `i-1`. Hence, the recurrence is `dp[i] = max(nums[i], dp[i-1] + nums[i])`. Since `dp[i]` only depends on `dp[i-1]`, we do not need to store the entire `dp` array; we can maintain only the previous value in a variable such as `curr`, reducing the space complexity from `O(n)` to `O(1)`. Therefore, Kadane’s Algorithm is essentially a **space-optimized 1D DP algorithm** with `O(n)` time and `O(1)` extra space. It is sometimes also associated with the **Greedy** technique because at each index we decide whether extending the current subarray or starting fresh is better, but its underlying recurrence and state make it a classic example of DP.
+
+### Question: In Kadane’s Algorithm, why don’t we reset the sum as soon as we encounter a negative number?
+
+**Answer:** We cannot reset the sum whenever we encounter a negative number because a negative number can still be part of the maximum-sum subarray if the positive numbers before and after it compensate for it. For example, in `[4, -1, 2]`, `-1` is negative, but keeping it gives `4 + (-1) + 2 = 5`, which is better than resetting at `-1` and getting only `4`. Therefore, Kadane’s Algorithm does **not** care whether the current element is positive or negative; it cares whether the **total running sum** is positive or negative. We keep adding elements as long as the running sum remains useful. Once the running sum becomes **negative**, we reset it to `0` because a negative-sum subarray can never help form a maximum-sum subarray going forward: for any future element `x`, `negative_sum + x < x`, so starting fresh at `x` is always better. Thus, the correct idea is: **do not discard a subarray just because it contains a negative number; discard it only when its total sum becomes negative.**
+
+
+```c++
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        
+        int ans=INT_MIN, curr=0, n=nums.size();
+
+        for(int i=0; i<n; i++){
+            if( curr < 0)
+                curr=nums[i];
+            else
+                curr+=nums[i];
+
+            ans=max(ans,curr);
+        }
+        return ans;
+    }
+};
+```
+
+
+---
+
 🔗 **References**
 - Reverse Pairs → https://leetcode.com/problems/reverse-pairs/
 
