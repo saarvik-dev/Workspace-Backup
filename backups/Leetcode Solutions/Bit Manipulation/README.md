@@ -276,3 +276,49 @@ public:
 
 ---
 
+## **1386. Cinema Seat Allocation**
+
+
+```c++
+class Solution {
+public:
+    int maxNumberOfFamilies(int n, vector<vector<int>>& reservedSeats) {
+        unordered_map<int, int> rowMask;
+
+        // Mask seats 2 through 9 (seats 1 and 10 do not affect 4-person groups)
+        for (const auto& seat : reservedSeats) {
+            int r = seat[0];
+            int c = seat[1];
+            if (c >= 2 && c <= 9) {
+                rowMask[r] |= (1 << (c - 2)); // Shift to 0-indexed bits (0 to 7)
+            }
+        }
+
+        // Each unvisited row can accommodate 2 full groups
+        int ans = (n - rowMask.size()) * 2;
+
+        // Bitmasks for each 4-seat block (relative to seat 2):
+        // Left   (seats 2,3,4,5) -> bits 0,1,2,3 -> 0b00001111 (15)
+        // Right  (seats 6,7,8,9) -> bits 4,5,6,7 -> 0b11110000 (240)
+        // Middle (seats 4,5,6,7) -> bits 2,3,4,5 -> 0b00111100 (60)
+        const int LEFT_MASK = 0b00001111;
+        const int RIGHT_MASK = 0b11110000;
+        const int MID_MASK = 0b00111100;
+
+        for (const auto& [row, mask] : rowMask) {
+            bool leftPossible = (mask & LEFT_MASK) == 0;
+            bool rightPossible = (mask & RIGHT_MASK) == 0;
+            bool midPossible = (mask & MID_MASK) == 0;
+
+            if (leftPossible && rightPossible) {
+                ans += 2;
+            } else if (leftPossible || rightPossible || midPossible) {
+                ans += 1;
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
