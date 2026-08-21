@@ -344,3 +344,15 @@ If you tried to use **only Dijkstra**, you would unnecessarily waste processing 
 If you tried to use **only Topological Sort**, your program would crash the moment it encountered a real-world graph with a cycle (like a two-way street).
 You use Topological Sort when the graph allows it (DAGs) because it is faster and more flexible with negative numbers. You fall back to Dijkstra when the graph contains cycles.
 
+## Significance of this line in Dijkstra Algorithm
+
+
+```c++
+
+            // Skip if this distance is outdated
+            if (d > dist[node]) continue;
+```
+
+
+![](../../assets/3c20eb7a-3bc3-80b4-8b42-d0efbcc179a0.png)
+

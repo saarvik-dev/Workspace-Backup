@@ -4369,3 +4369,214 @@ public:
 
 ---
 
+## **2976. Minimum Cost to Convert String I**
+
+### Intuition
+
+For every position where `source[i] != target[i]`, we need to find the minimum cost to convert `source[i]` into `target[i]`, allowing intermediate character conversions.
+
+This can be modeled as a weighted directed graph: each character is a node, and each conversion `original[i] -> changed[i]` is a directed edge with `cost[i]`.
+
+Therefore, for every required character conversion, we need the shortest path between the corresponding source and target characters.
+
+Since all edge costs are non-negative, Dijkstra's algorithm can be used to find these shortest paths. If no path exists between two required characters, the conversion is impossible and we return `-1`.
+
+For graph construction, we use a map where each character stores its adjacent characters along with the corresponding conversion costs.
+
+### Brute Force
+
+
+```c++
+class Solution {
+    unordered_map <char, vector<pair<char, long long>>> graph;
+private:
+    long long minCost(char ch1, char ch2)
+    {
+        vector <long long> dist(26, LLONG_MAX);
+
+        //Declaring min heap
+        priority_queue <pair<long long, char>, 
+                        vector<pair<long long, char>>, 
+                        greater<pair<long long, char>>> q;
+
+
+        q.push({0, ch1});
+        dist[ch1 - 'a'] = 0;
+
+        while(!q.empty())
+        {
+            auto [cost, ch] = q.top();
+            q.pop();
+
+            if(cost > dist[ch - 'a']) 
+                continue;
+
+            if(ch == ch2)
+                break;
+
+            for(auto [neigh, price] : graph[ch])
+            {
+                long long newCost = cost + price;
+                
+                if(dist[neigh - 'a'] > newCost)
+                {
+                    dist[neigh - 'a'] = newCost;
+                    q.push({newCost, neigh});
+                }
+            }
+        }
+        return dist[ch2 - 'a'];
+    }
+public:
+    long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
+
+
+    int n = original.size();
+
+    for(int i = 0; i < n; i++)
+    {
+        char ch1 = original[i];
+        char ch2 = changed[i];
+        int c = 1LL * cost[i];
+
+        graph[ch1].push_back({ch2, c});
+    }
+
+    long long ans = 0;
+    int len = source.length();
+
+    for(int i = 0; i < len; i++)
+    {
+        char ch1 = source[i];
+        char ch2 = target[i];
+
+        if(ch1 == ch2)
+            continue;
+            
+        if(graph.find(ch1) == graph.end())
+            return -1;
+
+
+        if(minCost(ch1, ch2) == LLONG_MAX)
+            return -1 * 1LL;
+        else
+            ans += minCost(ch1, ch2);
+    }
+
+    return ans;
+    }
+};
+```
+
+### Optimal Solution - Precomputation\DP
+
+In my initial approach, I ran Dijkstra’s algorithm separately for every position `i` in the string, calling `minCost(source[i], target[i])` each time. This is inefficient because `minCost()` computes the shortest distances from `source[i]` to **all 26 characters**, even though the same source character may appear at many positions, causing the same Dijkstra computation to be repeated unnecessarily. Since there are only **26 possible characters**, the optimal approach is to run Dijkstra at most once for each character `'a'` to `'z'` and store the resulting shortest-distance array, where `dist[x][y]` represents the minimum cost to convert character `x` to character `y`. Then, while traversing the strings, we can directly look up `dist[source[i]-'a'][target[i]-'a']` instead of running Dijkstra again. Thus, the expensive shortest-path computations become independent of the string length, reducing the repeated work to at most **26 Dijkstra runs**.
+
+
+```c++
+class Solution {
+    unordered_map<char, vector<pair<char, long long>>> graph;
+
+private:
+    // Returns shortest distances from ch1 to all 26 characters
+    vector<long long> minCost(char ch1)
+    {
+        vector<long long> dist(26, LLONG_MAX);
+
+        // Min-heap: {cost, character}
+        priority_queue<
+            pair<long long, char>,
+            vector<pair<long long, char>>,
+            greater<pair<long long, char>>
+        > q;
+
+        dist[ch1 - 'a'] = 0;
+        q.push({0, ch1});
+
+        while (!q.empty())
+        {
+            auto [cost, ch] = q.top();
+            q.pop();
+
+            // Ignore outdated entry
+            if (cost > dist[ch - 'a'])
+                continue;
+
+            for (auto [neigh, price] : graph[ch])
+            {
+                long long newCost = cost + price;
+
+                if (newCost < dist[neigh - 'a'])
+                {
+                    dist[neigh - 'a'] = newCost;
+                    q.push({newCost, neigh});
+                }
+            }
+        }
+
+        return dist;
+    }
+
+public:
+    long long minimumCost(
+        string source,
+        string target,
+        vector<char>& original,
+        vector<char>& changed,
+        vector<int>& cost
+    )
+    {
+        // Graph construction
+        int n = original.size();
+
+        for (int i = 0; i < n; i++)
+        {
+            char ch1 = original[i];
+            char ch2 = changed[i];
+            long long c = cost[i];
+
+            graph[ch1].push_back({ch2, c});
+        }
+
+        // allDist[x][y] = minimum cost to convert x -> y
+        vector<vector<long long>> allDist(26, vector<long long>(26, LLONG_MAX));
+
+        // Run Dijkstra once from each possible character
+        for (int i = 0; i < 26; i++)
+        {
+            char ch = 'a' + i;
+            allDist[i] = minCost(ch);
+        }
+
+        long long ans = 0;
+        int len = source.length();
+
+        for (int i = 0; i < len; i++)
+        {
+            char ch1 = source[i];
+            char ch2 = target[i];
+
+            // Already equal, so no cost
+            if (ch1 == ch2)
+                continue;
+
+            long long currCost =
+                allDist[ch1 - 'a'][ch2 - 'a'];
+
+            // No possible conversion
+            if (currCost == LLONG_MAX)
+                return -1;
+
+            ans += currCost;
+        }
+
+        return ans;
+    }
+};
+```
+
+### Floyd Warshall’s
+
+
+---
+

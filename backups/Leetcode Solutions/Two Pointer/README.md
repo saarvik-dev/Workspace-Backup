@@ -226,3 +226,70 @@ public:
 };
 ```
 
+
+---
+
+## **3069. Distribute Elements Into Two Arrays I**
+
+### Brute Force
+
+
+```c++
+
+class Solution {
+public:
+    vector<int> resultArray(vector<int>& nums) {
+        // Initialize two separate arrays
+        vector<int> arr1, arr2;
+        
+        // Rule 1: Put the first element into arr1
+        arr1.push_back(nums[0]);
+        // Rule 2: Put the second element into arr2
+        arr2.push_back(nums[1]);
+        
+        // Process subsequent elements starting from the 3rd element (index 2)
+        for (int i = 2; i < nums.size(); i++) {
+            // Rule 3: If the last element of arr1 is greater than the last element of arr2
+            if (arr1.back() > arr2.back()) {
+                arr1.push_back(nums[i]);
+            } else {
+                arr2.push_back(nums[i]);
+            }
+        }
+        
+        // Concatenate arr2 onto the end of arr1
+        arr1.insert(arr1.end(), arr2.begin(), arr2.end());
+        
+        return arr1;
+    }
+};
+```
+
+### Two Pointer Optimal
+
+
+```c++
+class Solution {
+public:
+    vector<int> resultArray(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> arr(n);
+        arr[0] = nums[0];
+        arr[n - 1] = nums[1];
+        int idx = 0, revIdx = n - 1;
+        for (int i = 2; i < n; i++) {
+            if (arr[idx] > arr[revIdx]) {
+                arr[++idx] = nums[i];
+            } else {
+                arr[--revIdx] = nums[i];
+            }
+        }
+        reverse(arr.begin() + revIdx, arr.end());
+        return arr;
+    }
+};
+```
+
+
+---
+
